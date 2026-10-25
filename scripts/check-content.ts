@@ -1,8 +1,9 @@
 // The content check (PHASE-2.md step 3). Reads every entry and playbook in content/ and content-samples/ and lists
-// every problem, so a bad file never reaches the site. Runs as `npm run check:content` and before every build.
+// every problem, so a bad file never reaches the site; also checks the project files in projects/ (step 6). Runs as
+// `npm run check:content` and before every build.
 // Usage: tsx scripts/check-content.ts [root …]   (default: content content-samples)
 
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
 import { listContent, readEntry, readPlaybook, sections, splitFrontMatter } from "../src/lib/content";
@@ -211,14 +212,91 @@ function checkRoot(root: string) {
     if (playbook.projectFile && !existsSync(join("projects", `${playbook.projectFile}.md`))) problem(where, `projectFile "${playbook.projectFile}" is not in projects/`);
     if (real && playbook.kind === "replication-guide" && !playbook.projectFile) problem(where, "real replication guides need projectFile");
   }
-  return { entries: entries.length, playbooks: playbookSlugs.length };
+  return { entries: entries.length, playbooks: playbookSlugs.length, slugs: known, playbookSlugs: new Set(playbookSlugs) };
+}
+
+// ---------- project files (PHASE-2.md step 6) ----------
+
+const FULL_HEADER = ["Name", "Kind", "Live site", "Repository", "Local folder", "Read at", "Target", "Embeddable"];
+const FULL_SECTIONS = [
+  "Contents",
+  "Overview",
+  "Stack",
+  "Architecture",
+  "Repository structure",
+  "Visual design",
+  "How the front end operates",
+  "How the back end operates",
+  "Data model",
+  "How it was built (process)",
+  "Reusable pieces catalogue",
+  "Gotchas and quirks",
+  "Proposed entries",
+  "Proposed replication guide",
+  "Proposed new tag values",
+  "Open questions",
+  "Sources",
+];
+// differences-only files: these patterns, in this order ("Unique: …" may repeat)
+const DERIVED_SECTIONS = [/^What is shared with /, /^Unique: /, /^Reusable pieces unique to /, /^Gotchas unique to /, /^Proposed entries$/, /^Proposed new tag values$/, /^Open questions$/, /^Sources$/];
+
+/** Checks every projects/*.md; for project files already applied, every entry slug they propose must exist. */
+function checkProjects(realSlugs: Set<string> | undefined, realPlaybooks: Set<string> | undefined) {
+  const dir = "projects";
+  if (!existsSync(dir)) return 0;
+  const questions = existsSync(join(dir, "OPEN-QUESTIONS.md")) ? readFileSync(join(dir, "OPEN-QUESTIONS.md"), "utf8") : "";
+  const appliedPart = questions.split(/^## Answered and applied\s*$/m)[1] ?? "";
+  const files = readdirSync(dir).filter((f) => f.endsWith(".md") && !f.startsWith("_") && f !== "OPEN-QUESTIONS.md");
+  for (const file of files) {
+    const where = `projects/${file}`;
+    const name = file.slice(0, -3);
+    if (!VALUE.test(name)) problem(where, "file name must be a slug (lowercase words joined by hyphens)");
+    const text = readFileSync(join(dir, file), "utf8").replace(/\r\n/g, "\n");
+    const header = new Set([...text.matchAll(/^\| ([A-Za-z ]+?) \| /gm)].map((m) => m[1]));
+    const derived = header.has("Derived from");
+    for (const row of derived ? [...FULL_HEADER.filter((r) => r !== "Status on the site"), "Derived from"] : FULL_HEADER) {
+      if (!header.has(row)) problem(where, `header table needs a "${row}" row`);
+    }
+    const headings = [...text.matchAll(/^## (?:\d+\. )?(.+)$/gm)].map((m) => m[1].trim());
+    if (derived) {
+      let at = 0;
+      for (const heading of headings) {
+        while (at < DERIVED_SECTIONS.length && !DERIVED_SECTIONS[at].test(heading)) at++;
+        if (at === DERIVED_SECTIONS.length) {
+          problem(where, `unexpected or out-of-order section "## ${heading}"`);
+          break;
+        }
+        if (!DERIVED_SECTIONS[at].source.startsWith("^Unique")) at++;
+      }
+      for (const pattern of DERIVED_SECTIONS) if (!headings.some((h) => pattern.test(h))) problem(where, `needs a section matching ${pattern.source.replace(/[\^$]/g, "")}`);
+    } else {
+      const missing = FULL_SECTIONS.filter((s) => !headings.includes(s));
+      if (missing.length) problem(where, `missing sections: ${missing.map((s) => `"## ${s}"`).join(", ")}`);
+      else if (JSON.stringify(headings.filter((h) => FULL_SECTIONS.includes(h))) !== JSON.stringify(FULL_SECTIONS)) problem(where, "sections are out of order");
+    }
+    if (!new RegExp(`\\]\\(${name}\\.md\\)`).test(questions)) problem(where, "has no section in projects/OPEN-QUESTIONS.md");
+    // applied: its section sits under "Answered and applied", and what it proposes must exist in content/
+    if (realSlugs && new RegExp(`\\(${name}\\.md\\)`).test(appliedPart)) {
+      const proposed = text.split(/^## (?:\d+\. )?Proposed entries$/m)[1]?.split(/^## /m)[0] ?? "";
+      // (the key-code table repeats slugs, so each is checked once)
+      for (const slug of new Set([...proposed.matchAll(/^\| `([a-z0-9-]+)` \|/gm)].map((m) => m[1]))) {
+        if (!realSlugs.has(slug)) problem(where, `applied, but proposed entry "${slug}" is not in content/entries`);
+      }
+      for (const m of text.matchAll(/^`(replicate-[a-z0-9-]+)` · /gm)) {
+        if (!realPlaybooks?.has(m[1])) problem(where, `applied, but its guide "${m[1]}" is not in content/playbooks`);
+      }
+    }
+  }
+  return files.length;
 }
 
 const roots = process.argv.slice(2).length ? process.argv.slice(2) : ["content", "content-samples"];
 const counts = roots.map((root) => ({ root, ...checkRoot(root) }));
+const realCounts = counts.find((c) => c.root === "content");
+const projectFiles = checkProjects(realCounts?.slugs, realCounts?.playbookSlugs);
 
 if (problems.length) {
   console.error(`Content check failed: ${problems.length} problem${problems.length === 1 ? "" : "s"}\n- ${problems.join("\n- ")}`);
   process.exit(1);
 }
-console.log(`Content check passed: ${counts.map((c) => `${c.root} (${c.entries} entries, ${c.playbooks} playbooks)`).join(", ")}`);
+console.log(`Content check passed: ${counts.map((c) => `${c.root} (${c.entries} entries, ${c.playbooks} playbooks)`).join(", ")}, ${projectFiles} project files`);
