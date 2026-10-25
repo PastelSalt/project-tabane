@@ -229,10 +229,19 @@
   pointer-events: none;
 }
 
-.stickerStamp {
-  top: 92px;
-  right: 64px;
-  z-index: 2;
+/* The stamp sits in the "Showing" row, in normal flow, so it never lands on a card */
+.statusRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  /* room for the washi tape that pokes above the first row of cards */
+  margin-bottom: var(--space-3);
+}
+
+.stamp {
+  flex: none;
+  margin: -10px 8px 0 0;
 }
 
 .stickerCarrot {
@@ -253,8 +262,16 @@
   rotate: -8deg;
 }
 
+/* Reduced motion: no lift at all, not even an instant jump */
+@media (prefers-reduced-motion: reduce) {
+  .card:hover,
+  .card:focus-within {
+    transform: none;
+  }
+}
+
 @media (max-width: 900px) {
-  .stickerStamp,
+  .stamp,
   .stickerCarrot {
     display: none;
   }

@@ -27,7 +27,6 @@ export default async function LibraryPage({ searchParams }: PageProps<"/library"
   return (
     <AppLayout sidebar={<FilterSidebar filters={filters} counts={countTags(all)} />}>
       <CarrotPod size={34} className={`${styles.sticker} ${styles.stickerCarrot}`} />
-      <Stamp className={`${styles.sticker} ${styles.stickerStamp}`} />
 
       <SectionHeading
         number="01"
@@ -38,7 +37,10 @@ export default async function LibraryPage({ searchParams }: PageProps<"/library"
         <SearchBar filters={filters} />
       </SectionHeading>
 
-      <ActiveFilters filters={filters} shown={matches.length} total={all.length} />
+      <div className={styles.statusRow}>
+        <ActiveFilters filters={filters} shown={matches.length} total={all.length} />
+        <Stamp className={styles.stamp} />
+      </div>
 
       {visible.length === 0 ? (
         <EmptyState />

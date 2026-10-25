@@ -42,6 +42,13 @@
   rotate: -5deg;
 }
 
+/* Decorative carrot at the end of the header row, in normal flow */
+.headSticker {
+  flex: none;
+  margin-left: auto;
+  rotate: 14deg;
+}
+
 .title {
   font-size: 40px;
   line-height: 1.12;
@@ -433,6 +440,10 @@
 
   .head {
     gap: var(--space-3);
+  }
+
+  .headSticker {
+    display: none;
   }
 
   .row {

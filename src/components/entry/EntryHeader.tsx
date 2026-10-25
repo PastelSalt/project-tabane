@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SuitBadge } from "@/components/motifs";
+import { CarrotPod, SuitBadge } from "@/components/motifs";
 import { Pill, StatusPill, Tag } from "@/components/ui";
 import { suitFor } from "@/lib/format";
 import { features, layers, stacks, targets } from "@/lib/tags";
@@ -36,6 +36,7 @@ export function EntryHeader({ entry }: { entry: Entry }) {
             ))}
           </div>
         </div>
+        <CarrotPod size={30} className={styles.headSticker} />
       </header>
     </>
   );

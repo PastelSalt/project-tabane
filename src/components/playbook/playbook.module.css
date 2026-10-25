@@ -86,6 +86,13 @@
   box-shadow: 10px 12px 0 var(--card-shadow);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .card:hover,
+  .card:focus-within {
+    transform: none;
+  }
+}
+
 .cardSuit {
   position: absolute;
   top: 14px;
