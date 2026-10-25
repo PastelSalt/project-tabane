@@ -14,6 +14,12 @@ reuseNote: A grid of images with credits, opening each image on its own page.
 liveSite:
   url: https://example.com/gone
   embeddable: true
+repository:
+  name: PastelSalt/sample-site
+  url: https://github.com/PastelSalt/sample-site
+codeLocation:
+  path: src/js/gallery.js
+  ref: a1b2c3d
 wireframe:
   desktop:
     file: wireframe.svg
