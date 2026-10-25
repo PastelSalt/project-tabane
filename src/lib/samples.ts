@@ -282,6 +282,7 @@ export const sampleEntries: Entry[] = [
       desktop("screenshots/editor-1", "Screenshot of the editor with a script open"),
       desktop("screenshots/editor-2", "Screenshot of the preview pane"),
     ],
+    clip: { src: "/samples/clips/editor.webm", poster: "/samples/screenshots/editor-2.svg" },
     technicalDetails: "The editor sends the script to the preview after a short pause in typing, so the preview never blocks typing.",
     related: ["sample-novel-engine"],
     usedIn: ["Sample studio"],

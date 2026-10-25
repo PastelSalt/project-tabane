@@ -10,11 +10,12 @@ import { Panel } from "./Panel";
 export type WireframeView = "desktop" | "phone";
 export type FrameMode = "live" | "screenshot";
 
-/** Entry page address with its view choices, such as /library/x?view=phone&frame=screenshot. */
-export function entryHref(slug: string, choices: { view?: WireframeView; frame?: FrameMode }): string {
+/** Entry page address with its view choices, such as /library/x?view=phone&frame=screenshot&shot=2. */
+export function entryHref(slug: string, choices: { view?: WireframeView; frame?: FrameMode; shot?: number }): string {
   const params = new URLSearchParams();
   if (choices.view === "phone") params.set("view", "phone");
   if (choices.frame === "screenshot") params.set("frame", "screenshot");
+  if (choices.shot) params.set("shot", String(choices.shot + 1));
   const query = params.toString();
   return `/library/${slug}${query ? `?${query}` : ""}`;
 }
