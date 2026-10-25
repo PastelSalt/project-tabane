@@ -1,0 +1,101 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - bar
+      - 0
+      - 0
+      - 144
+      - 7
+      - ⚓ Keeper
+    - - panel
+      - 3
+      - 10
+      - 26
+      - 76
+    - - button
+      - 6
+      - 14
+      - 20
+      - 4.6
+      - Overview
+    - - label
+      - 6
+      - 21
+      - 20
+      - 4
+      - Queue (2)
+    - - label
+      - 6
+      - 27
+      - 20
+      - 4
+      - Notes
+    - - label
+      - 6
+      - 33
+      - 20
+      - 4
+      - Audit
+    - - label
+      - 6
+      - 39
+      - 20
+      - 4
+      - Errors
+    - - label
+      - 6
+      - 45
+      - 20
+      - 4
+      - Settings
+    - - panel
+      - 34
+      - 10
+      - 24
+      - 12
+      - notes 24 h
+    - - panel
+      - 61
+      - 10
+      - 24
+      - 12
+      - reports
+    - - panel
+      - 88
+      - 10
+      - 24
+      - 12
+      - held
+    - - panel
+      - 115
+      - 10
+      - 26
+      - 12
+      - visitors
+    - - chart
+      - 34
+      - 26
+      - 52
+      - 26
+    - - chart
+      - 89
+      - 26
+      - 52
+      - 26
+    - - panel
+      - 34
+      - 56
+      - 107
+      - 28
+      - QUEUE
+    - - text
+      - 38
+      - 64
+      - 80
+      - 5
+    - - pill
+      - 120
+      - 64
+      - 16
+      - 4
+      - approve

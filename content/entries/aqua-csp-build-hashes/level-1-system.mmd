@@ -1,0 +1,7 @@
+flowchart LR
+  build[astro build] --> html[(built HTML pages)]
+  html --> collect[collect executable inline scripts]
+  collect --> sha[sha256 of each]
+  sha --> rewrite[rewrite script-src in vercel.json]
+  rewrite --> commit[commit vercel.json]
+  commit --> served[served CSP]

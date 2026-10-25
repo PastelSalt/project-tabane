@@ -1,0 +1,161 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - image
+      - 0
+      - 0
+      - 144
+      - 76
+      - page
+    - - panel
+      - 4
+      - 78
+      - 136
+      - 11
+    - - button
+      - 7
+      - 80
+      - 12
+      - 7
+      - HOME
+    - - pill
+      - 20
+      - 80
+      - 12
+      - 7
+      - ABOUT
+    - - pill
+      - 33
+      - 80
+      - 12
+      - 7
+      - CLIPS
+    - - pill
+      - 46
+      - 80
+      - 12
+      - 7
+      - DISCO
+    - - pill
+      - 59
+      - 80
+      - 12
+      - 7
+      - STREAM
+    - - pill
+      - 72
+      - 80
+      - 12
+      - 7
+      - EVENTS
+    - - pill
+      - 85
+      - 80
+      - 12
+      - 7
+      - ARTS
+    - - pill
+      - 98
+      - 80
+      - 12
+      - 7
+      - BOARD
+    - - line
+      - 111
+      - 79
+      - 1
+      - 9
+    - - label
+      - 113
+      - 80
+      - 26
+      - 7
+      - ♪ ✦ JP LOG ⏱ ?
+    - - note
+      - 30
+      - 66
+      - 84
+      - 8
+      - one size always; only the pill slides
+phone:
+  boxes:
+    - - image
+      - 0
+      - 0
+      - 39
+      - 44
+      - page
+    - - panel
+      - 2
+      - 46
+      - 35
+      - 26
+      - MORE SHEET
+    - - pill
+      - 4
+      - 52
+      - 15
+      - 4
+      - ABOUT
+    - - pill
+      - 20
+      - 52
+      - 15
+      - 4
+      - EVENTS
+    - - pill
+      - 4
+      - 58
+      - 15
+      - 4
+      - ARTS
+    - - pill
+      - 20
+      - 58
+      - 15
+      - 4
+      - LOG
+    - - pill
+      - 4
+      - 64
+      - 15
+      - 4
+      - TIME
+    - - pill
+      - 20
+      - 64
+      - 15
+      - 4
+      - HELP
+    - - panel
+      - 1
+      - 74
+      - 37
+      - 9
+    - - button
+      - 2
+      - 76
+      - 6
+      - 5
+      - ⌂
+    - - pill
+      - 9
+      - 76
+      - 6
+      - 5
+    - - pill
+      - 16
+      - 76
+      - 6
+      - 5
+    - - pill
+      - 23
+      - 76
+      - 6
+      - 5
+    - - pill
+      - 30
+      - 76
+      - 7
+      - 5
+      - …

@@ -1,0 +1,9 @@
+flowchart TD
+  login[keeper login page] -->|email + passphrase| ba[Better Auth: rate limited]
+  ba --> hook[sign-in hook: audit row, alerts]
+  ba --> enrolled{2FA enrolled?}
+  enrolled -->|no| setup[two-factor setup with QR]
+  enrolled -->|yes| code[6-digit code]
+  setup --> guard[middleware guard]
+  code --> guard
+  guard --> keeper[keeper pages: no-store, noindex]

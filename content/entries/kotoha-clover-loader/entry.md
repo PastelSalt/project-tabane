@@ -32,6 +32,7 @@ related:
   - kotoha-crossfade-backdrop
   - kotoha-motion-calm-mode
   - hanon-sazanami-theme
+  - aqua-splash-title-screen
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

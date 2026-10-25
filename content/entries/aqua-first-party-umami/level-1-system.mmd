@@ -1,0 +1,8 @@
+flowchart LR
+  page[Page] -->|/s/ui.js| rewrite[vercel.json rewrite]
+  page -->|track and web vitals| beacon["/s/api/pulse"]
+  beacon --> rewrite
+  rewrite --> umami[(self-hosted Umami)]
+  keeper[keeper Overview] --> stats[api/admin/stats]
+  stats --> client[umami.ts: token 12 h, responses 5 min]
+  client --> umami

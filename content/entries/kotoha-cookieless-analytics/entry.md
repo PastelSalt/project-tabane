@@ -31,6 +31,7 @@ diagrams:
     file: level-2-rollup.mmd
 related:
   - kotoha-analytics-dashboard
+  - aqua-first-party-umami
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

@@ -12,6 +12,9 @@
 //       element: "#home"                 # optional: capture this whole element instead of the screen
 //       maxHeight: 1400                  # with element: cap the height
 //       early: true                      # shoot before the site's ready check (to capture a loader)
+//       local: { "aia:tour.done": null }  # storage for this shot only, merged over the site's (null = remove it)
+//       session: { … }                   # the same for sessionStorage
+//       motion: true                     # this shot with motion on (the site's default is reduced motion)
 //
 // Usage: npm run screenshots -- <entry slug | site key> …
 // Analytics are blocked per site (screenshot-sites.yml), and the run reports how many requests it blocked.
@@ -23,7 +26,8 @@ import { listContent } from "../src/lib/content";
 import { launchChrome, sleep, type Page } from "./cdp";
 
 type Site = { url: string; block?: string[]; local?: Record<string, string>; session?: Record<string, string>; ready?: string; settle?: number; motion?: boolean };
-type Shot = { file: string; device?: "desktop" | "phone"; path?: string; scrollTo?: string; before?: string; wait?: number; element?: string; maxHeight?: number; early?: boolean };
+type Shot = { file: string; device?: "desktop" | "phone"; path?: string; scrollTo?: string; before?: string; wait?: number; element?: string; maxHeight?: number; early?: boolean;
+  local?: Record<string, string | null>; session?: Record<string, string | null>; motion?: boolean };
 type Capture = { site: string; shots: Shot[] };
 
 const sites = parse(readFileSync(join("scripts", "screenshot-sites.yml"), "utf8")) as Record<string, Site>;
@@ -54,7 +58,8 @@ if (!jobs.length) {
   process.exit(1);
 }
 
-async function preparePage(page: Page, site: Site, device: "desktop" | "phone", blocked: { count: number }) {
+async function preparePage(page: Page, site: Site, shot: Shot, blocked: { count: number }) {
+  const device = shot.device ?? "desktop";
   await page.send("Network.setBlockedURLs", { urls: site.block ?? [] });
   page.on("Network.loadingFailed", (p) => {
     if (p.blockedReason) blocked.count++;
@@ -65,14 +70,14 @@ async function preparePage(page: Page, site: Site, device: "desktop" | "phone", 
     await page.send("Network.setUserAgentOverride", { userAgent: PHONE_UA });
   }
   await page.send("Emulation.setEmulatedMedia", {
-    features: [{ name: "prefers-reduced-motion", value: site.motion ? "no-preference" : "reduce" }],
+    features: [{ name: "prefers-reduced-motion", value: (shot.motion ?? site.motion) ? "no-preference" : "reduce" }],
   });
   // storage before the site's own scripts run, on its own origin only
   const origin = new URL(site.url).origin;
-  const sets = [
-    ...Object.entries(site.local ?? {}).map(([k, v]) => `localStorage.setItem(${JSON.stringify(k)}, ${JSON.stringify(v)});`),
-    ...Object.entries(site.session ?? {}).map(([k, v]) => `sessionStorage.setItem(${JSON.stringify(k)}, ${JSON.stringify(v)});`),
-  ].join("");
+  // shots share one browser profile, so a key an earlier shot set is still there: null removes it
+  const write = (store: string, entries: Record<string, string | null>) =>
+    Object.entries(entries).map(([k, v]) => (v === null ? `${store}.removeItem(${JSON.stringify(k)});` : `${store}.setItem(${JSON.stringify(k)}, ${JSON.stringify(v)});`));
+  const sets = [...write("localStorage", { ...site.local, ...shot.local }), ...write("sessionStorage", { ...site.session, ...shot.session })].join("");
   if (sets) await page.send("Page.addScriptToEvaluateOnNewDocument", { source: `if (location.origin === ${JSON.stringify(origin)}) { try { ${sets} } catch (e) {} }` });
 }
 
@@ -113,7 +118,7 @@ async function main() {
         const blocked = { count: 0 };
         const page = await chrome.newPage();
         try {
-          await preparePage(page, site, device, blocked);
+          await preparePage(page, site, shot, blocked);
           await page.send("Page.navigate", { url: site.url + (shot.path ?? "/") });
           if (!shot.early) {
             await page.waitFor("document.readyState === 'complete'", 45_000);

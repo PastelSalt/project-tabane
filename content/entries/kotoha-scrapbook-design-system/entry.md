@@ -34,6 +34,7 @@ related:
   - kotoha-admin-panel
   - hanon-sazanami-theme
   - hanon-sticker-sprite
+  - aqua-harbour-design-system
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

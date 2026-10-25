@@ -1,0 +1,8 @@
+flowchart LR
+  keeper[Keeper pages] --> action[keeper.* action: guard + re-check]
+  action --> fn[moderation function]
+  fn --> tx[one transaction over the WebSocket Pool]
+  tx --> change[(messages: approve, remove, restore)]
+  tx --> audit[(admin_actions)]
+  fn --> purge[purge: type the crew number]
+  settings[(settings, cached 60 s)] --> board[posting and report limits]

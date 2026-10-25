@@ -1,0 +1,90 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - panel
+      - 2
+      - 1.5
+      - 20
+      - 7
+      - AQUA IRO ARCHIVE
+    - - pill
+      - 4
+      - 10
+      - 16
+      - 4
+      - ⏱ 2021.08.08
+    - - image
+      - 0
+      - 0
+      - 144
+      - 90
+      - ""
+    - - panel
+      - 20
+      - 20
+      - 104
+      - 48
+      - AQUA TIME
+    - - box
+      - 28
+      - 28
+      - 40
+      - 18
+      - tape
+    - - heading
+      - 74
+      - 30
+      - 40
+      - 5
+    - - label
+      - 74
+      - 37
+      - 40
+      - 4
+      - 2021.08.08 · summer
+    - - line
+      - 28
+      - 52
+      - 88
+      - 2
+    - - dot
+      - 60
+      - 50.5
+      - 5
+      - 5
+    - - label
+      - 24
+      - 55
+      - 20
+      - 4
+      - 2018.08.08
+    - - label
+      - 100
+      - 55
+      - 20
+      - 4
+      - 2024.08.28
+    - - pill
+      - 28
+      - 60
+      - 16
+      - 4
+      - ◀ day
+    - - pill
+      - 46
+      - 60
+      - 16
+      - 4
+      - week ▶
+    - - button
+      - 86
+      - 60
+      - 30
+      - 4.6
+      - On this day
+    - - note
+      - 20
+      - 72
+      - 104
+      - 8
+      - "the whole site re-dates: outfit, greeting, streams, songs, counters"

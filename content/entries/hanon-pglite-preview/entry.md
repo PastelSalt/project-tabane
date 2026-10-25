@@ -27,6 +27,7 @@ related:
   - kotoha-db-scripts
   - kotoha-grouped-functions
   - hanon-cdp-test-harness
+  - aqua-db-drivers-pglite
 usedIn:
   - Hanon Fan Site
 shared: false

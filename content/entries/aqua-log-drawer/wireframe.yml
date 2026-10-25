@@ -1,0 +1,65 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - image
+      - 0
+      - 0
+      - 144
+      - 90
+      - page (dimmed)
+    - - panel
+      - 84
+      - 4
+      - 58
+      - 82
+      - LOG
+    - - button
+      - 87
+      - 12
+      - 13
+      - 5
+      - Backlog
+    - - pill
+      - 101
+      - 12
+      - 13
+      - 5
+      - Album
+    - - pill
+      - 115
+      - 12
+      - 12
+      - 5
+      - Credits
+    - - pill
+      - 128
+      - 12
+      - 12
+      - 5
+      - Keys
+    - - text
+      - 88
+      - 22
+      - 48
+      - 3
+    - - text
+      - 88
+      - 28
+      - 44
+      - 3
+    - - text
+      - 88
+      - 34
+      - 48
+      - 3
+    - - text
+      - 88
+      - 40
+      - 40
+      - 3
+    - - note
+      - 4
+      - 70
+      - 72
+      - 12
+      - opened by LOG, Esc, or the dialogue box

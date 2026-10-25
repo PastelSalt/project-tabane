@@ -1,0 +1,74 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 144
+      - 90
+      - ""
+    - - note
+      - 104
+      - 3
+      - 38
+      - 7
+      - "the wash: pattern + motifs"
+    - - panel
+      - 2
+      - 1.5
+      - 20
+      - 7
+      - AQUA IRO ARCHIVE
+    - - panel
+      - 8
+      - 12
+      - 60
+      - 24
+      - "PAPER: what you read"
+    - - text
+      - 12
+      - 20
+      - 50
+      - 7
+    - kind: panel
+      x: 74
+      y: 14
+      w: 28
+      h: 20
+      label: card
+      r: -2
+    - kind: panel
+      x: 106
+      y: 14
+      w: 28
+      h: 20
+      label: card
+      r: 1.5
+    - - line
+      - 0
+      - 40
+      - 144
+      - 2
+    - - bar
+      - 0
+      - 42
+      - 144
+      - 24
+      - THE DEEP · one band per page, also the page switch
+    - - line
+      - 0
+      - 66
+      - 144
+      - 2
+    - - panel
+      - 8
+      - 70
+      - 50
+      - 8
+      - banner card + tint bar
+    - - dashed
+      - 64
+      - 70
+      - 40
+      - 8
+      - Aqua talks box

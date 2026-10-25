@@ -1,0 +1,10 @@
+flowchart LR
+  cron[Daily Vercel cron] --> clean[cleanupBoard]
+  clean --> retention[null hashes and tokens, prune errors and sessions]
+  clean --> raid[raid hold off after 24 h if nothing waits]
+  clean --> digest[Discord digest]
+  weekly[Weekly GitHub Action] --> dump[pg_dump 17]
+  dump --> age[age encrypt to the recipient key]
+  age --> artifact[90-day artifact]
+  app[Any request] -.->|waitUntil| alerts[Discord alerts]
+  app -.-> errors[(app_errors)]

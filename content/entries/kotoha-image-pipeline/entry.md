@@ -26,6 +26,7 @@ diagrams:
 related:
   - kotoha-crossfade-backdrop
   - kotoha-clover-loader
+  - aqua-data-build
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

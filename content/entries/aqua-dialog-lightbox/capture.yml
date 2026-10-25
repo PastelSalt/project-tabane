@@ -1,0 +1,7 @@
+site: aqua-iro-archive
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    path: /arts
+    before: document.querySelector('[data-lb="image"]')?.click()
+    wait: 2500

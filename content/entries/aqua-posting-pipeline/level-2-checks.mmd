@@ -1,0 +1,12 @@
+flowchart TB
+  shape[1 shape] --> paused[2 paused?] --> bot[3 Turnstile]
+  bot --> text[4-6 shared text rules: clean, length, links, personal info]
+  text --> hash[7 monthly IP hash]
+  hash --> rate[8 one query: 10 min, 24 h, site-wide 5 min]
+  rate -->|burst| raid[newcomer hold on + alert]
+  rate --> dup[9 duplicate body hash]
+  dup --> filter[10 word filter]
+  filter --> hold[11 hold?]
+  hold --> insert[12 insert, crew number]
+  insert --> alert[13 alert if held]
+  alert --> reply[14 crew number + undo token]

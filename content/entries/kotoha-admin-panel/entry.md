@@ -33,6 +33,7 @@ related:
   - kotoha-content-crud-archive
   - kotoha-scrapbook-design-system
   - kotoha-analytics-dashboard
+  - aqua-keeper-panel
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

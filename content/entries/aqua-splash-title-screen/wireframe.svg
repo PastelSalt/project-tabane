@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="0" y="0" width="1440" height="900" rx="12" fill="#c9c9d2"/><path d="M12 12 L1428 888 M1428 12 L12 888" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="548" y="432" width="344" height="36" rx="18" fill="#c9c9d2"/><text x="720" y="450" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">under-the-sea key visual</text>
+<rect x="80" y="180" width="500" height="220" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="98" y="204" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">LOGO</text>
+<rect x="0" y="620" width="1440" height="280" fill="#c9c9d2"/>
+<rect x="460" y="680" width="520" height="70" rx="35" fill="#9a9aa3"/><text x="720" y="715" font-family="Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">PRESS START</text>
+<text x="240" y="820" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">ver. line</text>
+<text x="1200" y="820" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">© line</text>
+<rect x="720" y="100" width="660" height="180" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="1050" y="176.8" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">first visit: studio card → loading harbour with tide</text><text x="1050" y="203.20000000000002" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">gauge → title screen</text>
+<rect x="1280" y="30" width="120" height="40" rx="20" fill="#c9c9d2"/><text x="1340" y="50" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">▸▸ skip</text>
+</svg>

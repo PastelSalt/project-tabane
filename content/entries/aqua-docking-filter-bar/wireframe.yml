@@ -1,0 +1,73 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - panel
+      - 2
+      - 1.5
+      - 20
+      - 7
+      - AQUA IRO ARCHIVE
+    - - panel
+      - 24
+      - 1.5
+      - 116
+      - 7
+    - - button
+      - 27
+      - 2.6
+      - 10
+      - 4.6
+      - "2024"
+    - - pill
+      - 38
+      - 2.6
+      - 10
+      - 4.6
+      - "2023"
+    - - pill
+      - 49
+      - 2.6
+      - 10
+      - 4.6
+      - "2022"
+    - - pill
+      - 60
+      - 2.6
+      - 10
+      - 4.6
+      - "2021"
+    - - pill
+      - 71
+      - 2.6
+      - 10
+      - 4.6
+      - "2020"
+    - - label
+      - 82
+      - 2.6
+      - 30
+      - 4.6
+      - … (scrolls)
+    - - button
+      - 120
+      - 2.6
+      - 18
+      - 4.6
+      - Filters
+    - - panel
+      - 8
+      - 14
+      - 128
+      - 70
+      - STREAM LOG
+    - - text
+      - 12
+      - 22
+      - 116
+      - 23
+    - - note
+      - 30
+      - 62
+      - 84
+      - 12
+      - docks while its section is on screen, undocks after it

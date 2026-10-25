@@ -1,0 +1,61 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - image
+      - 0
+      - 0
+      - 144
+      - 90
+      - Home key visual
+    - - image
+      - 92
+      - 6
+      - 40
+      - 56
+      - pose (expression)
+    - - panel
+      - 10
+      - 54
+      - 124
+      - 24
+    - - button
+      - 14
+      - 50
+      - 26
+      - 6
+      - あくあ AQUA
+    - - text
+      - 16
+      - 60
+      - 90
+      - 3
+    - - pill
+      - 18
+      - 69
+      - 30
+      - 5
+      - choice 1
+    - - pill
+      - 52
+      - 69
+      - 30
+      - 5
+      - choice 2
+    - - pill
+      - 86
+      - 69
+      - 30
+      - 5
+      - choice 3
+    - - label
+      - 118
+      - 60
+      - 14
+      - 4
+      - LOG ▸
+    - - note
+      - 10
+      - 80
+      - 124
+      - 8
+      - lines are fan-written · checked at build · works before JS

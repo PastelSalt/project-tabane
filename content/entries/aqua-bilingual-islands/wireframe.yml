@@ -1,0 +1,104 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - panel
+      - 2
+      - 1.5
+      - 20
+      - 7
+      - AQUA IRO ARCHIVE
+    - - panel
+      - 22
+      - 80
+      - 100
+      - 9
+    - - pill
+      - 25
+      - 82
+      - 9
+      - 5
+      - HOME
+    - - pill
+      - 35
+      - 82
+      - 9
+      - 5
+      - ABOUT
+    - - pill
+      - 45
+      - 82
+      - 9
+      - 5
+      - CLIPS
+    - - pill
+      - 55
+      - 82
+      - 9
+      - 5
+      - DISCO
+    - - pill
+      - 65
+      - 82
+      - 9
+      - 5
+      - STREAM
+    - - pill
+      - 75
+      - 82
+      - 9
+      - 5
+      - EVENTS
+    - - pill
+      - 85
+      - 82
+      - 9
+      - 5
+      - ARTS
+    - - pill
+      - 95
+      - 82
+      - 9
+      - 5
+      - BOARD
+    - - label
+      - 104
+      - 82
+      - 17
+      - 5
+      - ♪ ✦ JP · LOG ⏱ ?
+    - - panel
+      - 10
+      - 12
+      - 60
+      - 40
+      - <T>
+    - - label
+      - 14
+      - 20
+      - 52
+      - 6
+      - "ja: 配信アーカイブ (shown)"
+    - - dashed
+      - 14
+      - 30
+      - 52
+      - 8
+      - "en: Streaming (hidden by CSS)"
+    - - note
+      - 76
+      - 12
+      - 62
+      - 12
+      - html[data-lang] picks which span shows
+    - - note
+      - 76
+      - 28
+      - 62
+      - 14
+      - islands render ja first, then switch (no mismatch)
+    - - note
+      - 10
+      - 56
+      - 128
+      - 8
+      - re-applied after every ClientRouter swap

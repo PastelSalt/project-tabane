@@ -1,0 +1,10 @@
+flowchart LR
+  pop[Report popover: reason + Turnstile] --> act[board.report]
+  act --> rl{too many reports from this hash in an hour?}
+  rl -->|yes| rate[RATE]
+  rl -->|no| own{own note?}
+  own -->|yes| okq[ok, not counted]
+  own -->|no| cte[one statement: insert report, bump count, hide at threshold]
+  cte --> hidden{hidden now?}
+  hidden -->|yes| alert[Discord: crew number + reasons]
+  hidden --> ok[always ok]

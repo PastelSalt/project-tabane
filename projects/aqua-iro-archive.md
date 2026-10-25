@@ -9,7 +9,7 @@ Full architectural analysis (visual, operation, process, code) of Aqua Iro Archi
 | Live site | https://aqua-iro-archive.vercel.app/ |
 | Repository | [PastelSalt/aqua-iro-archive](https://github.com/PastelSalt/aqua-iro-archive) (private) |
 | Local folder | `C:\Users\Myaako\Documents\MoekoWorks\aqua-iro-archive` |
-| Read at | commit `616052f` (`main`, 2026-10-24), 57 commits, read 2026-10-25 |
+| Read at | commit `616052f` (`main`, 2026-10-24), 57 commits, read 2026-10-25. Applied at `616052f` |
 | Target | Website (public archive + private admin area called the keeper, `/keeper`) |
 | Status on the site | Live. Full visual update (Parts A and B) shipped 2026-10-24. Message board open (live count: 1 note) |
 | Embeddable | **No.** The site sends `Content-Security-Policy: … frame-ancestors 'none'`, so Tabane must show screenshots, not a live frame |
@@ -346,7 +346,7 @@ Key visual → label `NO.0X — EN` → bilingual h1 + JP subtitle + intro → o
 ### 6.5 Dock (`Dock.tsx`, `DockButton.tsx`, `dock.css`, `docs/DOCK-PLAN.md`)
 
 - **One dock, one size:** it never changes while you scroll or hover (the result of the 13 Oct audit, which found three dock behaviours plus a fourth on phones).
-- **Wide (≥ 1024 px):** 8 chapters + 6 system buttons (MOTION, JP/EN, BGM, LOG, HELP, TIME). **Narrow:** 5 chapters (`home, clips, discography, streaming, messages`) + MORE, which opens one sheet with everything. Which buttons show is decided by CSS only.
+- **Wide (≥ 1024 px):** 8 chapters + 6 system buttons (MOTION, JP/EN, BGM, LOG, HELP, TIME). **Narrow:** 5 chapters (`home, clips, discography, streaming, messages`) + MORE, which opens one sheet with everything; the current chapter is always on the bar, taking Clips' place when it isn't one of the five. Which buttons show is decided by CSS only.
 - **Only motion:** the current-chapter pill slides to the new chapter after a page change.
 - **Buttons:** a Phosphor icon with one short label in the visitor's language; chapters are links, system buttons are buttons; same size and states.
 - **Keyboard shortcuts** (Alt+M motion, Alt+L language, Esc log; can be turned off), skipped while typing or inside a dialog (`isTyping`). The system toolbar has roving focus with the arrow keys.
@@ -425,6 +425,7 @@ Later sessions get beat 2 only (1.6–3.2 s). Skip (▸▸, Esc) always works. M
 ### 6.15 Analytics (`src/lib/analytics.ts`, `src/scripts/global.ts`)
 
 - Umami script with `data-do-not-track` and `data-exclude-search`, persisted across swaps, loaded through the site's own `/s/ui.js` rewrite.
+- The script tag renders only when `PUBLIC_UMAMI_WEBSITE_ID` is set (`Base.astro`). Live check 2026-10-25 (while applying): no Umami script on the live pages and `/s/ui.js` answered 404, so analytics was not switched on in production.
 - `track()` is a typed no-op when `window.umami` is missing; never sends personal data or note text.
 - Outbound-link events and Core Web Vitals (LCP, INP, CLS, FCP, TTFB via lazy `web-vitals`).
 
@@ -657,6 +658,8 @@ From the README deviations, the audit, the plan docs and commits, plus things no
 ## 12. Proposed entries
 
 All own-project entries start as **Proven** (live site), **Shared off**, Target **Website**, `projectFile: aqua-iro-archive`, Used in: Aqua Iro Archive. Live site: https://aqua-iro-archive.vercel.app/ with **Embeddable: false**. Code location ref: `616052f`. Slugs use the `aqua-` prefix.
+
+*Applied 2026-10-25:* all 28 entries and `replicate-aqua-iro-archive` written at code ref `616052f` (no changes since the read). `aqua-keeper-panel` shows the public `/keeper/login` page; `aqua-bgm-capsule`'s screenshot shows the dock's BGM button, because the capsule only appears after ♪ starts a YouTube video, which a capture does not do; `aqua-first-party-umami` records that analytics was not switched on in production on the day.
 
 ### 12.1 UI/UX entries
 

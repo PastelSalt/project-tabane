@@ -1,0 +1,8 @@
+flowchart TB
+  install[npm ci + Astro cache] --> lint[lint + contrast]
+  lint --> tests[unit, data, PGlite integration]
+  tests --> branch[Neon branch: migrate + seed, if a key exists]
+  branch --> build2[build, retried once]
+  build2 --> budget2[JS budget]
+  budget2 --> pw[Playwright on Chromium and WebKit]
+  pw --> cleanup[delete the Neon branch]

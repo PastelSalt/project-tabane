@@ -1,0 +1,7 @@
+flowchart LR
+  island[BoardApp island] -->|POST /_actions/board.post| action[Astro Action: checkOrigin + Zod]
+  action --> post[postNote: 14 checks]
+  post -->|siteverify| ts[Cloudflare Turnstile]
+  post --> db[(Neon: messages, settings, blocked_terms)]
+  post -.->|held or raid| discord[Discord webhook]
+  post --> island

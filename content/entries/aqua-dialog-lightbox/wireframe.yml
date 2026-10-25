@@ -1,0 +1,44 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 144
+      - 90
+      - blurred backdrop
+    - - panel
+      - 14
+      - 6
+      - 116
+      - 78
+    - - image
+      - 20
+      - 10
+      - 104
+      - 58
+      - artwork (or lite-youtube)
+    - - circle
+      - 15
+      - 34
+      - 8
+      - 8
+      - ‹
+    - - circle
+      - 121
+      - 34
+      - 8
+      - 8
+      - ›
+    - - circle
+      - 124
+      - 7
+      - 6
+      - 6
+      - ×
+    - - bar
+      - 14
+      - 72
+      - 116
+      - 10
+      - credit · source ↗

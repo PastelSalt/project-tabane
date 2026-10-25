@@ -32,6 +32,7 @@ related:
   - hanon-admin-smoke-test
   - kotoha-scroll-life
   - kotoha-scroll-reveals
+  - aqua-build-gates
 usedIn:
   - Hanon Fan Site
 shared: false

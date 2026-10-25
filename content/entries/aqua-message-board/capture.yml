@@ -1,0 +1,14 @@
+site: aqua-iro-archive
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    path: /messages
+    scrollTo: .composer-col
+    before: window.scrollBy(0, -90)
+    wait: 2500
+  - file: screenshot-phone.webp
+    device: phone
+    path: /messages
+    scrollTo: .compose
+    before: window.scrollBy(0, -90)
+    wait: 2500

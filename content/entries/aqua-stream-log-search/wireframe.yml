@@ -1,0 +1,98 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - panel
+      - 2
+      - 1.5
+      - 20
+      - 7
+      - AQUA IRO ARCHIVE
+    - - panel
+      - 8
+      - 10
+      - 128
+      - 22
+      - 2021 · 141 streams · 455 h
+    - - chart
+      - 12
+      - 17
+      - 120
+      - 12
+    - - pill
+      - 8
+      - 35
+      - 12
+      - 4.6
+      - "2024"
+    - - button
+      - 21
+      - 35
+      - 12
+      - 4.6
+      - "2023"
+    - - pill
+      - 34
+      - 35
+      - 12
+      - 4.6
+      - "2022"
+    - - input
+      - 92
+      - 35
+      - 44
+      - 4.6
+      - Search 639 streams
+    - - pill
+      - 8
+      - 41
+      - 14
+      - 4
+      - games
+    - - pill
+      - 23
+      - 41
+      - 14
+      - 4
+      - singing
+    - - pill
+      - 38
+      - 41
+      - 14
+      - 4
+      - collab
+    - - panel
+      - 8
+      - 47
+      - 128
+      - 8
+    - - text
+      - 12
+      - 49.4
+      - 90
+      - 1
+    - - panel
+      - 8
+      - 57
+      - 128
+      - 8
+    - - text
+      - 12
+      - 59.4
+      - 80
+      - 1
+    - - panel
+      - 8
+      - 67
+      - 128
+      - 8
+    - - text
+      - 12
+      - 69.4
+      - 86
+      - 1
+    - - note
+      - 96
+      - 77
+      - 42
+      - 8
+      - "filter: toggle hidden (< 16 ms)"

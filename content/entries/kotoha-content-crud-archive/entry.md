@@ -33,6 +33,7 @@ related:
   - kotoha-admin-auth
   - kotoha-cloudinary-uploads
   - hanon-admin-smoke-test
+  - aqua-moderation-audit
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

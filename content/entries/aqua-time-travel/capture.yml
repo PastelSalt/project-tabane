@@ -1,0 +1,6 @@
+site: aqua-iro-archive
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    before: window.dispatchEvent(new CustomEvent('aia:time-open'))
+    wait: 2500

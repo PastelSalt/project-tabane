@@ -40,6 +40,7 @@ related:
   - kotoha-admin-panel
   - kotoha-content-crud-archive
   - hanon-admin-smoke-test
+  - aqua-keeper-auth-totp
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

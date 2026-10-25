@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="0" y="100" width="120" height="700" rx="12" fill="#c9c9d2"/><path d="M12 112 L108 788 M108 112 L12 788" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="12" y="432" width="96" height="36" rx="18" fill="#c9c9d2"/><text x="60" y="450" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">filmstrip</text>
+<text x="1380" y="362.4" font-family="Segoe UI, sans-serif" font-size="23" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Vertical</text><text x="1380" y="390" font-family="Segoe UI, sans-serif" font-size="23" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">title ·</text><text x="1380" y="417.59999999999997" font-family="Segoe UI, sans-serif" font-size="23" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">42 %</text>
+<text x="400" y="220" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">02 (ghost)</text>
+<rect x="160" y="160" width="1120" height="220" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="178" y="184" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">SECTION</text>
+<rect x="140" y="400" width="1160" height="60" rx="12" fill="#e3e3ea"/><text x="720" y="430" font-family="Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">seam: wave · ticker · rope</text>
+<rect x="160" y="480" width="340" height="260" rx="12" fill="#c9c9d2"/><path d="M172 492 L488 728 M488 492 L172 728" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="540" y="480" width="340" height="180" rx="12" fill="#c9c9d2"/><path d="M552 492 L868 648 M868 492 L552 648" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="540" y="680" width="340" height="100" rx="18" fill="none" stroke="#9a9aa3" stroke-width="4" stroke-dasharray="14 10"/><text x="710" y="730" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">postcard</text>
+<rect x="920" y="480" width="340" height="300" rx="12" fill="#c9c9d2"/><path d="M932 492 L1248 768 M1248 492 L932 768" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<circle cx="150" cy="70" r="10" fill="#9a9aa3"/>
+<circle cx="710" cy="50" r="10" fill="#9a9aa3"/>
+<circle cx="1210" cy="90" r="10" fill="#9a9aa3"/>
+<rect x="140" y="800" width="1160" height="80" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="720" y="840" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">test: ≤ 8 % of 120 px cells may be empty, at 3 screen sizes</text>
+</svg>

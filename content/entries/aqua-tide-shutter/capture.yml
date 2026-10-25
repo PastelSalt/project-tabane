@@ -1,0 +1,7 @@
+site: aqua-iro-archive
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    motion: true
+    before: document.querySelector('a[href="/events"]')?.click()
+    wait: 380

@@ -1,0 +1,9 @@
+flowchart LR
+  pub[Public routes: list, count] --> http[Neon HTTP driver]
+  adm[Auth, keeper actions] --> pool[Neon WebSocket Pool: transactions]
+  tests[Vitest integration tests] --> pglite[(PGlite with the real migrations)]
+  http --> neon[(Neon Postgres)]
+  pool --> neon
+  types[db/types.ts: one DB type] -.-> http
+  types -.-> pool
+  types -.-> pglite

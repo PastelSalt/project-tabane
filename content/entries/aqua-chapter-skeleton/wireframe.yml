@@ -1,0 +1,66 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - panel
+      - 2
+      - 1.5
+      - 20
+      - 7
+      - AQUA IRO ARCHIVE
+    - - image
+      - 76
+      - 2
+      - 66
+      - 40
+      - chapter key visual
+    - - label
+      - 140
+      - 4
+      - 4
+      - 30
+      - ""
+    - - label
+      - 8
+      - 14
+      - 30
+      - 4
+      - NO.04 — STREAM
+    - - heading
+      - 8
+      - 20
+      - 50
+      - 5
+    - - text
+      - 8
+      - 27
+      - 40
+      - 1
+    - - text
+      - 8
+      - 31
+      - 56
+      - 5
+    - - box
+      - 0
+      - 44
+      - 144
+      - 5
+      - wave seam
+    - - panel
+      - 8
+      - 52
+      - 128
+      - 16
+      - PAGE BODY
+    - - panel
+      - 8
+      - 71
+      - 62
+      - 8
+      - ← PREV · NO.03
+    - - panel
+      - 74
+      - 71
+      - 62
+      - 8
+      - NEXT → · NO.05

@@ -1,0 +1,96 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - image
+      - 0
+      - 0
+      - 144
+      - 76
+      - page
+    - - panel
+      - 22
+      - 80
+      - 100
+      - 9
+    - - pill
+      - 25
+      - 82
+      - 9
+      - 5
+      - HOME
+    - - pill
+      - 35
+      - 82
+      - 9
+      - 5
+      - ABOUT
+    - - pill
+      - 45
+      - 82
+      - 9
+      - 5
+      - CLIPS
+    - - pill
+      - 55
+      - 82
+      - 9
+      - 5
+      - DISCO
+    - - pill
+      - 65
+      - 82
+      - 9
+      - 5
+      - STREAM
+    - - pill
+      - 75
+      - 82
+      - 9
+      - 5
+      - EVENTS
+    - - pill
+      - 85
+      - 82
+      - 9
+      - 5
+      - ARTS
+    - - pill
+      - 95
+      - 82
+      - 9
+      - 5
+      - BOARD
+    - - label
+      - 104
+      - 82
+      - 17
+      - 5
+      - ♪ ✦ JP · LOG ⏱ ?
+    - - panel
+      - 96
+      - 66
+      - 46
+      - 11
+    - - circle
+      - 98
+      - 67.5
+      - 8
+      - 8
+      - ♪
+    - - text
+      - 108
+      - 69
+      - 22
+      - 3
+    - - button
+      - 132
+      - 68
+      - 8
+      - 6
+      - ▶
+    - - note
+      - 4
+      - 60
+      - 80
+      - 10
+      - loads YouTube only after ♪ · never autoplays · plays across pages

@@ -13,33 +13,6 @@ Every open question from every project file, in one place, for Kyle to answer la
 
 ---
 
-## Aqua Iro Archive · [`aqua-iro-archive.md`](aqua-iro-archive.md) §15
-
-- [x] **A1. Entry granularity:** 28 entries; the board alone is four (pipeline, reports, moderation, island). Keep this split, or merge the board into one or two entries?
-  *Recommended:* keep the split; the pipeline and the report trick are each worth finding on their own.
-  _Answer:_ Keep the split: 28 entries.
-- [x] **A2. Overlap with Kotoha:** where Aqua does the same job differently (loader, lightbox, motion, bilingual, analytics, auth), keep separate entries linked under Related, or one entry per idea with both projects under Used in?
-  *Recommended:* separate entries; the stacks differ (plain JS vs Astro + Preact), so the code can't be shared.
-  _Answer:_ Separate entries, linked under Related.
-- [x] **A3. Signature features:** Talk and Aqua Time are written around Aqua. Keep them as Proven entries, or file them as Candidate patterns?
-  *Recommended:* Proven; they are live and the parts that change (character, dataset) are listed in the entry.
-  _Answer:_ Proven.
-- [x] **A4. CSP hashes in `vercel.json`:** the live hashes match the committed file, but `csp-hash.ts` also rewrites it during the build. Do you commit `vercel.json` after a local build when inline scripts change, or does the Vercel build's rewrite take effect?
-  *Recommended:* treat the committed `vercel.json` as what is served (that is what the live check showed), and write the rule into the entry: after changing an inline script or upgrading Astro, build locally and commit `vercel.json`.
-  _Answer:_ As recommended: the entry says the committed `vercel.json` is what is served, and gives the build-locally-and-commit rule (gotcha G2).
-- [x] **A5. BudouX:** a dependency named in Credits but not imported anywhere. Dropped, or planned?
-  *Recommended:* leave it out of the entries either way.
-  _Answer:_ Leave it out of Aqua's entries and Stack. (Himawari's `himawari-budoux-phrases` shows the working use.)
-- [x] **A6. Shared:** every entry starts with Shared off. Are any safe to show visitors (for example the filler kit or the motion budget)?
-  *Recommended:* keep all off for now.
-  _Answer:_ Keep all off for now.
-- [x] **A7. Replication guide order:** is the order in §13 how you would rebuild it?
-  *Recommended:* yes; it follows the commit history and the plan docs.
-  _Answer:_ Yes, use the §13 order.
-- [x] **A8. New tag values:** add all 15 proposed in §14, or only some?
-  *Recommended:* add all.
-  _Answer:_ Add all 15.
-
 ## Himawari Website · [`himawari-website.md`](himawari-website.md) §15
 
 The site only; the engine and Studio are out of scope.
@@ -138,3 +111,30 @@ Each section moves here when its project file is applied, with the date.
 - [x] **H4. Harness reach:** the test harness also works on Kotoha. List Kotoha under its Used in?
   *Recommended:* no, not until it has actually been run on Kotoha.
   _Answer:_ No, not until it has been run on Kotoha.
+
+### Aqua Iro Archive · [`aqua-iro-archive.md`](aqua-iro-archive.md) §15 · applied 2026-10-25 (28 entries, guide `replicate-aqua-iro-archive`)
+
+- [x] **A1. Entry granularity:** 28 entries; the board alone is four (pipeline, reports, moderation, island). Keep this split, or merge the board into one or two entries?
+  *Recommended:* keep the split; the pipeline and the report trick are each worth finding on their own.
+  _Answer:_ Keep the split: 28 entries.
+- [x] **A2. Overlap with Kotoha:** where Aqua does the same job differently (loader, lightbox, motion, bilingual, analytics, auth), keep separate entries linked under Related, or one entry per idea with both projects under Used in?
+  *Recommended:* separate entries; the stacks differ (plain JS vs Astro + Preact), so the code can't be shared.
+  _Answer:_ Separate entries, linked under Related.
+- [x] **A3. Signature features:** Talk and Aqua Time are written around Aqua. Keep them as Proven entries, or file them as Candidate patterns?
+  *Recommended:* Proven; they are live and the parts that change (character, dataset) are listed in the entry.
+  _Answer:_ Proven.
+- [x] **A4. CSP hashes in `vercel.json`:** the live hashes match the committed file, but `csp-hash.ts` also rewrites it during the build. Do you commit `vercel.json` after a local build when inline scripts change, or does the Vercel build's rewrite take effect?
+  *Recommended:* treat the committed `vercel.json` as what is served (that is what the live check showed), and write the rule into the entry: after changing an inline script or upgrading Astro, build locally and commit `vercel.json`.
+  _Answer:_ As recommended: the entry says the committed `vercel.json` is what is served, and gives the build-locally-and-commit rule (gotcha G2).
+- [x] **A5. BudouX:** a dependency named in Credits but not imported anywhere. Dropped, or planned?
+  *Recommended:* leave it out of the entries either way.
+  _Answer:_ Leave it out of Aqua's entries and Stack. (Himawari's `himawari-budoux-phrases` shows the working use.)
+- [x] **A6. Shared:** every entry starts with Shared off. Are any safe to show visitors (for example the filler kit or the motion budget)?
+  *Recommended:* keep all off for now.
+  _Answer:_ Keep all off for now.
+- [x] **A7. Replication guide order:** is the order in §13 how you would rebuild it?
+  *Recommended:* yes; it follows the commit history and the plan docs.
+  _Answer:_ Yes, use the §13 order.
+- [x] **A8. New tag values:** add all 15 proposed in §14, or only some?
+  *Recommended:* add all.
+  _Answer:_ Add all 15.

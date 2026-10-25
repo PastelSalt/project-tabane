@@ -1,0 +1,10 @@
+flowchart TB
+  req[Request] --> pre{prerendered?}
+  pre -->|yes| pass[pass through]
+  pre -->|no| needs{keeper page, admin API or keeper action?}
+  needs -->|no| pass
+  needs -->|yes| session{session?}
+  session -->|no| deny[redirect to login, or 401]
+  session -->|yes| tfa{twoFactorEnabled?}
+  tfa -->|no| enroll[redirect to setup, or 403]
+  tfa -->|yes| next[handler, then no-store + noindex]

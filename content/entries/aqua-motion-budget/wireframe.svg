@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="20" y="15" width="200" height="70" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="38" y="39" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">AQUA IRO ARCHIVE</text>
+<text x="250" y="240" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">2020 (ghost)</text>
+<rect x="200" y="408" width="1040" height="4" rx="2" fill="#9a9aa3"/>
+<circle cx="260" cy="410" r="20" fill="#9a9aa3"/>
+<circle cx="540" cy="410" r="20" fill="#9a9aa3"/>
+<circle cx="820" cy="410" r="20" fill="#9a9aa3"/>
+<circle cx="1100" cy="410" r="20" fill="#9a9aa3"/>
+<g transform="rotate(-2 270 550)"><rect x="140" y="460" width="260" height="180" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/></g>
+<g transform="rotate(1.5 830 550)"><rect x="700" y="460" width="260" height="180" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/></g>
+<rect x="460" y="120" width="920" height="80" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="920" y="160" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">loops ≤ 12 on screen · entrances ≤ 700 ms</text>
+<rect x="460" y="220" width="920" height="80" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="920" y="260" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">scroll-driven in CSS; GSAP only for the rope</text>
+<rect x="80" y="680" width="1280" height="80" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="720" y="720" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">≥ 55 fps scrolling · &lt; 15 % idle CPU · ≤ 40 KB JS per page</text>
+</svg>

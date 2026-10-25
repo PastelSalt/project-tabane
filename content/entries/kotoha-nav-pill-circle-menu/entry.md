@@ -36,6 +36,7 @@ screenshots:
 related:
   - kotoha-bilingual-i18n
   - kotoha-motion-calm-mode
+  - aqua-bottom-dock
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

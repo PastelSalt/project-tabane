@@ -1,0 +1,94 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - panel
+      - 2
+      - 1.5
+      - 20
+      - 7
+      - AQUA IRO ARCHIVE
+    - - bar
+      - 0
+      - 6
+      - 144
+      - 58
+      - ""
+    - - panel
+      - 5
+      - 9
+      - 40
+      - 45
+      - "AQUA CREW #2"
+    - - input
+      - 7
+      - 15
+      - 36
+      - 14
+      - Write your message for Aqua…
+    - - label
+      - 7
+      - 30
+      - 14
+      - 4
+      - 0 / 300
+    - - button
+      - 30
+      - 29.5
+      - 13
+      - 5
+      - Pin it
+    - - dashed
+      - 7
+      - 36
+      - 28
+      - 6
+      - Turnstile
+    - - text
+      - 7
+      - 44
+      - 34
+      - 7
+    - - panel
+      - 49
+      - 9
+      - 90
+      - 45
+    - - button
+      - 52
+      - 12
+      - 28
+      - 4
+      - CREW BOARD
+    - - pill
+      - 120
+      - 12
+      - 16
+      - 4
+      - Newest
+    - kind: panel
+      x: 53
+      y: 19
+      w: 24
+      h: 30
+      label: "Aqua Crew #1"
+      r: -1.5
+    - kind: panel
+      x: 81
+      y: 19
+      w: 24
+      h: 30
+      label: "#2 · undo 9:41"
+      r: 1
+    - kind: panel
+      x: 109
+      y: 19
+      w: 24
+      h: 30
+      label: "#3"
+      r: -1
+    - - note
+      - 8
+      - 67
+      - 128
+      - 8
+      - "notes are text nodes only · ⚑ report: reason + Turnstile"

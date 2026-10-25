@@ -37,6 +37,7 @@ diagrams:
 related:
   - kotoha-grouped-functions
   - kotoha-keyset-pagination
+  - aqua-db-drivers-pglite
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

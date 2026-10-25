@@ -22,3 +22,11 @@ hanon-fansite:
   local: { hf_lang: en }
   ready: "!document.getElementById('loader') && document.fonts.status === 'loaded'"
   settle: 1500
+
+aqua-iro-archive:
+  url: https://aqua-iro-archive.vercel.app
+  block: ["*/s/ui.js*", "*/s/api/pulse*"]
+  local: { "aia:title": '"1"', "aia:tour.done": "true", "aia:hint.dock": "true", "aia:visited": "true", "aia:prefs": '{"lang":"en"}', "aia:onthisday.off": "true" }
+  session: { "aia:splash": "1" }
+  ready: "document.documentElement.dataset.splash === 'seen' && document.fonts.status === 'loaded' && !!document.querySelector('.dock')"
+  settle: 2000

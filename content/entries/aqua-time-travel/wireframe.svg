@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="20" y="15" width="200" height="70" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="38" y="39" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">AQUA IRO ARCHIVE</text>
+<rect x="40" y="100" width="160" height="40" rx="20" fill="#c9c9d2"/><text x="120" y="120" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">⏱ 2021.08.08</text>
+<rect x="0" y="0" width="1440" height="900" rx="12" fill="#c9c9d2"/><path d="M12 12 L1428 888 M1428 12 L12 888" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="200" y="200" width="1040" height="480" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="218" y="224" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">AQUA TIME</text>
+<rect x="280" y="280" width="400" height="180" rx="12" fill="#e3e3ea"/><text x="480" y="370" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">tape</text>
+<rect x="740" y="300" width="400" height="50" rx="25" fill="#9a9aa3"/>
+<text x="940" y="390" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">2021.08.08 · summer</text>
+<rect x="280" y="528" width="880" height="4" rx="2" fill="#9a9aa3"/>
+<circle cx="625" cy="530" r="25" fill="#9a9aa3"/>
+<text x="340" y="570" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">2018.08.08</text>
+<text x="1100" y="570" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">2024.08.28</text>
+<rect x="280" y="600" width="160" height="40" rx="20" fill="#c9c9d2"/><text x="360" y="620" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">◀ day</text>
+<rect x="460" y="600" width="160" height="40" rx="20" fill="#c9c9d2"/><text x="540" y="620" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">week ▶</text>
+<rect x="860" y="600" width="300" height="46" rx="23" fill="#9a9aa3"/><text x="1010" y="623" font-family="Segoe UI, sans-serif" font-size="20.7" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">On this day</text>
+<rect x="200" y="720" width="1040" height="80" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="720" y="760" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">the whole site re-dates: outfit, greeting, streams, songs, counters</text>
+</svg>

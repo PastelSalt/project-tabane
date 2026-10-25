@@ -1,0 +1,75 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - image
+      - 0
+      - 10
+      - 12
+      - 70
+      - filmstrip
+    - - label
+      - 132
+      - 14
+      - 12
+      - 50
+      - Vertical title · 42 %
+    - - label
+      - 20
+      - 12
+      - 40
+      - 20
+      - 02 (ghost)
+    - - panel
+      - 16
+      - 16
+      - 112
+      - 22
+      - SECTION
+    - - box
+      - 14
+      - 40
+      - 116
+      - 6
+      - "seam: wave · ticker · rope"
+    - - image
+      - 16
+      - 48
+      - 34
+      - 26
+    - - image
+      - 54
+      - 48
+      - 34
+      - 18
+    - - dashed
+      - 54
+      - 68
+      - 34
+      - 10
+      - postcard
+    - - image
+      - 92
+      - 48
+      - 34
+      - 30
+    - - dot
+      - 14
+      - 6
+      - 2
+      - 2
+    - - dot
+      - 70
+      - 4
+      - 2
+      - 2
+    - - dot
+      - 120
+      - 8
+      - 2
+      - 2
+    - - note
+      - 14
+      - 80
+      - 116
+      - 8
+      - "test: ≤ 8 % of 120 px cells may be empty, at 3 screen sizes"

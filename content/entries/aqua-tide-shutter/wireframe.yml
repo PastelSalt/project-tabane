@@ -1,0 +1,60 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - bar
+      - 0
+      - 0
+      - 144
+      - 84
+      - ""
+    - - line
+      - 0
+      - 84
+      - 144
+      - 2
+    - kind: panel
+      x: 44
+      y: 26
+      w: 56
+      h: 30
+      label: ticket
+      r: -6
+    - kind: box
+      x: 58
+      y: 23
+      w: 22
+      h: 4
+      r: -14
+    - kind: label
+      x: 50
+      y: 34
+      w: 44
+      h: 6
+      label: No.04 STREAM
+      r: -6
+    - kind: label
+      x: 50
+      y: 42
+      w: 44
+      h: 5
+      label: 配信アーカイブ
+      r: -6
+    - kind: circle
+      x: 90
+      y: 46
+      w: 8
+      h: 8
+      label: ✿
+      r: -6
+    - - note
+      - 4
+      - 4
+      - 60
+      - 14
+      - "rises 220 ms → (first visit: holds 700 ms) → drains 260 ms"
+    - - note
+      - 92
+      - 66
+      - 48
+      - 12
+      - "Motion OFF: no shutter, no view transition"

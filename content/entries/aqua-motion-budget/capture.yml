@@ -1,0 +1,8 @@
+site: aqua-iro-archive
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    path: /events
+    scrollTo: "[data-voyage]"
+    before: window.scrollBy(0, 250)
+    wait: 1500

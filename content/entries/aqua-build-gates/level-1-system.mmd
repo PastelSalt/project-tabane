@@ -1,0 +1,8 @@
+flowchart LR
+  data[build-streams: assertions] --> talk[validate-talk]
+  talk --> check[astro check]
+  check --> build[astro build]
+  build --> prune[prune-assets]
+  prune --> csp[csp-hash]
+  csp --> budget[check-budget: gzip JS per page]
+  budget --> e2e[Playwright: Chromium + WebKit, axe, visual baselines]

@@ -1,0 +1,51 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - image
+      - 0
+      - 0
+      - 144
+      - 90
+      - under-the-sea key visual
+    - - panel
+      - 8
+      - 18
+      - 50
+      - 22
+      - LOGO
+    - - bar
+      - 0
+      - 62
+      - 144
+      - 28
+      - ""
+    - - button
+      - 46
+      - 68
+      - 52
+      - 7
+      - PRESS START
+    - - label
+      - 4
+      - 80
+      - 40
+      - 4
+      - ver. line
+    - - label
+      - 100
+      - 80
+      - 40
+      - 4
+      - © line
+    - - note
+      - 72
+      - 10
+      - 66
+      - 18
+      - "first visit: studio card → loading harbour with tide gauge → title screen"
+    - - pill
+      - 128
+      - 3
+      - 12
+      - 4
+      - ▸▸ skip

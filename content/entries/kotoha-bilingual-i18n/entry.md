@@ -32,6 +32,7 @@ screenshots:
 related:
   - kotoha-nav-pill-circle-menu
   - kotoha-profile-card
+  - aqua-bilingual-islands
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

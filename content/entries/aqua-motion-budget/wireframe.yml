@@ -1,0 +1,70 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - panel
+      - 2
+      - 1.5
+      - 20
+      - 7
+      - AQUA IRO ARCHIVE
+    - - label
+      - 10
+      - 14
+      - 30
+      - 20
+      - 2020 (ghost)
+    - - line
+      - 20
+      - 40
+      - 104
+      - 2
+    - - dot
+      - 24
+      - 39
+      - 4
+      - 4
+    - - dot
+      - 52
+      - 39
+      - 4
+      - 4
+    - - dot
+      - 80
+      - 39
+      - 4
+      - 4
+    - - dot
+      - 108
+      - 39
+      - 4
+      - 4
+    - kind: panel
+      x: 14
+      y: 46
+      w: 26
+      h: 18
+      r: -2
+    - kind: panel
+      x: 70
+      y: 46
+      w: 26
+      h: 18
+      r: 1.5
+    - - note
+      - 46
+      - 12
+      - 92
+      - 8
+      - loops ≤ 12 on screen · entrances ≤ 700 ms
+    - - note
+      - 46
+      - 22
+      - 92
+      - 8
+      - scroll-driven in CSS; GSAP only for the rope
+    - - note
+      - 8
+      - 68
+      - 128
+      - 8
+      - ≥ 55 fps scrolling · < 15 % idle CPU · ≤ 40 KB JS per page

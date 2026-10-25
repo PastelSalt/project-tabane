@@ -32,6 +32,7 @@ screenshots:
 related:
   - kotoha-cloudinary-uploads
   - kotoha-footer-credits
+  - aqua-dialog-lightbox
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

@@ -1,0 +1,9 @@
+flowchart LR
+  raw[RAWDATA tables] -->|once| yaml[(content YAML)]
+  tsv[streams TSV + overrides] --> streams[build-streams: assertions]
+  streams --> json[(streams.json + Fuse index)]
+  assets[original art] --> prep[prepare-images: curated, resized]
+  prep --> yaml
+  yaml --> astro[Astro collections with Zod]
+  json --> astro
+  astro --> og[make-og: share images]

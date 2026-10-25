@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="0" y="0" width="1440" height="900" rx="12" fill="#e3e3ea"/><text x="720" y="450" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">blurred backdrop</text>
+<rect x="140" y="60" width="1160" height="780" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/>
+<rect x="200" y="100" width="1040" height="580" rx="12" fill="#c9c9d2"/><path d="M212 112 L1228 668 M1228 112 L212 668" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="541.5" y="372" width="357" height="36" rx="18" fill="#c9c9d2"/><text x="720" y="390" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">artwork (or lite-youtube)</text>
+<circle cx="190" cy="380" r="40" fill="#c9c9d2"/><text x="190" y="380" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">‹</text>
+<circle cx="1250" cy="380" r="40" fill="#c9c9d2"/><text x="1250" y="380" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">›</text>
+<circle cx="1270" cy="100" r="30" fill="#c9c9d2"/><text x="1270" y="100" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">×</text>
+<rect x="140" y="720" width="1160" height="100" fill="#c9c9d2"/><text x="164" y="770" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">credit · source ↗</text>
+</svg>

@@ -1,0 +1,8 @@
+site: aqua-iro-archive
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    path: /streaming
+    scrollTo: "[data-streams]"
+    before: window.scrollBy(0, 500)
+    wait: 1500

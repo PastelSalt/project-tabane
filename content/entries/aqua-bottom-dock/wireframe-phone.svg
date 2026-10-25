@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 840" width="390" height="840">
+<rect width="390" height="840" fill="#f4f4f7"/>
+<rect x="0" y="0" width="390" height="440" rx="12" fill="#c9c9d2"/><path d="M12 12 L378 428 M378 12 L12 428" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="153" y="202" width="84" height="36" rx="18" fill="#c9c9d2"/><text x="195" y="220" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">page</text>
+<rect x="20" y="460" width="350" height="260" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="38" y="484" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">MORE SHEET</text>
+<rect x="40" y="520" width="150" height="40" rx="20" fill="#c9c9d2"/><text x="115" y="540" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">ABOUT</text>
+<rect x="200" y="520" width="150" height="40" rx="20" fill="#c9c9d2"/><text x="275" y="540" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">EVENTS</text>
+<rect x="40" y="580" width="150" height="40" rx="20" fill="#c9c9d2"/><text x="115" y="600" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">ARTS</text>
+<rect x="200" y="580" width="150" height="40" rx="20" fill="#c9c9d2"/><text x="275" y="600" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">LOG</text>
+<rect x="40" y="640" width="150" height="40" rx="20" fill="#c9c9d2"/><text x="115" y="660" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">TIME</text>
+<rect x="200" y="640" width="150" height="40" rx="20" fill="#c9c9d2"/><text x="275" y="660" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">HELP</text>
+<rect x="10" y="740" width="370" height="90" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/>
+<rect x="20" y="760" width="60" height="50" rx="25" fill="#9a9aa3"/><text x="50" y="785" font-family="Segoe UI, sans-serif" font-size="22.5" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">⌂</text>
+<rect x="90" y="760" width="60" height="50" rx="25" fill="#c9c9d2"/>
+<rect x="160" y="760" width="60" height="50" rx="25" fill="#c9c9d2"/>
+<rect x="230" y="760" width="60" height="50" rx="25" fill="#c9c9d2"/>
+<rect x="300" y="760" width="70" height="50" rx="25" fill="#c9c9d2"/><text x="335" y="785" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">…</text>
+</svg>

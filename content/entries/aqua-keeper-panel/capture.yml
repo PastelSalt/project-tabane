@@ -1,0 +1,7 @@
+site: aqua-iro-archive
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    path: /keeper/login
+    early: true
+    wait: 3000

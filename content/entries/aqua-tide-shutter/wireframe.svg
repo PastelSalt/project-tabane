@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="0" y="0" width="1440" height="840" fill="#c9c9d2"/>
+<rect x="0" y="848" width="1440" height="4" rx="2" fill="#9a9aa3"/>
+<g transform="rotate(-6 720 410)"><rect x="440" y="260" width="560" height="300" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="458" y="284" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">TICKET</text></g>
+<g transform="rotate(-14 690 250)"><rect x="580" y="230" width="220" height="40" rx="12" fill="#e3e3ea"/></g>
+<g transform="rotate(-6 720 370)"><text x="720" y="370" font-family="Segoe UI, sans-serif" font-size="27" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">No.04 STREAM</text></g>
+<g transform="rotate(-6 720 445)"><text x="720" y="445" font-family="Segoe UI, sans-serif" font-size="22.5" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">配信アーカイブ</text></g>
+<g transform="rotate(-6 940 500)"><circle cx="940" cy="500" r="40" fill="#c9c9d2"/><text x="940" y="500" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">✿</text></g>
+<rect x="40" y="40" width="600" height="140" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="340" y="96.8" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">rises 220 ms → (first visit: holds 700 ms) →</text><text x="340" y="123.19999999999999" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">drains 260 ms</text>
+<rect x="920" y="660" width="480" height="120" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="1160" y="706.8" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">Motion OFF: no shutter, no view</text><text x="1160" y="733.1999999999999" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">transition</text>
+</svg>

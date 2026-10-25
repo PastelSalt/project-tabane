@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="0" y="0" width="1440" height="900" rx="12" fill="#c9c9d2"/><path d="M12 12 L1428 888 M1428 12 L12 888" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="606.5" y="432" width="227" height="36" rx="18" fill="#c9c9d2"/><text x="720" y="450" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Home key visual</text>
+<rect x="920" y="60" width="400" height="560" rx="12" fill="#c9c9d2"/><path d="M932 72 L1308 608 M1308 72 L932 608" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="993.5" y="322" width="253" height="36" rx="18" fill="#c9c9d2"/><text x="1120" y="340" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">pose (expression)</text>
+<rect x="100" y="540" width="1240" height="240" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/>
+<rect x="140" y="500" width="260" height="60" rx="30" fill="#9a9aa3"/><text x="270" y="530" font-family="Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">あくあ AQUA</text>
+<rect x="160" y="600" width="900" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="180" y="690" width="300" height="50" rx="25" fill="#c9c9d2"/><text x="330" y="715" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">choice 1</text>
+<rect x="520" y="690" width="300" height="50" rx="25" fill="#c9c9d2"/><text x="670" y="715" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">choice 2</text>
+<rect x="860" y="690" width="300" height="50" rx="25" fill="#c9c9d2"/><text x="1010" y="715" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">choice 3</text>
+<text x="1250" y="620" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">LOG ▸</text>
+<rect x="100" y="800" width="1240" height="80" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="720" y="840" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">lines are fan-written · checked at build · works before JS</text>
+</svg>

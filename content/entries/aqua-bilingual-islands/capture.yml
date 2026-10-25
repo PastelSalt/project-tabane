@@ -1,0 +1,11 @@
+site: aqua-iro-archive
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    local:
+      aia:prefs: '{"lang":"ja"}'
+  - file: screenshot-phone.webp
+    device: phone
+    path: /about
+    local:
+      aia:prefs: '{"lang":"ja"}'

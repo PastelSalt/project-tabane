@@ -1,0 +1,10 @@
+site: aqua-iro-archive
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    path: /streaming
+  - file: screenshot-phone.webp
+    device: phone
+    path: /streaming
+    before: document.querySelector('.dock__more button, .dock__more a')?.click()
+    wait: 1500

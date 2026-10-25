@@ -25,6 +25,7 @@ diagrams:
 related:
   - kotoha-grouped-functions
   - kotoha-sparkles-confetti
+  - aqua-csp-build-hashes
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

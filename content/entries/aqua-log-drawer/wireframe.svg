@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="0" y="0" width="1440" height="900" rx="12" fill="#c9c9d2"/><path d="M12 12 L1428 888 M1428 12 L12 888" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="619.5" y="432" width="201" height="36" rx="18" fill="#c9c9d2"/><text x="720" y="450" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">page (dimmed)</text>
+<rect x="840" y="40" width="580" height="820" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="858" y="64" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">LOG</text>
+<rect x="870" y="120" width="130" height="50" rx="25" fill="#9a9aa3"/><text x="935" y="145" font-family="Segoe UI, sans-serif" font-size="22.5" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">Backlog</text>
+<rect x="1010" y="120" width="130" height="50" rx="25" fill="#c9c9d2"/><text x="1075" y="145" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Album</text>
+<rect x="1150" y="120" width="120" height="50" rx="25" fill="#c9c9d2"/><text x="1210" y="145" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Credits</text>
+<rect x="1280" y="120" width="120" height="50" rx="25" fill="#c9c9d2"/><text x="1340" y="145" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Keys</text>
+<rect x="880" y="220" width="480" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="880" y="280" width="440" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="880" y="340" width="480" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="880" y="400" width="400" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="40" y="700" width="720" height="120" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="400" y="760" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">opened by LOG, Esc, or the dialogue box</text>
+</svg>

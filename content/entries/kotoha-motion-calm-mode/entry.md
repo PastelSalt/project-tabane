@@ -31,6 +31,7 @@ related:
   - kotoha-scroll-life
   - kotoha-clover-loader
   - kotoha-sparkles-confetti
+  - aqua-motion-budget
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

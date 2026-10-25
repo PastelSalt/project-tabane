@@ -31,6 +31,7 @@ screenshots:
 related:
   - kotoha-scroll-life
   - kotoha-crossfade-backdrop
+  - aqua-motion-budget
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site
