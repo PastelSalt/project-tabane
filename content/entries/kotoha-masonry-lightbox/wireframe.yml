@@ -1,0 +1,128 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - pill
+      - 24
+      - 1.6
+      - 96
+      - 6
+    - - heading
+      - 28
+      - 3.4
+      - 12
+      - 2.4
+    - - button
+      - 44
+      - 3
+      - 10
+      - 3.2
+      - home
+    - - label
+      - 55
+      - 3
+      - 9
+      - 3.2
+      - about
+    - - label
+      - 64
+      - 3
+      - 9
+      - 3.2
+      - news
+    - - label
+      - 73
+      - 3
+      - 13
+      - 3.2
+      - discography
+    - - label
+      - 86
+      - 3
+      - 10
+      - 3.2
+      - gallery
+    - - pill
+      - 98
+      - 3
+      - 9
+      - 3.2
+      - JP · EN
+    - - pill
+      - 108
+      - 3
+      - 10
+      - 3.2
+      - Motion
+    - - label
+      - 10
+      - 11
+      - 40
+      - 4
+      - No.05 — GALLERY
+    - - image
+      - 10
+      - 17
+      - 29
+      - 24
+    - - text
+      - 10
+      - 42
+      - 22
+      - 1
+    - - image
+      - 10
+      - 46
+      - 29
+      - 34
+    - - image
+      - 42
+      - 17
+      - 29
+      - 36
+    - - text
+      - 42
+      - 54
+      - 22
+      - 1
+    - - image
+      - 42
+      - 58
+      - 29
+      - 22
+    - - image
+      - 74
+      - 17
+      - 29
+      - 20
+    - - image
+      - 74
+      - 39
+      - 29
+      - 30
+    - - text
+      - 74
+      - 70
+      - 22
+      - 1
+    - - image
+      - 106
+      - 17
+      - 29
+      - 30
+    - - image
+      - 106
+      - 49
+      - 29
+      - 22
+    - - button
+      - 58
+      - 83
+      - 28
+      - 5
+      - Load more
+    - - note
+      - 108
+      - 74
+      - 34
+      - 8
+      - lightbox grows out of the tile

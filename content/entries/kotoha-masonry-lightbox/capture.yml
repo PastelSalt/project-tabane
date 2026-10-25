@@ -1,0 +1,11 @@
+site: kotoha-fansite
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    scrollTo: "#gallery"
+    wait: 2500
+  - file: screenshot-lightbox.webp
+    device: desktop
+    scrollTo: "#gallery"
+    before: "document.querySelector('#masonry .tile button, #masonry .tile a, #masonry .tile')?.click()"
+    wait: 2500

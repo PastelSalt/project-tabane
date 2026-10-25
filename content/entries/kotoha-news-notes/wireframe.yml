@@ -1,0 +1,160 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - pill
+      - 24
+      - 1.6
+      - 96
+      - 6
+    - - heading
+      - 28
+      - 3.4
+      - 12
+      - 2.4
+    - - button
+      - 44
+      - 3
+      - 10
+      - 3.2
+      - home
+    - - label
+      - 55
+      - 3
+      - 9
+      - 3.2
+      - about
+    - - label
+      - 64
+      - 3
+      - 9
+      - 3.2
+      - news
+    - - label
+      - 73
+      - 3
+      - 13
+      - 3.2
+      - discography
+    - - label
+      - 86
+      - 3
+      - 10
+      - 3.2
+      - gallery
+    - - pill
+      - 98
+      - 3
+      - 9
+      - 3.2
+      - JP · EN
+    - - pill
+      - 108
+      - 3
+      - 10
+      - 3.2
+      - Motion
+    - - label
+      - 10
+      - 12
+      - 40
+      - 4
+      - No.03 — NEWS
+    - - heading
+      - 10
+      - 17
+      - 40
+      - 3
+    - kind: panel
+      x: 10
+      y: 26
+      w: 38
+      h: 48
+      r: -2
+    - kind: pill
+      x: 14
+      y: 30
+      w: 14
+      h: 3.6
+      label: 2026.09.25
+      r: -2
+    - kind: circle
+      x: 36
+      y: 24
+      w: 10
+      h: 10
+      label: NEW
+      r: -2
+    - kind: heading
+      x: 14
+      y: 37
+      w: 28
+      h: 3
+      r: -2
+    - kind: text
+      x: 14
+      y: 43
+      w: 30
+      h: 9
+      r: -2
+    - kind: pill
+      x: 14
+      y: 64
+      w: 12
+      h: 4
+      label: Watch
+      r: -2
+    - kind: panel
+      x: 53
+      y: 26
+      w: 38
+      h: 48
+      r: 1.5
+    - kind: box
+      x: 64
+      y: 24
+      w: 14
+      h: 3
+      r: -6
+    - kind: pill
+      x: 57
+      y: 30
+      w: 14
+      h: 3.6
+      label: 2026.08.02
+      r: 1.5
+    - kind: heading
+      x: 57
+      y: 37
+      w: 28
+      h: 3
+      r: 1.5
+    - kind: text
+      x: 57
+      y: 43
+      w: 30
+      h: 9
+      r: 1.5
+    - kind: panel
+      x: 96
+      y: 26
+      w: 38
+      h: 48
+      r: -1
+    - kind: heading
+      x: 100
+      y: 37
+      w: 28
+      h: 3
+      r: -1
+    - kind: text
+      x: 100
+      y: 43
+      w: 30
+      h: 9
+      r: -1
+    - - note
+      - 10
+      - 78
+      - 58
+      - 7
+      - "NEW stamp: 45 days or less · up to 3 link chips"

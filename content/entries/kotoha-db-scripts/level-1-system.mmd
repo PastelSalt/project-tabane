@@ -1,0 +1,6 @@
+flowchart LR
+  migrate[migrate.js: ordered SQL, recorded] --> seed[seed.sql: idempotent]
+  seed --> gallery[seed-gallery.js: idempotent Cloudinary upload]
+  gallery --> owner[admin-bootstrap.js: one Owner, refuses twice]
+  owner --> use[site in use]
+  use --> reset[prelaunch-reset.js: dry run unless --yes-reset-everything]

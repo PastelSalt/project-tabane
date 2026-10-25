@@ -1,0 +1,135 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - bar
+      - 0
+      - 0
+      - 144
+      - 7
+      - Kotoha Admin · user badge
+    - - panel
+      - 3
+      - 10
+      - 30
+      - 76
+    - - label
+      - 6
+      - 13
+      - 24
+      - 3
+      - Dashboard
+    - - label
+      - 6
+      - 19
+      - 24
+      - 3
+      - CONTENT
+    - - pill
+      - 6
+      - 23
+      - 24
+      - 3.6
+      - Latest Videos
+    - - text
+      - 7
+      - 29
+      - 20
+      - 5
+    - - label
+      - 6
+      - 39
+      - 24
+      - 3
+      - RECORDS
+    - - text
+      - 7
+      - 43
+      - 20
+      - 3
+    - - label
+      - 6
+      - 51
+      - 24
+      - 3
+      - ACCOUNT
+    - - text
+      - 7
+      - 55
+      - 20
+      - 3
+    - - button
+      - 38
+      - 11
+      - 34
+      - 6
+      - Latest Videos
+    - - button
+      - 118
+      - 11
+      - 22
+      - 5
+      - + Add
+    - - pill
+      - 38
+      - 20
+      - 40
+      - 4.4
+      - All · Published · Drafts
+    - - panel
+      - 38
+      - 28
+      - 102
+      - 12
+    - - image
+      - 41
+      - 30
+      - 14
+      - 8
+    - - text
+      - 58
+      - 31
+      - 50
+      - 3
+    - - pill
+      - 120
+      - 31
+      - 16
+      - 4
+      - published
+    - - dashed
+      - 38
+      - 43
+      - 102
+      - 12
+    - - image
+      - 41
+      - 45
+      - 14
+      - 8
+    - - text
+      - 58
+      - 46
+      - 50
+      - 3
+    - - pill
+      - 120
+      - 46
+      - 16
+      - 4
+      - draft
+    - - panel
+      - 38
+      - 58
+      - 102
+      - 12
+    - - text
+      - 58
+      - 61
+      - 50
+      - 3
+    - - note
+      - 38
+      - 74
+      - 102
+      - 7
+      - one RESOURCES config → list, form, drafts and archive

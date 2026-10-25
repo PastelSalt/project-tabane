@@ -1,0 +1,6 @@
+site: kotoha-fansite
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    scrollTo: "#discography"
+    before: window.scrollBy(0, -300)

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="240" y="16" width="960" height="60" rx="30" fill="#c9c9d2"/>
+<rect x="280" y="34" width="120" height="24" rx="12" fill="#9a9aa3"/>
+<rect x="440" y="30" width="100" height="32" rx="16" fill="#9a9aa3"/><text x="490" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">home</text>
+<text x="595" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">about</text>
+<text x="685" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">news</text>
+<text x="795" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">discography</text>
+<text x="910" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">gallery</text>
+<rect x="980" y="30" width="90" height="32" rx="16" fill="#c9c9d2"/><text x="1025" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">JP · EN</text>
+<rect x="1080" y="30" width="100" height="32" rx="16" fill="#c9c9d2"/><text x="1130" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Motion</text>
+<text x="300" y="130" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">No.05 — GALLERY</text>
+<rect x="100" y="170" width="290" height="240" rx="12" fill="#c9c9d2"/><path d="M112 182 L378 398 M378 182 L112 398" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="100" y="420" width="220" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="100" y="460" width="290" height="340" rx="12" fill="#c9c9d2"/><path d="M112 472 L378 788 M378 472 L112 788" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="420" y="170" width="290" height="360" rx="12" fill="#c9c9d2"/><path d="M432 182 L698 518 M698 182 L432 518" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="420" y="540" width="220" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="420" y="580" width="290" height="220" rx="12" fill="#c9c9d2"/><path d="M432 592 L698 788 M698 592 L432 788" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="740" y="170" width="290" height="200" rx="12" fill="#c9c9d2"/><path d="M752 182 L1018 358 M1018 182 L752 358" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="740" y="390" width="290" height="300" rx="12" fill="#c9c9d2"/><path d="M752 402 L1018 678 M1018 402 L752 678" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="740" y="700" width="220" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="1060" y="170" width="290" height="300" rx="12" fill="#c9c9d2"/><path d="M1072 182 L1338 458 M1338 182 L1072 458" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="1060" y="490" width="290" height="220" rx="12" fill="#c9c9d2"/><path d="M1072 502 L1338 698 M1338 502 L1072 698" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="580" y="830" width="280" height="50" rx="25" fill="#9a9aa3"/><text x="720" y="855" font-family="Segoe UI, sans-serif" font-size="22.5" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">Load more</text>
+<rect x="1080" y="740" width="340" height="80" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="1250" y="766.8" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">lightbox grows out of the</text><text x="1250" y="793.1999999999999" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">tile</text>
+</svg>

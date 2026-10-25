@@ -1,0 +1,9 @@
+flowchart TB
+  in[Request] --> route[routeOf: __route or path]
+  route --> method[methodGuard]
+  method --> origin[assertSameOrigin on writes]
+  origin --> body[readJson with a size cap]
+  body --> handler[the route's handler]
+  handler -->|ok| json[JSON + cache preset]
+  handler -->|HttpError| envelope["error: code, message, fields"]
+  handler -->|anything else| e500[500 SERVER_ERROR]

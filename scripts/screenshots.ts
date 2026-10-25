@@ -11,6 +11,7 @@
 //       wait: 800                        # optional extra milliseconds before the shot
 //       element: "#home"                 # optional: capture this whole element instead of the screen
 //       maxHeight: 1400                  # with element: cap the height
+//       early: true                      # shoot before the site's ready check (to capture a loader)
 //
 // Usage: npm run screenshots -- <entry slug | site key> …
 // Analytics are blocked per site (screenshot-sites.yml), and the run reports how many requests it blocked.
@@ -22,7 +23,7 @@ import { listContent } from "../src/lib/content";
 import { launchChrome, sleep, type Page } from "./cdp";
 
 type Site = { url: string; block?: string[]; local?: Record<string, string>; session?: Record<string, string>; ready?: string; settle?: number; motion?: boolean };
-type Shot = { file: string; device?: "desktop" | "phone"; path?: string; scrollTo?: string; before?: string; wait?: number; element?: string; maxHeight?: number };
+type Shot = { file: string; device?: "desktop" | "phone"; path?: string; scrollTo?: string; before?: string; wait?: number; element?: string; maxHeight?: number; early?: boolean };
 type Capture = { site: string; shots: Shot[] };
 
 const sites = parse(readFileSync(join("scripts", "screenshot-sites.yml"), "utf8")) as Record<string, Site>;
@@ -114,9 +115,11 @@ async function main() {
         try {
           await preparePage(page, site, device, blocked);
           await page.send("Page.navigate", { url: site.url + (shot.path ?? "/") });
-          await page.waitFor("document.readyState === 'complete'", 45_000);
-          if (site.ready) await page.waitFor(site.ready, 45_000);
-          await sleep(site.settle ?? 800);
+          if (!shot.early) {
+            await page.waitFor("document.readyState === 'complete'", 45_000);
+            if (site.ready) await page.waitFor(site.ready, 45_000);
+            await sleep(site.settle ?? 800);
+          }
           const png = await shoot(page, shot);
           writeFileSync(join(job.dir, shot.file), png);
           console.log(`${job.slug}/${shot.file}  ${device}  ${(png.length / 1024).toFixed(0)} KB  (${blocked.count} analytics request${blocked.count === 1 ? "" : "s"} blocked)`);

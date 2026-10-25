@@ -1,0 +1,6 @@
+flowchart TB
+  call[fetch to Neon] -->|ok| done[rows]
+  call -->|error| code{connect error?}
+  code -->|no| fail[throw: never repeat a statement]
+  code -->|yes, attempt 1 or 2| wait2[wait 500 ms × attempt] --> call
+  code -->|yes, 3rd attempt| fail

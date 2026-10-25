@@ -1,0 +1,6 @@
+flowchart LR
+  list[pagedList on the page] -->|?cursor=…&limit=20| api[api/public.js list]
+  api --> decode[decodeCursor]
+  decode --> sql[(rows before the cursor, limit+1)]
+  sql --> page[page: items + nextCursor]
+  page --> list

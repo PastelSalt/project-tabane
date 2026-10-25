@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="240" y="16" width="960" height="60" rx="30" fill="#c9c9d2"/>
+<rect x="280" y="34" width="120" height="24" rx="12" fill="#9a9aa3"/>
+<rect x="440" y="30" width="100" height="32" rx="16" fill="#9a9aa3"/><text x="490" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">home</text>
+<text x="595" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">about</text>
+<text x="685" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">news</text>
+<text x="795" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">discography</text>
+<text x="910" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">gallery</text>
+<rect x="980" y="30" width="90" height="32" rx="16" fill="#c9c9d2"/><text x="1025" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">JP · EN</text>
+<rect x="1080" y="30" width="100" height="32" rx="16" fill="#c9c9d2"/><text x="1130" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Motion</text>
+<text x="350" y="140" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">No.04 — DISCOGRAPHY</text>
+<rect x="100" y="190" width="1240" height="140" rx="18" fill="none" stroke="#9a9aa3" stroke-width="4" stroke-dasharray="14 10"/><text x="720" y="260" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">COMING SOON · 12 days left</text>
+<circle cx="410" cy="530" r="130" fill="#c9c9d2"/>
+<rect x="100" y="400" width="260" height="260" rx="12" fill="#c9c9d2"/><path d="M112 412 L348 648 M348 412 L112 648" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="181.5" y="512" width="97" height="36" rx="18" fill="#c9c9d2"/><text x="230" y="530" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">cover</text>
+<rect x="440" y="400" width="260" height="260" rx="12" fill="#c9c9d2"/><path d="M452 412 L688 648 M688 412 L452 648" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="521.5" y="512" width="97" height="36" rx="18" fill="#c9c9d2"/><text x="570" y="530" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">cover</text>
+<rect x="780" y="400" width="260" height="260" rx="12" fill="#e3e3ea"/><text x="910" y="512" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">no art:</text><text x="910" y="548" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">designed cover</text>
+<rect x="1120" y="400" width="220" height="260" rx="12" fill="#c9c9d2"/><path d="M1132 412 L1328 648 M1328 412 L1132 648" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="1181.5" y="512" width="97" height="36" rx="18" fill="#c9c9d2"/><text x="1230" y="530" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">cover</text>
+<rect x="100" y="690" width="260" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="440" y="690" width="260" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="780" y="690" width="260" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="100" y="780" width="580" height="70" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="390" y="815" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">hover: the vinyl slides out of the sleeve</text>
+</svg>

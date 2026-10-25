@@ -1,0 +1,5 @@
+flowchart LR
+  page[main.js] --> getJson[getJson, 15 s timeout]
+  getJson --> edge[Vercel edge cache]
+  edge -->|miss or revalidate| fn[api/public.js]
+  fn --> neon[(Neon over HTTP)]

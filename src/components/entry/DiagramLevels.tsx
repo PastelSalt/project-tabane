@@ -122,8 +122,10 @@ function MermaidView({
       for (const id of boxes) {
         source = source.replace(new RegExp(`(^|[\\s>])${id}\\[([^\\]]+)\\]`, "m"), `$1${id}["$2 ↓"]`);
       }
-      source += "\n  classDef default fill:#ffffff,stroke:#0b0b0b,stroke-width:2.5px";
-      if (boxes.length) {
+      // classDef is flowchart syntax; sequence and other diagrams keep Mermaid's own look
+      const flowchart = /^\s*(flowchart|graph)\b/.test(source);
+      if (flowchart) source += "\n  classDef default fill:#ffffff,stroke:#0b0b0b,stroke-width:2.5px";
+      if (flowchart && boxes.length) {
         source += `\n  classDef expand fill:#ffffff,stroke:#9f5ca6,stroke-width:3.5px\n  class ${boxes.join(",")} expand`;
       }
 

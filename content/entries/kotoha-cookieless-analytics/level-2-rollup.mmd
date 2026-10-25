@@ -1,0 +1,9 @@
+flowchart TB
+  trigger[tracker or dashboard request] --> stale{rolled today on this instance?}
+  stale -->|yes| skip[skip]
+  stale -->|no| range[days from the last rolled day to yesterday]
+  range --> tx[one transaction]
+  tx --> clear[delete those days in analytics_daily]
+  tx --> agg[aggregate SQL: every metric per JST day]
+  agg --> mark[_rolled marker]
+  mark --> prune[delete events over 90 days, old sessions and attempts]

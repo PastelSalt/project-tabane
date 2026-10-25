@@ -1,0 +1,6 @@
+site: kotoha-fansite
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    early: true
+    wait: 900

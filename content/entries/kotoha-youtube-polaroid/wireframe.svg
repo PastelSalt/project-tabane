@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="240" y="16" width="960" height="60" rx="30" fill="#c9c9d2"/>
+<rect x="280" y="34" width="120" height="24" rx="12" fill="#9a9aa3"/>
+<rect x="440" y="30" width="100" height="32" rx="16" fill="#9a9aa3"/><text x="490" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">home</text>
+<text x="595" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">about</text>
+<text x="685" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">news</text>
+<text x="795" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">discography</text>
+<text x="910" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">gallery</text>
+<rect x="980" y="30" width="90" height="32" rx="16" fill="#c9c9d2"/><text x="1025" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">JP · EN</text>
+<rect x="1080" y="30" width="100" height="32" rx="16" fill="#c9c9d2"/><text x="1130" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Motion</text>
+<g transform="rotate(-3 660 370)"><rect x="340" y="120" width="640" height="500" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/></g>
+<g transform="rotate(-3 660 320)"><rect x="380" y="160" width="560" height="320" rx="12" fill="#c9c9d2"/><path d="M392 172 L928 468 M928 172 L392 468" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="585.5" y="302" width="149" height="36" rx="18" fill="#c9c9d2"/><text x="660" y="320" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">thumbnail</text></g>
+<g transform="rotate(-3 660 320)"><circle cx="660" cy="320" r="50" fill="#c9c9d2"/><text x="660" y="320" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">▶</text></g>
+<g transform="rotate(-3 620 535)"><rect x="400" y="520" width="440" height="12" rx="6" fill="#c9c9d2"/></g>
+<rect x="80" y="680" width="1280" height="160" rx="12" fill="#e3e3ea"/>
+<rect x="120" y="700" width="220" height="120" rx="12" fill="#c9c9d2"/><path d="M132 712 L328 808 M328 712 L132 808" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="370" y="700" width="220" height="120" rx="12" fill="#c9c9d2"/><path d="M382 712 L578 808 M578 712 L382 808" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="620" y="700" width="220" height="120" rx="12" fill="#c9c9d2"/><path d="M632 712 L828 808 M828 712 L632 808" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="870" y="700" width="220" height="120" rx="12" fill="#c9c9d2"/><path d="M882 712 L1078 808 M1078 712 L882 808" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="1120" y="700" width="220" height="120" rx="12" fill="#c9c9d2"/><path d="M1132 712 L1328 808 M1328 712 L1132 808" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="1020" y="180" width="360" height="120" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="1200" y="226.8" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">no iframe until clicked</text><text x="1200" y="253.20000000000002" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">(youtube-nocookie)</text>
+</svg>

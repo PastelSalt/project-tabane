@@ -1,0 +1,7 @@
+flowchart TB
+  del[Delete request] --> tx[one transaction]
+  tx --> copy[insert to_jsonb row into archived_content]
+  tx --> remove[delete the row]
+  restore[Restore request] --> back[jsonb_populate_record, overriding system value]
+  back -->|same id| table[(content table)]
+  back -->|unique conflict| conflict[409]

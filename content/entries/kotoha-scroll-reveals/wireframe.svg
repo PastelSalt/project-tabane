@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="240" y="16" width="960" height="60" rx="30" fill="#c9c9d2"/>
+<rect x="280" y="34" width="120" height="24" rx="12" fill="#9a9aa3"/>
+<rect x="440" y="30" width="100" height="32" rx="16" fill="#9a9aa3"/><text x="490" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">home</text>
+<text x="595" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">about</text>
+<text x="685" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">news</text>
+<text x="795" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">discography</text>
+<text x="910" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">gallery</text>
+<rect x="980" y="30" width="90" height="32" rx="16" fill="#c9c9d2"/><text x="1025" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">JP · EN</text>
+<rect x="1080" y="30" width="100" height="32" rx="16" fill="#c9c9d2"/><text x="1130" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Motion</text>
+<rect x="120" y="140" width="1200" height="220" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="138" y="164" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">SECTION IN VIEW</text>
+<rect x="180" y="220" width="600" height="12" rx="6" fill="#c9c9d2"/><rect x="180" y="240" width="360" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="120" y="420" width="560" height="300" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="138" y="444" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">.REVEAL RISING IN</text>
+<rect x="760" y="460" width="560" height="300" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="778" y="484" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">.REVEAL-POP</text>
+<rect x="120" y="780" width="1200" height="100" rx="18" fill="none" stroke="#9a9aa3" stroke-width="4" stroke-dasharray="14 10"/><text x="720" y="830" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">far section (.is-far): animations off</text>
+<rect x="720" y="140" width="580" height="70" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="1010" y="175" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">CSS scroll timeline, no JS per frame</text>
+</svg>

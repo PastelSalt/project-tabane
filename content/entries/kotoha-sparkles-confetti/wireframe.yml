@@ -1,0 +1,130 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - pill
+      - 24
+      - 1.6
+      - 96
+      - 6
+    - - heading
+      - 28
+      - 3.4
+      - 12
+      - 2.4
+    - - button
+      - 44
+      - 3
+      - 10
+      - 3.2
+      - home
+    - - label
+      - 55
+      - 3
+      - 9
+      - 3.2
+      - about
+    - - label
+      - 64
+      - 3
+      - 9
+      - 3.2
+      - news
+    - - label
+      - 73
+      - 3
+      - 13
+      - 3.2
+      - discography
+    - - label
+      - 86
+      - 3
+      - 10
+      - 3.2
+      - gallery
+    - - pill
+      - 98
+      - 3
+      - 9
+      - 3.2
+      - JP · EN
+    - - pill
+      - 108
+      - 3
+      - 10
+      - 3.2
+      - Motion
+    - - image
+      - 46
+      - 12
+      - 52
+      - 72
+      - "pose (tap: boing)"
+    - - dot
+      - 104
+      - 30
+      - 2
+      - 2
+    - - dot
+      - 108
+      - 34
+      - 3
+      - 3
+    - - dot
+      - 113
+      - 37
+      - 2
+      - 2
+    - - dot
+      - 118
+      - 42
+      - 3
+      - 3
+    - - circle
+      - 121
+      - 45
+      - 4
+      - 4
+      - ✦
+    - - note
+      - 104
+      - 50
+      - 36
+      - 7
+      - "cursor trail: mouse only"
+    - - dot
+      - 30
+      - 20
+      - 2
+      - 2
+    - - dot
+      - 24
+      - 26
+      - 3
+      - 3
+    - - dot
+      - 34
+      - 28
+      - 2
+      - 2
+    - - dot
+      - 20
+      - 32
+      - 2
+      - 2
+    - - dot
+      - 38
+      - 34
+      - 3
+      - 3
+    - - note
+      - 4
+      - 40
+      - 38
+      - 13
+      - confetti 🍀 on the logo, the pose and special days
+    - - note
+      - 4
+      - 78
+      - 40
+      - 7
+      - all off in calm mode

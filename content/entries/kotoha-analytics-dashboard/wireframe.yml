@@ -1,0 +1,103 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - bar
+      - 0
+      - 0
+      - 144
+      - 7
+      - Kotoha Admin
+    - - panel
+      - 3
+      - 10
+      - 22
+      - 76
+    - - dashed
+      - 30
+      - 10
+      - 110
+      - 9
+      - Hello! · today's date (JST)
+    - - panel
+      - 30
+      - 22
+      - 20
+      - 12
+      - Videos 12
+    - - panel
+      - 52
+      - 22
+      - 20
+      - 12
+      - News 10
+    - - panel
+      - 74
+      - 22
+      - 20
+      - 12
+      - Awards 33
+    - - panel
+      - 96
+      - 22
+      - 20
+      - 12
+      - Disco 10
+    - - panel
+      - 118
+      - 22
+      - 22
+      - 12
+      - Gallery 8
+    - - box
+      - 30
+      - 37
+      - 34
+      - 6
+      - Today 34
+    - - box
+      - 66
+      - 37
+      - 34
+      - 6
+      - Week 210
+    - - box
+      - 102
+      - 37
+      - 38
+      - 6
+      - Month 880
+    - - chart
+      - 30
+      - 45
+      - 110
+      - 20
+    - - note
+      - 104
+      - 46
+      - 34
+      - 5
+      - hover / tap / ← →
+    - - pill
+      - 30
+      - 68
+      - 44
+      - 4.4
+      - 7 · 30 · 90 · 365 days
+    - - panel
+      - 30
+      - 75
+      - 34
+      - 13
+      - AUDIENCE
+    - - panel
+      - 68
+      - 75
+      - 34
+      - 13
+      - TRAFFIC
+    - - panel
+      - 106
+      - 75
+      - 34
+      - 13
+      - ENGAGEMENT

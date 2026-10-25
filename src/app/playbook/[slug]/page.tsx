@@ -5,6 +5,7 @@ import { Panel } from "@/components/entry/Panel";
 import entryStyles from "@/components/entry/entry.module.css";
 import { Flower, PocketWatch, SuitBadge } from "@/components/motifs";
 import styles from "@/components/playbook/playbook.module.css";
+import { PlaybookText } from "@/components/playbook/PlaybookText";
 import { AppLayout, Sidebar } from "@/components/shell";
 import { Chip, Pill, PlaybookStatusPill } from "@/components/ui";
 import { getEntry, getPlaybook } from "@/lib/data";
@@ -135,14 +136,22 @@ export default async function PlaybookDetail({ params }: PageProps<"/playbook/[s
         <Panel title="Before you start" color="blue">
           <ul className={styles.checklist}>
             {playbook.beforeYouStart.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item}>
+                <span>
+                  <PlaybookText text={item} inline />
+                </span>
+              </li>
             ))}
           </ul>
         </Panel>
         <Panel title="Gotchas" color="violet">
           <ul className={styles.gotchas}>
             {playbook.gotchas.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item}>
+                <span>
+                  <PlaybookText text={item} inline />
+                </span>
+              </li>
             ))}
           </ul>
         </Panel>
@@ -154,7 +163,7 @@ export default async function PlaybookDetail({ params }: PageProps<"/playbook/[s
             <li key={step.title} className={styles.step}>
               <div>
                 <h3>{step.title}</h3>
-                <p>{step.body}</p>
+                <PlaybookText text={step.body} />
               </div>
             </li>
           ))}
@@ -164,7 +173,9 @@ export default async function PlaybookDetail({ params }: PageProps<"/playbook/[s
       <Panel title="Finished looks like" color="yellow" shadow="violet" tint="yellow">
         <p className={styles.finished}>
           <Flower size={32} />
-          {playbook.finishedLooksLike}
+          <span>
+            <PlaybookText text={playbook.finishedLooksLike} inline />
+          </span>
         </p>
       </Panel>
     </AppLayout>

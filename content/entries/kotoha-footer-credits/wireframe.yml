@@ -1,0 +1,70 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - image
+      - 0
+      - 0
+      - 144
+      - 30
+      - page above
+    - - box
+      - 0
+      - 30
+      - 144
+      - 4
+      - scallop edge
+    - - box
+      - 0
+      - 34
+      - 144
+      - 56
+    - - heading
+      - 8
+      - 40
+      - 26
+      - 4
+    - - text
+      - 8
+      - 48
+      - 26
+      - 5
+    - - pill
+      - 8
+      - 60
+      - 16
+      - 4
+      - JP · EN
+    - - label
+      - 44
+      - 40
+      - 40
+      - 4
+      - CREDITS
+    - - text
+      - 44
+      - 46
+      - 40
+      - 13
+    - - text
+      - 44
+      - 64
+      - 30
+      - 3
+    - - panel
+      - 96
+      - 40
+      - 42
+      - 18
+      - MADE BY MOEKO WORKS
+    - - panel
+      - 96
+      - 62
+      - 42
+      - 14
+      - "SISTER SITE: HANON"
+    - - bar
+      - 0
+      - 82
+      - 144
+      - 8
+      - disclaimer · © line

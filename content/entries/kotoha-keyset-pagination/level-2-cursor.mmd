@@ -1,0 +1,6 @@
+flowchart TB
+  rows[limit+1 rows] --> more{more than limit?}
+  more -->|no| last[items, nextCursor = null]
+  more -->|yes| cut[keep the first limit rows]
+  cut --> enc[base64url of date + id of the last row]
+  enc --> next[items, nextCursor]

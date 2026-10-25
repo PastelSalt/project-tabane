@@ -1,0 +1,12 @@
+flowchart LR
+  originals[assets/ originals] --> script[optimize-images.js with sharp]
+  script --> widths[WebP at several widths]
+  script --> crops[9:16 focal-point crops]
+  script --> ui[UI images at 1x and 2x]
+  script --> icons[favicon SVG and PNG, apple-touch icon]
+  script --> og[OG image: art + logo]
+  widths --> public[public/assets]
+  crops --> public
+  ui --> public
+  icons --> public
+  og --> public

@@ -1,0 +1,49 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - image
+      - 0
+      - 0
+      - 144
+      - 90
+      - loader artwork (1 of 3)
+    - - circle
+      - 60
+      - 24
+      - 24
+      - 24
+      - ✿
+    - - circle
+      - 66
+      - 30
+      - 12
+      - 12
+    - - heading
+      - 60
+      - 52
+      - 24
+      - 2.6
+    - - box
+      - 40
+      - 58
+      - 64
+      - 5
+      - Did you know? fact
+    - - note
+      - 92
+      - 20
+      - 44
+      - 7
+      - petals fill as tasks finish
+    - - note
+      - 92
+      - 29
+      - 44
+      - 7
+      - "exit: iris opens from the clover"
+    - - note
+      - 6
+      - 76
+      - 52
+      - 7
+      - CSS failsafe fades it after 12 s

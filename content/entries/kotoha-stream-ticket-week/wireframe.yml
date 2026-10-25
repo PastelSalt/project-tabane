@@ -1,0 +1,131 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - panel
+      - 20
+      - 14
+      - 104
+      - 34
+    - - dashed
+      - 22
+      - 16
+      - 100
+      - 30
+    - - label
+      - 24
+      - 20
+      - 10
+      - 22
+      - NEXT
+    - - line
+      - 36
+      - 17
+      - 1
+      - 28
+    - - text
+      - 42
+      - 20
+      - 50
+      - 1
+    - - box
+      - 44
+      - 26
+      - 12
+      - 9
+      - "02"
+    - - box
+      - 60
+      - 26
+      - 12
+      - 9
+      - "01"
+    - - box
+      - 76
+      - 26
+      - 12
+      - 9
+      - "32"
+    - - box
+      - 92
+      - 26
+      - 12
+      - 9
+      - "14"
+    - - label
+      - 44
+      - 36
+      - 12
+      - 4
+      - DAYS
+    - - label
+      - 60
+      - 36
+      - 12
+      - 4
+      - HRS
+    - - label
+      - 76
+      - 36
+      - 12
+      - 4
+      - MIN
+    - - label
+      - 92
+      - 36
+      - 12
+      - 4
+      - SEC
+    - - panel
+      - 20
+      - 54
+      - 13
+      - 14
+      - MON
+    - - box
+      - 35
+      - 54
+      - 13
+      - 14
+      - TUE 21:00
+    - - panel
+      - 50
+      - 54
+      - 13
+      - 14
+      - WED
+    - - panel
+      - 65
+      - 54
+      - 13
+      - 14
+      - THU
+    - - box
+      - 80
+      - 54
+      - 13
+      - 14
+      - FRI 21:00
+    - - panel
+      - 95
+      - 54
+      - 13
+      - 14
+      - SAT
+    - - dashed
+      - 110
+      - 54
+      - 14
+      - 14
+      - today
+    - - note
+      - 20
+      - 74
+      - 60
+      - 7
+      - LIVE for 2 h · local time on hover
+    - - note
+      - 84
+      - 74
+      - 40
+      - 7
+      - "screen readers: once a minute"

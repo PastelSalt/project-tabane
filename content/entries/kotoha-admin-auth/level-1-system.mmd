@@ -1,0 +1,11 @@
+flowchart TB
+  login[POST auth/login] --> origin[same-origin check]
+  origin --> throttle[throttle: 5 per user+IP, 20 per IP, 15 min]
+  throttle --> lookup[find active user]
+  lookup -->|unknown| burn[dummy verify, record attempt, 401]
+  lookup --> verify[Argon2id verify]
+  verify -->|wrong, 5th time| lock[lock 15 min]
+  verify --> session[create session]
+  session --> forced{must change password?}
+  forced -->|yes| change[forced change]
+  forced -->|no| app[admin app]

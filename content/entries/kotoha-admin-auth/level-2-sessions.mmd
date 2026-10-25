@@ -1,0 +1,6 @@
+flowchart LR
+  token[32 random bytes] --> cookie[__Host-kf_session, HttpOnly, Strict, Secure]
+  token --> hash[(sha256 stored in admin_sessions)]
+  req[Each request] --> check{idle under 2 h and under 7 days?}
+  check -->|yes| touch[touch last_seen_at at most every 5 min]
+  check -->|no| out[401, sign in again]

@@ -1,0 +1,9 @@
+flowchart LR
+  click[data-track attributes] --> queue[in-memory queue]
+  dwell[section dwell timer] --> queue
+  queue -->|25 events, page hide| beacon[sendBeacon /api/track]
+  beacon --> filter[drop bots, admins, cross-origin, floods]
+  filter --> hash[daily visitor hash]
+  hash --> events[(analytics_events, 90 days)]
+  events --> daily[(analytics_daily, forever)]
+  daily --> dash[dashboard: rolled days + live today]

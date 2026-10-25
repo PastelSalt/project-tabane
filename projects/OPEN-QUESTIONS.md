@@ -13,30 +13,6 @@ Every open question from every project file, in one place, for Kyle to answer la
 
 ---
 
-## Kotoha Fan Site · [`kotoha-fansite.md`](kotoha-fansite.md) §15
-
-- [x] **K1. Entry granularity:** 29 entries is fine-grained (for example, the motion system is split into four). Keep this split, or merge into fewer, bigger entries (for example one "motion system" entry)?
-  *Recommended:* keep the split; small entries are easier to find and lift.
-  _Answer:_ Keep the split: 29 entries.
-- [x] **K2. Hanon under Used in:** list Hanon Fan Site under Used in on the Kotoha entries now?
-  *Recommended:* yes; the Hanon file (§7.1) confirms every Kotoha piece is in Hanon.
-  _Answer:_ Yes. Every Kotoha entry lists Hanon Fan Site under Used in, with the notes from the Hanon file §7.1.
-- [x] **K3. The unused wipe (`wipe.js`):** leave it out, or add it as a Candidate entry?
-  *Recommended:* leave it out.
-  _Answer:_ Leave it out.
-- [x] **K4. Shared:** every entry starts with Shared off. Are any safe to show visitors (for example the design system or the loader)?
-  *Recommended:* keep all off for now.
-  _Answer:_ Keep all off for now.
-- [x] **K5. Replication guide order:** is the build order in §13 how you would rebuild it?
-  *Recommended:* yes; it follows the commit history and `FORHANON.md`.
-  _Answer:_ Yes, use the §13 order.
-- [x] **K6. New tag values:** add all 18 proposed in §14, or only some?
-  *Recommended:* add all.
-  _Answer:_ Add all 18.
-- [x] **K7. Admin look** *(rewritten 2026-10-25 after the admin UI refresh)*: the admin now uses the public site's theme, calmer (Kotoha §6.10, piece U27; Hanon has the same in its own theme). Fold its look into `kotoha-admin-panel`, or make "admin UI kit in the site's theme" its own entry?
-  *Recommended:* fold it into `kotoha-admin-panel`; the kit only makes sense with that panel.
-  _Answer:_ Fold it into `kotoha-admin-panel`.
-
 ## Hanon Fan Site · [`hanon-fansite.md`](hanon-fansite.md) §9
 
 - [x] **H1. Marquee fix in Kotoha:** apply Hanon's marquee fix to the Kotoha repository? That is a change outside Tabane, so it would be its own task.
@@ -137,4 +113,28 @@ The site only; the engine and Studio are out of scope.
 
 ## Answered and applied
 
-None yet. Every section above is answered; each moves here when its project file is applied.
+Each section moves here when its project file is applied, with the date.
+
+### Kotoha Fan Site · [`kotoha-fansite.md`](kotoha-fansite.md) §15 · applied 2026-10-25 (29 entries, guide `replicate-kotoha-fan-site`)
+
+- [x] **K1. Entry granularity:** 29 entries is fine-grained (for example, the motion system is split into four). Keep this split, or merge into fewer, bigger entries (for example one "motion system" entry)?
+  *Recommended:* keep the split; small entries are easier to find and lift.
+  _Answer:_ Keep the split: 29 entries.
+- [x] **K2. Hanon under Used in:** list Hanon Fan Site under Used in on the Kotoha entries now?
+  *Recommended:* yes; the Hanon file (§7.1) confirms every Kotoha piece is in Hanon.
+  _Answer:_ Yes. Every Kotoha entry lists Hanon Fan Site under Used in, with the notes from the Hanon file §7.1.
+- [x] **K3. The unused wipe (`wipe.js`):** leave it out, or add it as a Candidate entry?
+  *Recommended:* leave it out.
+  _Answer:_ Leave it out.
+- [x] **K4. Shared:** every entry starts with Shared off. Are any safe to show visitors (for example the design system or the loader)?
+  *Recommended:* keep all off for now.
+  _Answer:_ Keep all off for now.
+- [x] **K5. Replication guide order:** is the build order in §13 how you would rebuild it?
+  *Recommended:* yes; it follows the commit history and `FORHANON.md`.
+  _Answer:_ Yes, use the §13 order.
+- [x] **K6. New tag values:** add all 18 proposed in §14, or only some?
+  *Recommended:* add all.
+  _Answer:_ Add all 18.
+- [x] **K7. Admin look** *(rewritten 2026-10-25 after the admin UI refresh)*: the admin now uses the public site's theme, calmer (Kotoha §6.10, piece U27; Hanon has the same in its own theme). Fold its look into `kotoha-admin-panel`, or make "admin UI kit in the site's theme" its own entry?
+  *Recommended:* fold it into `kotoha-admin-panel`; the kit only makes sense with that panel.
+  _Answer:_ Fold it into `kotoha-admin-panel`.

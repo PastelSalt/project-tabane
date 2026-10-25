@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="240" y="16" width="960" height="60" rx="30" fill="#c9c9d2"/>
+<rect x="280" y="34" width="120" height="24" rx="12" fill="#9a9aa3"/>
+<rect x="440" y="30" width="100" height="32" rx="16" fill="#9a9aa3"/><text x="490" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">home</text>
+<text x="595" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">about</text>
+<text x="685" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">news</text>
+<text x="795" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">discography</text>
+<text x="910" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">gallery</text>
+<rect x="980" y="30" width="90" height="32" rx="16" fill="#c9c9d2"/><text x="1025" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">JP · EN</text>
+<rect x="1080" y="30" width="100" height="32" rx="16" fill="#c9c9d2"/><text x="1130" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Motion</text>
+<rect x="1080" y="30" width="100" height="32" rx="16" fill="#9a9aa3"/><text x="1130" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">Motion off</text>
+<rect x="0" y="90" width="1440" height="810" rx="12" fill="#c9c9d2"/><path d="M12 102 L1428 888 M1428 102 L12 888" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="678" y="477" width="84" height="36" rx="18" fill="#c9c9d2"/><text x="720" y="495" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">page</text>
+<rect x="840" y="120" width="540" height="70" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="1110" y="155" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">set before first paint (motion-boot.js)</text>
+<rect x="840" y="210" width="540" height="70" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="1110" y="231.8" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">follows the device's reduced-motion</text><text x="1110" y="258.2" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">setting</text>
+<rect x="840" y="300" width="540" height="70" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="1110" y="335" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">calm: loops stop, hovers flatten</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="240" y="16" width="960" height="60" rx="30" fill="#c9c9d2"/>
+<rect x="280" y="34" width="120" height="24" rx="12" fill="#9a9aa3"/>
+<rect x="440" y="30" width="100" height="32" rx="16" fill="#9a9aa3"/><text x="490" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">home</text>
+<text x="595" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">about</text>
+<text x="685" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">news</text>
+<text x="795" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">discography</text>
+<text x="910" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">gallery</text>
+<rect x="980" y="30" width="90" height="32" rx="16" fill="#c9c9d2"/><text x="1025" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">JP · EN</text>
+<rect x="1080" y="30" width="100" height="32" rx="16" fill="#c9c9d2"/><text x="1130" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Motion</text>
+<rect x="300" y="120" width="840" height="720" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="318" y="144" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">ACHIEVEMENTS</text>
+<rect x="443" y="200" width="4" height="600" rx="2" fill="#9a9aa3"/>
+<rect x="360" y="200" width="160" height="44" rx="22" fill="#9a9aa3"/><text x="440" y="222" font-family="Segoe UI, sans-serif" font-size="19.8" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">2026</text>
+<circle cx="445" cy="295" r="15" fill="#9a9aa3"/>
+<rect x="500" y="276" width="140" height="36" rx="18" fill="#c9c9d2"/><text x="570" y="294" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">09.25</text>
+<rect x="660" y="280" width="400" height="12" rx="6" fill="#c9c9d2"/>
+<circle cx="445" cy="365" r="15" fill="#9a9aa3"/>
+<rect x="500" y="346" width="140" height="36" rx="18" fill="#c9c9d2"/><text x="570" y="364" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">07.08</text>
+<rect x="660" y="350" width="360" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="360" y="430" width="160" height="44" rx="22" fill="#9a9aa3"/><text x="440" y="452" font-family="Segoe UI, sans-serif" font-size="19.8" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">2025</text>
+<circle cx="445" cy="525" r="15" fill="#9a9aa3"/>
+<rect x="500" y="506" width="140" height="36" rx="18" fill="#c9c9d2"/><text x="570" y="524" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">12.01</text>
+<rect x="660" y="510" width="400" height="12" rx="6" fill="#c9c9d2"/>
+<circle cx="445" cy="595" r="15" fill="#9a9aa3"/>
+<rect x="500" y="576" width="140" height="36" rx="18" fill="#c9c9d2"/><text x="570" y="594" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">06.10</text>
+<rect x="660" y="580" width="320" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="500" y="700" width="600" height="80" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="800" y="740" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">a year pill appears whenever the year changes</text>
+</svg>

@@ -1,0 +1,8 @@
+flowchart LR
+  req[Request] --> vercel[vercel.json headers]
+  vercel --> csp[CSP: self + named CDNs, no inline scripts]
+  vercel --> sri[SRI on every CDN file]
+  vercel --> frame[X-Frame-Options DENY, frame-ancestors none]
+  vercel --> other[HSTS, nosniff, referrer, permissions]
+  vercel --> robots[noindex on admin and API]
+  vercel --> cache[asset and locale caching]

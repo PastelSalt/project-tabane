@@ -1,0 +1,5 @@
+flowchart LR
+  browser[Browser] -->|/api/group/route| rewrite[vercel.json rewrite to ?__route=]
+  rewrite --> fn[Grouped function: public, auth, admin, track]
+  fn --> db[(Neon Postgres)]
+  fn --> cld[(Cloudinary)]

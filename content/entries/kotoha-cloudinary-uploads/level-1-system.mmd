@@ -1,0 +1,19 @@
+sequenceDiagram
+  participant A as Admin browser
+  participant F as api/admin.js
+  participant C as Cloudinary
+  A->>A: prepareFile: shrink to 10 MB and 25 MP (canvas to WebP)
+  A->>F: POST gallery/sign
+  F-->>A: timestamp, folder, preset, tags, SHA-1 signature
+  A->>C: POST file + signature (XHR with progress)
+  C-->>A: public_id, version, signature
+  A->>F: POST gallery with publicId, version, signature, credit
+  F->>F: verifyUploadResponse
+  F->>C: Admin API getResource
+  alt too big, wrong format or folder
+    F->>C: destroy
+    F-->>A: 422 UPLOAD_REJECTED
+  else ok
+    F->>F: insert gallery_images + activity_log
+    F-->>A: 201 item
+  end

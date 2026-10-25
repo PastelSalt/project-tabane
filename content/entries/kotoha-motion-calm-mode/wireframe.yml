@@ -1,0 +1,85 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - pill
+      - 24
+      - 1.6
+      - 96
+      - 6
+    - - heading
+      - 28
+      - 3.4
+      - 12
+      - 2.4
+    - - button
+      - 44
+      - 3
+      - 10
+      - 3.2
+      - home
+    - - label
+      - 55
+      - 3
+      - 9
+      - 3.2
+      - about
+    - - label
+      - 64
+      - 3
+      - 9
+      - 3.2
+      - news
+    - - label
+      - 73
+      - 3
+      - 13
+      - 3.2
+      - discography
+    - - label
+      - 86
+      - 3
+      - 10
+      - 3.2
+      - gallery
+    - - pill
+      - 98
+      - 3
+      - 9
+      - 3.2
+      - JP · EN
+    - - pill
+      - 108
+      - 3
+      - 10
+      - 3.2
+      - Motion
+    - - button
+      - 108
+      - 3
+      - 10
+      - 3.2
+      - Motion off
+    - - image
+      - 0
+      - 9
+      - 144
+      - 81
+      - page
+    - - note
+      - 84
+      - 12
+      - 54
+      - 7
+      - set before first paint (motion-boot.js)
+    - - note
+      - 84
+      - 21
+      - 54
+      - 7
+      - follows the device's reduced-motion setting
+    - - note
+      - 84
+      - 30
+      - 54
+      - 7
+      - "calm: loops stop, hovers flatten"

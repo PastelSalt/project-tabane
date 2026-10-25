@@ -1,0 +1,117 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - pill
+      - 24
+      - 1.6
+      - 96
+      - 6
+    - - heading
+      - 28
+      - 3.4
+      - 12
+      - 2.4
+    - - button
+      - 44
+      - 3
+      - 10
+      - 3.2
+      - home
+    - - label
+      - 55
+      - 3
+      - 9
+      - 3.2
+      - about
+    - - label
+      - 64
+      - 3
+      - 9
+      - 3.2
+      - news
+    - - label
+      - 73
+      - 3
+      - 13
+      - 3.2
+      - discography
+    - - label
+      - 86
+      - 3
+      - 10
+      - 3.2
+      - gallery
+    - - pill
+      - 98
+      - 3
+      - 9
+      - 3.2
+      - JP · EN
+    - - pill
+      - 108
+      - 3
+      - 10
+      - 3.2
+      - Motion
+    - kind: panel
+      x: 34
+      y: 12
+      w: 64
+      h: 50
+      r: -3
+    - kind: image
+      x: 38
+      y: 16
+      w: 56
+      h: 32
+      label: thumbnail
+      r: -3
+    - kind: circle
+      x: 61
+      y: 27
+      w: 10
+      h: 10
+      label: ▶
+      r: -3
+    - kind: text
+      x: 40
+      y: 52
+      w: 44
+      h: 3
+      r: -3
+    - - box
+      - 8
+      - 68
+      - 128
+      - 16
+    - - image
+      - 12
+      - 70
+      - 22
+      - 12
+    - - image
+      - 37
+      - 70
+      - 22
+      - 12
+    - - image
+      - 62
+      - 70
+      - 22
+      - 12
+    - - image
+      - 87
+      - 70
+      - 22
+      - 12
+    - - image
+      - 112
+      - 70
+      - 22
+      - 12
+    - - note
+      - 102
+      - 18
+      - 36
+      - 12
+      - no iframe until clicked (youtube-nocookie)

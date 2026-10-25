@@ -1,0 +1,107 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - label
+      - 4
+      - 3
+      - 44
+      - 4
+      - CLOVER SCRAPBOOK
+    - - circle
+      - 4
+      - 9
+      - 6
+      - 6
+    - - circle
+      - 12
+      - 9
+      - 6
+      - 6
+    - - circle
+      - 20
+      - 9
+      - 6
+      - 6
+    - - circle
+      - 28
+      - 9
+      - 6
+      - 6
+    - - circle
+      - 36
+      - 9
+      - 6
+      - 6
+    - kind: panel
+      x: 4
+      y: 22
+      w: 42
+      h: 30
+      label: paper
+      r: -2
+    - kind: box
+      x: 18
+      y: 20
+      w: 14
+      h: 3
+      r: -8
+    - kind: text
+      x: 8
+      y: 31
+      w: 34
+      h: 7
+      r: -2
+    - kind: pill
+      x: 54
+      y: 9
+      w: 22
+      h: 5
+      label: STICKER
+      r: -6
+    - - circle
+      - 82
+      - 6
+      - 16
+      - 16
+      - STAMP
+    - - panel
+      - 102
+      - 7
+      - 38
+      - 16
+      - speech bubble
+    - - label
+      - 54
+      - 30
+      - 40
+      - 4
+      - No.02 — NEWS
+    - - heading
+      - 54
+      - 36
+      - 50
+      - 4
+    - - label
+      - 54
+      - 42
+      - 84
+      - 10
+      - N E W S  (giant outlined word)
+    - - dashed
+      - 54
+      - 58
+      - 40
+      - 24
+      - stitched card
+    - - box
+      - 100
+      - 58
+      - 40
+      - 24
+      - grain + pattern fill
+    - - note
+      - 4
+      - 58
+      - 42
+      - 8
+      - every value from tokens.css

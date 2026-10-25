@@ -1,29 +1,45 @@
-// A tiny reader for simple Mermaid flowcharts, used only to draw card thumbnails without loading Mermaid.
-// It understands `id[Label]` nodes and `a --> b` edges, which is all the level-1 diagrams use.
+// A tiny reader for Mermaid diagrams, used only to draw card thumbnails without loading Mermaid.
+// Flowcharts: nodes in any common shape (`id[Label]`, `id[(Label)]`, `id{Label}`, `id((Label))` …) and arrows
+// (`-->`, `-.->`, `==>`, `---`), with arrow labels (`-->|yes|`) ignored. Sequence diagrams: the participants in a row.
+// Anything else gives an empty outline.
 
 export type Outline = {
   nodes: { id: string; label: string; x: number; y: number }[];
   edges: { from: string; to: string }[];
 };
 
-export function outlineMermaid(source: string, width: number, height: number): Outline {
-  const labels = new Map<string, string>();
-  const edges: Outline["edges"] = [];
-  const node = /([A-Za-z0-9_-]+)(?:\[([^\]]+)\])?/;
+const SKIP = /^\s*(classDef|class|style|linkStyle|subgraph|end|direction|%%)\b/;
+const ARROW = /\s*(?:-->|-\.->|==>|---|-\.-)\s*/;
+// id, then an optional shape; the first group that matched is the label
+const NODE = /^([A-Za-z0-9_-]+)\s*(?:\[\(([^)]*)\)\]|\(\[([^\]]*)\]\)|\(\(([^)]*)\)\)|\[\/([^\]]*)\/\]|\[([^\]]*)\]|\{([^}]*)\}|\(([^)]*)\))?/;
 
-  for (const line of source.split("\n").slice(1)) {
-    const parts = line.split("-->").map((part) => part.trim());
+export function outlineMermaid(source: string, width: number, height: number): Outline {
+  const lines = source.split("\n");
+  const kind = lines[0]?.trim().split(/\s+/)[0] ?? "";
+  if (kind === "sequenceDiagram") return sequenceOutline(lines.slice(1), width, height);
+  if (kind !== "flowchart" && kind !== "graph") return { nodes: [], edges: [] };
+
+  const labels = new Map<string, string>();
+  const edgeKeys = new Set<string>();
+  const edges: Outline["edges"] = [];
+
+  for (const raw of lines.slice(1)) {
+    if (SKIP.test(raw) || !raw.trim()) continue;
+    const parts = raw.replace(/\|[^|]*\|/g, " ").split(ARROW).map((part) => part.trim());
     const ids = parts.map((part) => {
-      const match = part.match(node);
+      const match = part.match(NODE);
       if (!match) return undefined;
-      const [, id, label] = match;
-      if (label || !labels.has(id)) labels.set(id, label ?? labels.get(id) ?? id);
+      const id = match[1];
+      const label = match.slice(2).find((group) => group !== undefined)?.replace(/^"|"$/g, "").trim();
+      if (label || !labels.has(id)) labels.set(id, label || labels.get(id) || id);
       return id;
     });
     for (let i = 0; i + 1 < ids.length; i++) {
       const from = ids[i];
       const to = ids[i + 1];
-      if (from && to) edges.push({ from, to });
+      if (!from || !to || from === to || edgeKeys.has(`${from}-${to}`)) continue;
+      edgeKeys.add(`${from}-${to}`);
+      edges.push({ from, to });
     }
   }
 
@@ -37,7 +53,7 @@ export function outlineMermaid(source: string, width: number, height: number): O
       if (!depth.has(to) || depth.get(to)! < d) depth.set(to, Math.min(d, ids.length));
     }
   }
-  const columns = Math.max(...ids.map((id) => depth.get(id) ?? 0)) + 1;
+  const columns = Math.max(0, ...ids.map((id) => depth.get(id) ?? 0)) + 1;
   const byColumn = new Map<number, string[]>();
   for (const id of ids) {
     const column = depth.get(id) ?? 0;
@@ -54,5 +70,31 @@ export function outlineMermaid(source: string, width: number, height: number): O
       y: ((row + 0.5) / siblings.length) * height,
     };
   });
+  return { nodes, edges };
+}
+
+/** Sequence diagrams: participants in one row, one line per pair that exchanges messages. */
+function sequenceOutline(lines: string[], width: number, height: number): Outline {
+  const labels = new Map<string, string>();
+  const edgeKeys = new Set<string>();
+  const edges: Outline["edges"] = [];
+  for (const line of lines) {
+    const participant = /^\s*(?:participant|actor)\s+(\w+)(?:\s+as\s+(.+))?$/.exec(line);
+    if (participant) {
+      labels.set(participant[1], participant[2]?.trim() ?? participant[1]);
+      continue;
+    }
+    const message = /^\s*(\w+)\s*--?>>?[+-]?\s*(\w+)\s*:/.exec(line);
+    if (!message) continue;
+    const [, from, to] = message;
+    for (const id of [from, to]) if (!labels.has(id)) labels.set(id, id);
+    const key = [from, to].sort().join("-");
+    if (from !== to && !edgeKeys.has(key)) {
+      edgeKeys.add(key);
+      edges.push({ from, to });
+    }
+  }
+  const ids = [...labels.keys()];
+  const nodes = ids.map((id, i) => ({ id, label: labels.get(id)!, x: ((i + 0.5) / ids.length) * width, y: height / 2 }));
   return { nodes, edges };
 }

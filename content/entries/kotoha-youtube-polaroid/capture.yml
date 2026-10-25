@@ -1,0 +1,5 @@
+site: kotoha-fansite
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    scrollTo: "#news-player"

@@ -1,0 +1,6 @@
+flowchart LR
+  req[Request] --> fresh{younger than 60 s?}
+  fresh -->|yes| hit[cached answer]
+  fresh -->|no, within a day| stale[stale answer now]
+  stale --> bg[revalidate in the background]
+  fresh -->|older than a day| wait[wait for the function]

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="0" y="0" width="1440" height="70" fill="#c9c9d2"/><text x="24" y="35" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">Kotoha Admin · user badge</text>
+<rect x="30" y="100" width="300" height="760" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/>
+<text x="180" y="145" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Dashboard</text>
+<text x="180" y="205" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">CONTENT</text>
+<rect x="60" y="230" width="240" height="36" rx="18" fill="#c9c9d2"/><text x="180" y="248" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Latest Videos</text>
+<rect x="70" y="290" width="200" height="12" rx="6" fill="#c9c9d2"/><rect x="70" y="310" width="120" height="12" rx="6" fill="#c9c9d2"/>
+<text x="180" y="405" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">RECORDS</text>
+<rect x="70" y="430" width="200" height="12" rx="6" fill="#c9c9d2"/>
+<text x="180" y="525" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">ACCOUNT</text>
+<rect x="70" y="550" width="200" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="380" y="110" width="340" height="60" rx="30" fill="#9a9aa3"/><text x="550" y="140" font-family="Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">Latest Videos</text>
+<rect x="1180" y="110" width="220" height="50" rx="25" fill="#9a9aa3"/><text x="1290" y="135" font-family="Segoe UI, sans-serif" font-size="22.5" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">+ Add</text>
+<rect x="380" y="200" width="400" height="44" rx="22" fill="#c9c9d2"/><text x="580" y="222" font-family="Segoe UI, sans-serif" font-size="19.8" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">All · Published · Drafts</text>
+<rect x="380" y="280" width="1020" height="120" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/>
+<rect x="410" y="300" width="140" height="80" rx="12" fill="#c9c9d2"/><path d="M422 312 L538 368 M538 312 L422 368" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="580" y="310" width="500" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="1200" y="310" width="160" height="40" rx="20" fill="#c9c9d2"/><text x="1280" y="330" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">published</text>
+<rect x="380" y="430" width="1020" height="120" rx="18" fill="none" stroke="#9a9aa3" stroke-width="4" stroke-dasharray="14 10"/>
+<rect x="410" y="450" width="140" height="80" rx="12" fill="#c9c9d2"/><path d="M422 462 L538 518 M538 462 L422 518" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/>
+<rect x="580" y="460" width="500" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="1200" y="460" width="160" height="40" rx="20" fill="#c9c9d2"/><text x="1280" y="480" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">draft</text>
+<rect x="380" y="580" width="1020" height="120" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/>
+<rect x="580" y="610" width="500" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="380" y="740" width="1020" height="70" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="890" y="775" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">one RESOURCES config → list, form, drafts and archive</text>
+</svg>

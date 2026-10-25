@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="200" y="140" width="1040" height="340" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/>
+<rect x="220" y="160" width="1000" height="300" rx="18" fill="none" stroke="#9a9aa3" stroke-width="4" stroke-dasharray="14 10"/>
+<text x="290" y="310" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">NEXT</text>
+<rect x="363" y="170" width="4" height="280" rx="2" fill="#9a9aa3"/>
+<rect x="420" y="200" width="500" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="440" y="260" width="120" height="90" rx="12" fill="#e3e3ea"/><text x="500" y="305" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">02</text>
+<rect x="600" y="260" width="120" height="90" rx="12" fill="#e3e3ea"/><text x="660" y="305" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">01</text>
+<rect x="760" y="260" width="120" height="90" rx="12" fill="#e3e3ea"/><text x="820" y="305" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">32</text>
+<rect x="920" y="260" width="120" height="90" rx="12" fill="#e3e3ea"/><text x="980" y="305" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">14</text>
+<text x="500" y="380" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">DAYS</text>
+<text x="660" y="380" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">HRS</text>
+<text x="820" y="380" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">MIN</text>
+<text x="980" y="380" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">SEC</text>
+<rect x="200" y="540" width="130" height="140" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="218" y="564" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">MON</text>
+<rect x="350" y="540" width="130" height="140" rx="12" fill="#e3e3ea"/><text x="415" y="592" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">TUE</text><text x="415" y="628" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">21:00</text>
+<rect x="500" y="540" width="130" height="140" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="518" y="564" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">WED</text>
+<rect x="650" y="540" width="130" height="140" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="668" y="564" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">THU</text>
+<rect x="800" y="540" width="130" height="140" rx="12" fill="#e3e3ea"/><text x="865" y="592" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">FRI</text><text x="865" y="628" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">21:00</text>
+<rect x="950" y="540" width="130" height="140" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="968" y="564" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">SAT</text>
+<rect x="1100" y="540" width="140" height="140" rx="18" fill="none" stroke="#9a9aa3" stroke-width="4" stroke-dasharray="14 10"/><text x="1170" y="610" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">today</text>
+<rect x="200" y="740" width="600" height="70" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="500" y="775" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">LIVE for 2 h · local time on hover</text>
+<rect x="840" y="740" width="400" height="70" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="1040" y="775" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">screen readers: once a minute</text>
+</svg>

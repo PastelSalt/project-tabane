@@ -1,0 +1,123 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - pill
+      - 24
+      - 1.6
+      - 96
+      - 6
+    - - heading
+      - 28
+      - 3.4
+      - 12
+      - 2.4
+    - - button
+      - 44
+      - 3
+      - 10
+      - 3.2
+      - home
+    - - label
+      - 55
+      - 3
+      - 9
+      - 3.2
+      - about
+    - - label
+      - 64
+      - 3
+      - 9
+      - 3.2
+      - news
+    - - label
+      - 73
+      - 3
+      - 13
+      - 3.2
+      - discography
+    - - label
+      - 86
+      - 3
+      - 10
+      - 3.2
+      - gallery
+    - - pill
+      - 98
+      - 3
+      - 9
+      - 3.2
+      - JP · EN
+    - - pill
+      - 108
+      - 3
+      - 10
+      - 3.2
+      - Motion
+    - - image
+      - 0
+      - 9
+      - 144
+      - 81
+      - Home
+    - - note
+      - 24
+      - 10
+      - 60
+      - 6
+      - active marker slides to the section in view
+    - - note
+      - 98
+      - 10
+      - 36
+      - 6
+      - scroll-progress icon fills
+phone:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 39
+      - 84
+    - - circle
+      - 31
+      - 2
+      - 6
+      - 6
+      - ×
+    - - heading
+      - 6
+      - 16
+      - 18
+      - 3
+    - - heading
+      - 6
+      - 23
+      - 14
+      - 3
+    - - heading
+      - 6
+      - 30
+      - 12
+      - 3
+    - - heading
+      - 6
+      - 37
+      - 22
+      - 3
+    - - heading
+      - 6
+      - 44
+      - 15
+      - 3
+    - - pill
+      - 6
+      - 54
+      - 16
+      - 4
+      - JP · EN
+    - - note
+      - 3
+      - 68
+      - 33
+      - 9
+      - opens as a circle from the menu button

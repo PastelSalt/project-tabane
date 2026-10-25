@@ -1,0 +1,89 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - image
+      - 0
+      - 0
+      - 144
+      - 90
+      - section artwork (fixed layer)
+    - - pill
+      - 24
+      - 1.6
+      - 96
+      - 6
+    - - heading
+      - 28
+      - 3.4
+      - 12
+      - 2.4
+    - - button
+      - 44
+      - 3
+      - 10
+      - 3.2
+      - home
+    - - label
+      - 55
+      - 3
+      - 9
+      - 3.2
+      - about
+    - - label
+      - 64
+      - 3
+      - 9
+      - 3.2
+      - news
+    - - label
+      - 73
+      - 3
+      - 13
+      - 3.2
+      - discography
+    - - label
+      - 86
+      - 3
+      - 10
+      - 3.2
+      - gallery
+    - - pill
+      - 98
+      - 3
+      - 9
+      - 3.2
+      - JP · EN
+    - - pill
+      - 108
+      - 3
+      - 10
+      - 3.2
+      - Motion
+    - - panel
+      - 10
+      - 22
+      - 52
+      - 40
+      - ABOUT
+    - - text
+      - 14
+      - 32
+      - 44
+      - 7
+    - - panel
+      - 82
+      - 30
+      - 52
+      - 40
+      - PROFILE
+    - - text
+      - 86
+      - 40
+      - 44
+      - 9
+    - - note
+      - 30
+      - 74
+      - 84
+      - 7
+      - art crossfades (0.9 s) when a section crosses the middle

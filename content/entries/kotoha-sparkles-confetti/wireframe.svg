@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="240" y="16" width="960" height="60" rx="30" fill="#c9c9d2"/>
+<rect x="280" y="34" width="120" height="24" rx="12" fill="#9a9aa3"/>
+<rect x="440" y="30" width="100" height="32" rx="16" fill="#9a9aa3"/><text x="490" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">home</text>
+<text x="595" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">about</text>
+<text x="685" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">news</text>
+<text x="795" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">discography</text>
+<text x="910" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">gallery</text>
+<rect x="980" y="30" width="90" height="32" rx="16" fill="#c9c9d2"/><text x="1025" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">JP · EN</text>
+<rect x="1080" y="30" width="100" height="32" rx="16" fill="#c9c9d2"/><text x="1130" y="46" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Motion</text>
+<rect x="460" y="120" width="520" height="720" rx="12" fill="#c9c9d2"/><path d="M472 132 L968 828 M968 132 L472 828" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="593.5" y="462" width="253" height="36" rx="18" fill="#c9c9d2"/><text x="720" y="480" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">pose (tap: boing)</text>
+<circle cx="1050" cy="310" r="10" fill="#9a9aa3"/>
+<circle cx="1095" cy="355" r="15" fill="#9a9aa3"/>
+<circle cx="1140" cy="380" r="10" fill="#9a9aa3"/>
+<circle cx="1195" cy="435" r="15" fill="#9a9aa3"/>
+<circle cx="1230" cy="470" r="20" fill="#c9c9d2"/><text x="1230" y="470" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">✦</text>
+<rect x="1040" y="500" width="360" height="70" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="1220" y="535" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">cursor trail: mouse only</text>
+<circle cx="310" cy="210" r="10" fill="#9a9aa3"/>
+<circle cx="255" cy="275" r="15" fill="#9a9aa3"/>
+<circle cx="350" cy="290" r="10" fill="#9a9aa3"/>
+<circle cx="210" cy="330" r="10" fill="#9a9aa3"/>
+<circle cx="395" cy="355" r="15" fill="#9a9aa3"/>
+<rect x="40" y="400" width="380" height="130" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="230" y="451.8" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">confetti 🍀 on the logo, the</text><text x="230" y="478.2" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">pose and special days</text>
+<rect x="40" y="780" width="400" height="70" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="240" y="815" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">all off in calm mode</text>
+</svg>

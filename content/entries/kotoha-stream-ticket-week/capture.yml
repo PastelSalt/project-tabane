@@ -1,0 +1,9 @@
+site: kotoha-fansite
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    scrollTo: "#home"
+  - file: screenshot-phone.webp
+    device: phone
+    scrollTo: "#home"
+    before: "document.querySelector('.ticket__body')?.scrollIntoView({ block: 'center', behavior: 'instant' })"

@@ -1,0 +1,9 @@
+flowchart LR
+  form[Admin form from RESOURCES] --> api[api client, same-origin cookie]
+  api --> guard[assertSameOrigin + requireAdmin]
+  guard --> content[CONTENT config]
+  content --> validate[validator per field type]
+  validate --> write[insert or update]
+  write --> log[(activity_log)]
+  guard --> archive[Delete becomes archive]
+  archive --> log

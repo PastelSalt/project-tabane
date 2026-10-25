@@ -1,0 +1,132 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - pill
+      - 24
+      - 1.6
+      - 96
+      - 6
+    - - heading
+      - 28
+      - 3.4
+      - 12
+      - 2.4
+    - - button
+      - 44
+      - 3
+      - 10
+      - 3.2
+      - home
+    - - label
+      - 55
+      - 3
+      - 9
+      - 3.2
+      - about
+    - - label
+      - 64
+      - 3
+      - 9
+      - 3.2
+      - news
+    - - label
+      - 73
+      - 3
+      - 13
+      - 3.2
+      - discography
+    - - label
+      - 86
+      - 3
+      - 10
+      - 3.2
+      - gallery
+    - - pill
+      - 98
+      - 3
+      - 9
+      - 3.2
+      - JP · EN
+    - - pill
+      - 108
+      - 3
+      - 10
+      - 3.2
+      - Motion
+    - - circle
+      - 8
+      - 30
+      - 52
+      - 52
+    - - image
+      - 20
+      - 12
+      - 28
+      - 66
+      - full-body pose
+    - - panel
+      - 70
+      - 14
+      - 64
+      - 66
+      - PROFILE
+    - - heading
+      - 76
+      - 22
+      - 30
+      - 4
+    - - pill
+      - 76
+      - 29
+      - 18
+      - 4
+    - - pill
+      - 96
+      - 29
+      - 18
+      - 4
+    - - label
+      - 76
+      - 37
+      - 16
+      - 3.6
+      - Birthday
+    - - text
+      - 94
+      - 38
+      - 34
+      - 1
+    - - label
+      - 76
+      - 43
+      - 16
+      - 3.6
+      - Debut
+    - - text
+      - 94
+      - 44
+      - 30
+      - 1
+    - - label
+      - 76
+      - 49
+      - 16
+      - 3.6
+      - Likes
+    - - text
+      - 94
+      - 50
+      - 34
+      - 1
+    - - dashed
+      - 74
+      - 58
+      - 56
+      - 18
+      - stitched border
+    - - note
+      - 8
+      - 82
+      - 52
+      - 6
+      - "tap the pose: boing + confetti"

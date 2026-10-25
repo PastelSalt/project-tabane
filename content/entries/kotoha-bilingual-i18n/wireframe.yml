@@ -1,0 +1,117 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - pill
+      - 24
+      - 1.6
+      - 96
+      - 6
+    - - heading
+      - 28
+      - 3.4
+      - 12
+      - 2.4
+    - - button
+      - 44
+      - 3
+      - 10
+      - 3.2
+      - home
+    - - label
+      - 55
+      - 3
+      - 9
+      - 3.2
+      - about
+    - - label
+      - 64
+      - 3
+      - 9
+      - 3.2
+      - news
+    - - label
+      - 73
+      - 3
+      - 13
+      - 3.2
+      - discography
+    - - label
+      - 86
+      - 3
+      - 10
+      - 3.2
+      - gallery
+    - - pill
+      - 98
+      - 3
+      - 9
+      - 3.2
+      - JP · EN
+    - - pill
+      - 108
+      - 3
+      - 10
+      - 3.2
+      - Motion
+    - - button
+      - 98
+      - 3
+      - 9
+      - 3.2
+      - JP · EN
+    - - panel
+      - 8
+      - 14
+      - 62
+      - 60
+      - EN
+    - - heading
+      - 14
+      - 24
+      - 40
+      - 4
+    - - text
+      - 14
+      - 32
+      - 50
+      - 9
+    - - pill
+      - 14
+      - 54
+      - 16
+      - 4
+      - Watch
+    - - panel
+      - 74
+      - 14
+      - 62
+      - 60
+      - 日本語
+    - - heading
+      - 80
+      - 24
+      - 34
+      - 4
+    - - text
+      - 80
+      - 32
+      - 50
+      - 9
+    - - pill
+      - 80
+      - 54
+      - 16
+      - 4
+      - 見る
+    - - note
+      - 8
+      - 78
+      - 62
+      - 7
+      - data-i18n · data-i18n-attr · t(key, vars)
+    - - note
+      - 74
+      - 78
+      - 62
+      - 7
+      - "first visit: Japan → 日本語, else English"

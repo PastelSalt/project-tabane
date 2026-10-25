@@ -1,0 +1,148 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - pill
+      - 24
+      - 1.6
+      - 96
+      - 6
+    - - heading
+      - 28
+      - 3.4
+      - 12
+      - 2.4
+    - - button
+      - 44
+      - 3
+      - 10
+      - 3.2
+      - home
+    - - label
+      - 55
+      - 3
+      - 9
+      - 3.2
+      - about
+    - - label
+      - 64
+      - 3
+      - 9
+      - 3.2
+      - news
+    - - label
+      - 73
+      - 3
+      - 13
+      - 3.2
+      - discography
+    - - label
+      - 86
+      - 3
+      - 10
+      - 3.2
+      - gallery
+    - - pill
+      - 98
+      - 3
+      - 9
+      - 3.2
+      - JP · EN
+    - - pill
+      - 108
+      - 3
+      - 10
+      - 3.2
+      - Motion
+    - - panel
+      - 30
+      - 12
+      - 84
+      - 72
+      - ACHIEVEMENTS
+    - - line
+      - 44
+      - 20
+      - 1
+      - 60
+    - - button
+      - 36
+      - 20
+      - 16
+      - 4.4
+      - "2026"
+    - - dot
+      - 43
+      - 28
+      - 3
+      - 3
+    - - pill
+      - 50
+      - 27.6
+      - 14
+      - 3.6
+      - "09.25"
+    - - text
+      - 66
+      - 28
+      - 40
+      - 1
+    - - dot
+      - 43
+      - 35
+      - 3
+      - 3
+    - - pill
+      - 50
+      - 34.6
+      - 14
+      - 3.6
+      - "07.08"
+    - - text
+      - 66
+      - 35
+      - 36
+      - 1
+    - - button
+      - 36
+      - 43
+      - 16
+      - 4.4
+      - "2025"
+    - - dot
+      - 43
+      - 51
+      - 3
+      - 3
+    - - pill
+      - 50
+      - 50.6
+      - 14
+      - 3.6
+      - "12.01"
+    - - text
+      - 66
+      - 51
+      - 40
+      - 1
+    - - dot
+      - 43
+      - 58
+      - 3
+      - 3
+    - - pill
+      - 50
+      - 57.6
+      - 14
+      - 3.6
+      - "06.10"
+    - - text
+      - 66
+      - 58
+      - 32
+      - 1
+    - - note
+      - 50
+      - 70
+      - 60
+      - 8
+      - a year pill appears whenever the year changes

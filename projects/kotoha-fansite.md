@@ -679,6 +679,8 @@ Learned in this project (from `MIGRATION.md`, `FORHANON.md`, `docs/PERFORMANCE_P
 
 All own-project entries start as **Proven** (live site), **Shared off**, Target **Website**, `projectFile: kotoha-fansite`, Used in: Kotoha Fan Site (and Hanon Fan Site where `FORHANON.md` shows it was carried over). Live site: https://kotoha-fansite.vercel.app/ with **Embeddable: false**. Code location ref: `79bbd5e`.
 
+*Applied 2026-10-25:* entries use code ref `41d4bd8` (Kotoha's `main` after the admin refresh and the marquee fix), `node-js` for the `nodejs` stack value below (one spelling in `tags.yml`), and `kotoha-content-crud-archive` where `kotoha-youtube-polaroid` names the lookup. Used in starts as Kotoha Fan Site; Hanon is added when its file is applied. `kotoha-analytics-dashboard` has no live-site link or screenshot (the dashboard is behind sign-in); `kotoha-admin-panel` shows the public `/login` page.
+
 ### 12.1 UI/UX entries
 
 | Slug | Title | Pieces | Stack | Feature | Related |

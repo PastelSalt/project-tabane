@@ -1,0 +1,92 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - pill
+      - 24
+      - 1.6
+      - 96
+      - 6
+    - - heading
+      - 28
+      - 3.4
+      - 12
+      - 2.4
+    - - button
+      - 44
+      - 3
+      - 10
+      - 3.2
+      - home
+    - - label
+      - 55
+      - 3
+      - 9
+      - 3.2
+      - about
+    - - label
+      - 64
+      - 3
+      - 9
+      - 3.2
+      - news
+    - - label
+      - 73
+      - 3
+      - 13
+      - 3.2
+      - discography
+    - - label
+      - 86
+      - 3
+      - 10
+      - 3.2
+      - gallery
+    - - pill
+      - 98
+      - 3
+      - 9
+      - 3.2
+      - JP · EN
+    - - pill
+      - 108
+      - 3
+      - 10
+      - 3.2
+      - Motion
+    - kind: panel
+      x: 12
+      y: 16
+      w: 36
+      h: 44
+      r: -2
+    - kind: panel
+      x: 54
+      y: 16
+      w: 36
+      h: 44
+      r: -2
+    - kind: panel
+      x: 96
+      y: 16
+      w: 36
+      h: 44
+      r: -2
+    - - note
+      - 30
+      - 63
+      - 84
+      - 7
+      - cards lean up to ±2° with scroll speed (on-screen cards only)
+    - kind: bar
+      x: 0
+      y: 74
+      w: 144
+      h: 8
+      label: KOTOHA ✿ ことは ✿ HaKoniwalily ✿ marquee
+      r: -1.5
+    - - note
+      - 84
+      - 84
+      - 56
+      - 5
+      - speed and direction follow the scroll

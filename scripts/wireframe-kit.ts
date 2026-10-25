@@ -32,21 +32,41 @@ function text(x: number, y: number, label: string, size: number, fill: string, a
   return `<text x="${x}" y="${y}" font-family="${FONT}" font-size="${size}" font-weight="${weight}" fill="${fill}" text-anchor="${anchor}" dominant-baseline="middle">${esc(label)}</text>`;
 }
 
+/** Centred text that wraps onto as many lines as the box needs, shrinking the size if it still doesn't fit. */
+function wrapped(cx: number, cy: number, label: string, size: number, fill: string, maxW: number, maxH: number, weight = 700) {
+  const words = label.split(/\s+/);
+  for (let s = size; ; s -= 1) {
+    const perLine = Math.max(1, Math.floor((maxW - 16) / (s * 0.56)));
+    const lines: string[] = [];
+    for (const word of words) {
+      const last = lines[lines.length - 1];
+      if (last !== undefined && (last + " " + word).length <= perLine) lines[lines.length - 1] = `${last} ${word}`;
+      else lines.push(word);
+    }
+    if ((lines.length * s * 1.2 <= maxH - 8 && lines.every((l) => l.length <= perLine)) || s <= 12) {
+      if (lines.length === 1) return text(cx, cy, label, s, fill, "middle", weight);
+      const top = cy - ((lines.length - 1) * s * 1.2) / 2;
+      return lines.map((line, i) => text(cx, top + i * s * 1.2, line, s, fill, "middle", weight)).join("");
+    }
+  }
+}
+
 function draw(b: Box): string {
   const [x, y, w, h] = [n(b.x), n(b.y), n(b.w), n(b.h)];
   const cx = x + w / 2;
   const cy = y + h / 2;
   const fs = Math.max(18, Math.min(30, h * 0.45));
   const corner = (label: string) => text(x + 18, y + 24, label.toUpperCase(), 20, C.ink, "start");
+  const fit = (label: string, size: number, fill: string, weight = 700) => wrapped(cx, cy, label, size, fill, w, h, weight);
   switch (b.kind) {
     case "bar":
       return `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${C.light}"/>${b.label ? text(x + 24, cy, b.label, 22, C.ink, "start") : ""}`;
     case "panel":
       return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="24" fill="${C.white}" stroke="${C.mid}" stroke-width="4"/>${b.label ? corner(b.label) : ""}`;
     case "box":
-      return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="12" fill="${C.soft}"/>${b.label ? text(cx, cy, b.label, fs, C.ink) : ""}`;
+      return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="12" fill="${C.soft}"/>${b.label ? fit(b.label, fs, C.ink) : ""}`;
     case "dashed":
-      return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" fill="none" stroke="${C.mid}" stroke-width="4" stroke-dasharray="14 10"/>${b.label ? text(cx, cy, b.label, fs, C.ink) : ""}`;
+      return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" fill="none" stroke="${C.mid}" stroke-width="4" stroke-dasharray="14 10"/>${b.label ? fit(b.label, fs, C.ink) : ""}`;
     case "image":
       return (
         `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="12" fill="${C.light}"/>` +
@@ -89,11 +109,11 @@ function draw(b: Box): string {
       );
     }
     case "label":
-      return text(cx, cy, b.label ?? "", fs, C.ink);
+      return fit(b.label ?? "", fs, C.ink);
     case "note":
       return (
         `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="14" fill="none" stroke="${C.note}" stroke-width="3" stroke-dasharray="8 7"/>` +
-        (b.label ? text(cx, cy, b.label, Math.min(22, fs), C.note, "middle", 600) : "")
+        (b.label ? fit(b.label, Math.min(22, fs), C.note, 600) : "")
       );
   }
 }
