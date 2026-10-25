@@ -177,6 +177,24 @@ a:focus-visible {
   }
 }
 
+/* "Skip to content": hidden until it gets keyboard focus */
+.skip-link {
+  position: absolute;
+  left: var(--space-4);
+  top: -100px;
+  z-index: 10;
+  padding: var(--space-2) var(--space-4);
+  background: var(--yellow);
+  border: var(--line) solid var(--black);
+  border-radius: var(--radius-pill);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.skip-link:focus-visible {
+  top: var(--space-3);
+}
+
 /* Hidden visually, still read by screen readers */
 .visually-hidden {
   position: absolute;

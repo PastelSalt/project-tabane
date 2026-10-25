@@ -1,0 +1,292 @@
+/* ---------- Header ---------- */
+.header {
+  background: var(--blue);
+  border-bottom: var(--line) solid var(--black);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  min-height: 76px;
+  padding: var(--space-3) var(--space-6);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+  color: var(--black);
+}
+
+.brand:hover {
+  color: var(--black);
+}
+
+.brandMark {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  background: var(--white);
+  border: var(--line) solid var(--black);
+  border-radius: 16px;
+  box-shadow: var(--shadow-small);
+}
+
+.brandWord {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  padding: 0 2px;
+  /* yellow highlighter under the lower half of the word */
+  background: linear-gradient(transparent 56%, var(--yellow) 56% 86%, transparent 86%);
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-3);
+  margin: 0 auto;
+}
+
+.navPill {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 7px var(--space-4) 7px var(--space-2);
+  background: var(--white);
+  border: var(--line) solid var(--black);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-md);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--black);
+}
+
+.navPill:hover {
+  color: var(--black);
+  background: var(--yellow-tint);
+}
+
+.navPillCurrent,
+.navPillCurrent:hover {
+  background: var(--yellow);
+  box-shadow: var(--shadow-small);
+}
+
+.navNumber {
+  background: var(--black);
+  color: var(--white);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-xs);
+  padding: 1px var(--space-2);
+}
+
+.owner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 5px 6px 5px var(--space-4);
+  background: var(--white);
+  border: var(--line) solid var(--black);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--violet);
+  color: var(--white);
+  font-size: var(--text-xs);
+}
+
+/* ---------- Layout ---------- */
+.app {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: var(--space-7);
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-6) var(--space-9);
+}
+
+.main {
+  position: relative;
+  min-width: 0;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+  position: sticky;
+  top: var(--space-4);
+  align-self: start;
+  min-height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding: 18px var(--space-4) var(--space-4);
+  background: var(--white);
+  border: var(--line) solid var(--black);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-violet);
+}
+
+.sidebarHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebarTitle {
+  font-size: var(--text-lg);
+}
+
+.suits {
+  font-size: var(--text-md);
+  letter-spacing: 3px;
+}
+
+.suitRed {
+  color: var(--violet);
+}
+
+.sidebarBody {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sidebarFoot {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: var(--line-thin) dashed var(--black);
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+.sidebarFoot small {
+  font-size: 11px;
+}
+
+/* ---------- Section heading ---------- */
+.sectionHead {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  margin-bottom: 26px;
+}
+
+.numberBadge {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  flex: none;
+  background: var(--yellow);
+  border: var(--line) solid var(--black);
+  border-radius: 18px;
+  box-shadow: var(--shadow-button);
+  font-size: var(--text-xl);
+  font-weight: 800;
+  transform: rotate(-4deg);
+}
+
+.sectionTitle h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--text-3xl);
+  line-height: 1;
+}
+
+.sectionTitle p {
+  margin-top: 6px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.sectionActions {
+  flex: 1;
+  min-width: 260px;
+  margin-left: var(--space-3);
+}
+
+/* ---------- Phone ---------- */
+@media (max-width: 900px) {
+  .bar {
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+  }
+
+  .owner {
+    margin-left: auto;
+  }
+
+  .ownerText {
+    display: none;
+  }
+
+  /* page links drop to their own row and scroll sideways if needed */
+  .nav {
+    order: 3;
+    width: 100%;
+    margin: 0;
+    gap: var(--space-2);
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 2px 4px 6px 2px;
+  }
+
+  .navPill {
+    font-size: var(--text-sm);
+    padding: 5px var(--space-3) 5px 6px;
+    gap: 6px;
+  }
+
+  .app {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    padding: var(--space-5) var(--space-4) var(--space-8);
+  }
+
+  .sidebar {
+    position: static;
+    min-height: 0;
+  }
+
+  .sectionTitle h1 {
+    font-size: var(--text-2xl);
+  }
+
+  .sectionActions {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+}
+
+/* Narrow phones: drop the page numbers from the links so all three fit */
+@media (max-width: 480px) {
+  .navNumber {
+    display: none;
+  }
+
+  .navPill {
+    padding: 5px var(--space-3);
+  }
+
+  .brandWord {
+    font-size: 26px;
+  }
+}

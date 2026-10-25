@@ -65,7 +65,7 @@ const spaces = ["--space-1", "--space-2", "--space-3", "--space-4", "--space-5",
 
 export default function Styleguide() {
   return (
-    <main className={styles.page}>
+    <main id="main" className={styles.page}>
       <header className={styles.intro}>
         <h1>Styleguide</h1>
         <p>
