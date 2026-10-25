@@ -4,6 +4,8 @@ Everything that happens on Project Tabane, by Kyle and by Claude. Newest first. 
 
 | Date | Who | Action |
 |---|---|---|
+| 2026-10-25 | Claude | Rewrote `PHASE-2.md` around project files: the ask → write → review → apply → update flow, the project-file format, a `projects/` folder, a `projectFile` field on entries and a project-file check; 11 steps where steps 1–7 run on their own and step 8 waits for Kyle to name the first project. Spec updated (Fill step, Project file field, How Claude works, phase 2 summary) |
+| 2026-10-25 | Kyle | Changed Phase 2: for each project or site, Claude writes a separate Markdown file with full data about it, then applies that file's content to Tabane |
 | 2026-10-25 | Claude | Wrote `PHASE-2.md`: content format (folder layout, entry file with front matter, Technical details and Key code sections, tags.yml), technical choices (yaml, zod, check before build, image route, content folder switch), the first-entries table, 13 steps with one approval stop at the inventory, known gaps and choices to change |
 | 2026-10-25 | Kyle | Approved Phase 1. Asked for a Phase 2 plan (content system and first entries) as PHASE-2.md |
 | 2026-10-25 | Claude | Phase 1 step 15 done: typecheck, lint and production build pass; ran the production server and checked every route's status (pages 200, `/` redirects, missing entries, playbooks and addresses 404, clip and logo served, noindex on every page); every page was checked at desktop and 375 px during steps 6 to 14. `PHASE-1.md` marked complete with the changes made while building. Phase 1 is finished and waiting for Kyle's review. Committed locally, not pushed |

@@ -36,7 +36,7 @@ Claude is the only one who updates Tabane. I read it on the site and think with 
 
 | Step | Who | What happens |
 |---|---|---|
-| 1. Fill | Claude | Adds many concepts as entries: pieces from my projects, researched sites and ideas, all in the fixed Entry model |
+| 1. Fill | Claude | For each project or site I name, Claude first writes a project file (`projects/<name>.md`) with everything about it; I review it, and when I say to apply it, Claude turns it into entries and a replication guide, all in the fixed Entry model |
 | 2. Deliberate | Me and Claude | When I have a new idea or project, I talk the plan through with Claude, who reads Tabane's existing entries and playbooks to suggest what to reuse and what is missing |
 | 3. Build | Me and Claude | The new project pulls in the reusable parts, and only what it needs is adjusted, to get a prototype running |
 | 4. Update | Claude, when I ask | When I think of something, or a project produces something worth keeping, I ask Claude to update the site: new entries, changed statuses, new playbooks |
@@ -129,6 +129,7 @@ Every entry uses the same fields, so people and Claude can read any entry the sa
 | Technical details | All | How it operates: the techniques and stack for UI/UX, the backend logic for backend |
 | Diagrams | Backend | Mermaid files in the entry's folder, so Claude can read them. The front matter lists each diagram with its ID, level (1 for the whole system, then 2, 3 and lower), parent diagram ID, file name, and the box in the parent that opens it (when its name differs from the diagram ID), so the levels link to each other |
 | Related entries | All | The folder names (slugs) of other entries this one pairs with, such as the Backend entry behind a UI/UX entry |
+| Project file | All | The project file in `projects/` the entry was made from, so every entry traces back to its source notes |
 | Shared | All | Off by default; only Shared entries are visible to someone using an access code |
 | Used in | All | The projects that have reused this entry, added after a project built with Tabane |
 | Last checked | When a live site exists | The date the link check last found the live site working |
@@ -174,6 +175,7 @@ content/
 Tabane will be worked on by me and Claude over a long time, and Claude is the only one who writes to it. Its content must be easy for Claude to read and understand without extra explanation, and every update must come out the same way, which is why every entry uses the fixed fields in the Entry model.
 
 - **Instructions in the repository:** a CLAUDE.md file in the Tabane repository explains the content folder, the Entry model, `tags.yml`, the naming rules, the image rules and the exact steps for adding or updating an entry or playbook, so every Claude session works on Tabane the same way. It is the first file written when the repository is created.
+- **Project files:** before any entries are made for a project or site, Claude writes `projects/<name>.md` with everything about it (overview, stack, structure, every UI/UX and backend piece, how it was built, gotchas, proposed entries, open questions, sources). I review it; only when I say to apply it does Claude create the entries and replication guide from it. The project file is the source of truth: when it changes, applying it again updates the entries. Project files are not shown on the site.
 - **Access to my project code:** all my project repositories are cloned under `C:\Users\Myaako\Documents\MoekoWorks\`, next to Tabane. Claude reads them there to write entries, Key code excerpts and replication guides, and to lift code into a new project. Claude pulls the latest commit before reading, and never commits to those repositories while working on Tabane.
 - **Templates:** a template `entry.md` and playbook file in the repository, so every new file starts with the right fields.
 - **Reading while deliberating:** Claude reads the content files straight from a local copy of the repository, filtering by the tags in the front matter. No database or site access is needed.
@@ -310,7 +312,7 @@ First pass at the split, to be refined while writing the entries:
 The order, so the site is useful early and grows as concepts are added:
 
 1. **Working UI.** The full site running locally with sample entries only: design system, motifs, every page, search, filters, diagram levels, motion, phone layout. Planned in detail in `PHASE-1.md`.
-2. **Content system and first entries.** The content folder, `tags.yml`, the Markdown loader, the templates, the schema check and the full CLAUDE.md, then the first entries from the Moeko Works projects written as files, replacing the samples.
+2. **Content system and project files.** The content folder, `tags.yml`, the Markdown loader, the templates, the schema check, the project-file template and the full CLAUDE.md, then the first project file written, reviewed and applied, replacing the samples. Planned in `PHASE-2.md`.
 3. **Claude's upkeep tools.** The screenshot script and the link-check script.
 4. **Deploy.** Vercel deployment behind the password gate, with noindex.
 5. **Login and access codes, last.** Neon connected for the first time, GitHub sign-in, and one-time codes that expire and work once, replacing the password gate.
