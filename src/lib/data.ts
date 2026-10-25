@@ -8,7 +8,7 @@ import type { Entry, Playbook } from "./types";
 export type Audience = "owner" | "visitor";
 
 export type EntryFilters = {
-  /** Text search over title, feature and reuse note. */
+  /** Search by word start over title, feature, stack and reuse note ("stats" finds "statistics"). */
   q?: string;
 } & { [Tag in EntryTagName]?: string[] };
 
@@ -32,7 +32,7 @@ export function getEntries(filters: EntryFilters = {}, audience: Audience = "own
         return values.some((value) => wanted.includes(value));
       }),
     )
-    .filter((entry) => !q || searchText(entry).includes(q))
+    .filter((entry) => !q || matches(searchWords(entry), q))
     .sort((a, b) => b.created.localeCompare(a.created));
 }
 
@@ -118,9 +118,23 @@ function isShared(slug: string): boolean {
   return loadContent().entries.some((entry) => entry.slug === slug && entry.shared);
 }
 
-function searchText(entry: Entry): string {
-  const featureLabels = entry.feature.map((value) => entryTags.feature.values[value]);
-  return [entry.title, ...featureLabels, entry.reuseNote].join(" ").toLowerCase();
+/** The words search looks at: title, feature and stack labels, and the reuse note. */
+function searchWords(entry: Entry): string[] {
+  const featureLabels = entry.feature.map((value) => entryTags.feature.values[value] ?? value);
+  const stackLabels = entry.stack.map((value) => entryTags.stack.values[value] ?? value);
+  return words([entry.title, ...featureLabels, ...stackLabels, entry.reuseNote].join(" "));
+}
+
+/** Lowercase words, with a trailing plural "s" dropped, so "stats" and "statistics" share a start. */
+function words(text: string): string[] {
+  return (text.toLowerCase().match(/[\p{L}\p{N}]+/gu) ?? []).map((word) =>
+    word.length > 3 && word.endsWith("s") && !word.endsWith("ss") ? word.slice(0, -1) : word,
+  );
+}
+
+/** Every word of the query starts some word of the entry: "stats" finds "statistics", "count" finds "countdown". */
+export function matches(entryWords: string[], query: string): boolean {
+  return words(query).every((part) => entryWords.some((word) => word.startsWith(part)));
 }
 
 function first(value: string | string[] | undefined): string | undefined {

@@ -4,7 +4,7 @@ import type { EntryFilters } from "@/lib/data";
 import { entryTags, type EntryTagName } from "@/lib/tags";
 import styles from "./library.module.css";
 
-/** Search over title, feature and reuse note. Submitting keeps the current filters. */
+/** Search by word start over title, feature, stack and reuse note. Submitting keeps the current filters. */
 export function SearchBar({ filters }: { filters: EntryFilters }) {
   return (
     <Form action="/library" className={styles.search} role="search">
@@ -16,7 +16,7 @@ export function SearchBar({ filters }: { filters: EntryFilters }) {
         name="q"
         type="search"
         defaultValue={filters.q ?? ""}
-        placeholder="Search title, feature or reuse note"
+        placeholder="Search title, feature, stack or reuse note"
         className={styles.searchInput}
         autoComplete="off"
       />
