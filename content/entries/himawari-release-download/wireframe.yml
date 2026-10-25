@@ -1,0 +1,169 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 144
+      - 90
+      - ""
+    - - label
+      - 6
+      - 2
+      - 22
+      - 5
+      - ✿ Himawari Studio
+    - - pill
+      - 92
+      - 2.5
+      - 16
+      - 4
+      - EN / 日本語
+    - - pill
+      - 110
+      - 2.5
+      - 18
+      - 4
+      - MOTION OFF
+    - - circle
+      - 130
+      - 2
+      - 5
+      - 5
+    - - circle
+      - 136
+      - 2
+      - 5
+      - 5
+    - - line
+      - 6
+      - 9
+      - 132
+      - 0.4
+    - - label
+      - 6
+      - 10
+      - 18
+      - 4
+      - HIMAWARI
+    - - label
+      - 64
+      - 10
+      - 74
+      - 4
+      - FEATURES · DOWNLOAD · LEARN · NEWS · FAQ
+    - - line
+      - 6
+      - 15
+      - 132
+      - 0.4
+    - - heading
+      - 8
+      - 20
+      - 40
+      - 6
+    - - button
+      - 8
+      - 30
+      - 36
+      - 7
+      - Download for Windows
+    - - label
+      - 8
+      - 39
+      - 46
+      - 4
+      - 0.4.1 · 22 October 2026 · 146 MB
+    - - panel
+      - 70
+      - 20
+      - 66
+      - 22
+      - INSTALL STEPS
+    - - text
+      - 74
+      - 28
+      - 56
+      - 10
+    - - panel
+      - 8
+      - 47
+      - 62
+      - 20
+      - REQUIREMENTS
+    - - text
+      - 12
+      - 54
+      - 52
+      - 9
+    - - panel
+      - 74
+      - 47
+      - 62
+      - 20
+      - SMARTSCREEN · SHA-256
+    - - text
+      - 78
+      - 54
+      - 52
+      - 9
+    - - panel
+      - 8
+      - 70
+      - 128
+      - 16
+      - EVERY VERSION
+    - - text
+      - 12
+      - 77
+      - 110
+      - 6
+phone:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 39
+      - 84
+      - ""
+    - - heading
+      - 3
+      - 4
+      - 30
+      - 4
+    - - button
+      - 3
+      - 12
+      - 33
+      - 6
+      - Download
+    - - label
+      - 3
+      - 19
+      - 33
+      - 3
+      - 0.4.1 · date · 146 MB
+    - - label
+      - 3
+      - 23
+      - 33
+      - 5
+      - Open this page on your computer to download it.
+    - - panel
+      - 3
+      - 30
+      - 33
+      - 13
+      - STEPS
+    - - panel
+      - 3
+      - 46
+      - 33
+      - 16
+      - REQUIREMENTS
+    - - panel
+      - 3
+      - 65
+      - 33
+      - 16
+      - SHA-256

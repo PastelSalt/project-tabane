@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="0" y="0" width="1440" height="900" rx="12" fill="#e3e3ea"/>
+<text x="170" y="45" font-family="Segoe UI, sans-serif" font-size="20.5" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">✿ Himawari Studio</text>
+<rect x="920" y="25" width="160" height="40" rx="20" fill="#c9c9d2"/><text x="1000" y="45" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">EN / 日本語</text>
+<rect x="1100" y="25" width="180" height="40" rx="20" fill="#c9c9d2"/><text x="1190" y="45" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">MOTION OFF</text>
+<circle cx="1325" cy="45" r="25" fill="#c9c9d2"/>
+<circle cx="1385" cy="45" r="25" fill="#c9c9d2"/>
+<rect x="60" y="90" width="1320" height="4" rx="2" fill="#9a9aa3"/>
+<text x="150" y="120" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">HIMAWARI</text>
+<text x="1010" y="120" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">FEATURES · DOWNLOAD · LEARN · NEWS · FAQ</text>
+<rect x="60" y="150" width="1320" height="4" rx="2" fill="#9a9aa3"/>
+<rect x="80" y="200" width="400" height="60" rx="30" fill="#9a9aa3"/>
+<rect x="80" y="300" width="360" height="70" rx="35" fill="#9a9aa3"/><text x="260" y="335" font-family="Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">Download for Windows</text>
+<text x="310" y="410" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">0.4.1 · 22 October 2026 · 146 MB</text>
+<rect x="700" y="200" width="660" height="220" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="718" y="224" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">INSTALL STEPS</text>
+<rect x="740" y="280" width="560" height="12" rx="6" fill="#c9c9d2"/><rect x="740" y="300" width="560" height="12" rx="6" fill="#c9c9d2"/><rect x="740" y="320" width="560" height="12" rx="6" fill="#c9c9d2"/><rect x="740" y="340" width="560" height="12" rx="6" fill="#c9c9d2"/><rect x="740" y="360" width="336" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="80" y="470" width="620" height="200" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="98" y="494" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">REQUIREMENTS</text>
+<rect x="120" y="540" width="520" height="12" rx="6" fill="#c9c9d2"/><rect x="120" y="560" width="520" height="12" rx="6" fill="#c9c9d2"/><rect x="120" y="580" width="520" height="12" rx="6" fill="#c9c9d2"/><rect x="120" y="600" width="312" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="740" y="470" width="620" height="200" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="758" y="494" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">SMARTSCREEN · SHA-256</text>
+<rect x="780" y="540" width="520" height="12" rx="6" fill="#c9c9d2"/><rect x="780" y="560" width="520" height="12" rx="6" fill="#c9c9d2"/><rect x="780" y="580" width="520" height="12" rx="6" fill="#c9c9d2"/><rect x="780" y="600" width="312" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="80" y="700" width="1280" height="160" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="98" y="724" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">EVERY VERSION</text>
+<rect x="120" y="770" width="1100" height="12" rx="6" fill="#c9c9d2"/><rect x="120" y="790" width="1100" height="12" rx="6" fill="#c9c9d2"/><rect x="120" y="810" width="660" height="12" rx="6" fill="#c9c9d2"/>
+</svg>

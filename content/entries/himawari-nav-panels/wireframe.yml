@@ -1,0 +1,180 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 144
+      - 90
+      - ""
+    - - label
+      - 6
+      - 2
+      - 22
+      - 5
+      - ✿ Himawari Studio
+    - - pill
+      - 92
+      - 2.5
+      - 16
+      - 4
+      - EN / 日本語
+    - - pill
+      - 110
+      - 2.5
+      - 18
+      - 4
+      - MOTION OFF
+    - - circle
+      - 130
+      - 2
+      - 5
+      - 5
+    - - circle
+      - 136
+      - 2
+      - 5
+      - 5
+    - - line
+      - 6
+      - 9
+      - 132
+      - 0.4
+    - - label
+      - 6
+      - 10
+      - 18
+      - 4
+      - HIMAWARI
+    - - label
+      - 64
+      - 10
+      - 74
+      - 4
+      - FEATURES · DOWNLOAD · LEARN · NEWS · FAQ
+    - - line
+      - 6
+      - 15
+      - 132
+      - 0.4
+    - - pill
+      - 86
+      - 9.6
+      - 18
+      - 4.6
+      - DOWNLOAD
+    - - panel
+      - 40
+      - 16
+      - 96
+      - 30
+      - PANEL · DOWNLOAD
+    - - button
+      - 46
+      - 24
+      - 30
+      - 7
+      - Download
+    - - label
+      - 46
+      - 33
+      - 40
+      - 4
+      - 0.4.1 · date · size
+    - - text
+      - 92
+      - 24
+      - 38
+      - 10
+    - - image
+      - 6
+      - 50
+      - 132
+      - 36
+      - page
+    - - note
+      - 8
+      - 18
+      - 30
+      - 26
+      - opens on hover or focus (CSS); Esc closes it
+phone:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 39
+      - 84
+      - ""
+    - - label
+      - 2
+      - 2
+      - 18
+      - 5
+      - ✿ HIMAWARI
+    - - button
+      - 29
+      - 2
+      - 8
+      - 5
+      - ≡
+    - - panel
+      - 8
+      - 2
+      - 30
+      - 56
+      - MENU (popover)
+    - - circle
+      - 31
+      - 4
+      - 5
+      - 5
+      - ×
+    - - label
+      - 11
+      - 11
+      - 24
+      - 5
+      - FEATURES
+    - - label
+      - 11
+      - 18
+      - 24
+      - 5
+      - DOWNLOAD
+    - - label
+      - 11
+      - 25
+      - 24
+      - 5
+      - LEARN
+    - - label
+      - 11
+      - 32
+      - 24
+      - 5
+      - NEWS
+    - - label
+      - 11
+      - 39
+      - 24
+      - 5
+      - FAQ
+    - - label
+      - 11
+      - 48
+      - 24
+      - 5
+      - 日本語
+    - - note
+      - 3
+      - 60
+      - 33
+      - 8
+      - on /ja each label has its Japanese name under it
+    - - note
+      - 3
+      - 72
+      - 33
+      - 9
+      - "popovertarget: no script to open or close"

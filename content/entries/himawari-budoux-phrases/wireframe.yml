@@ -1,0 +1,50 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+phone:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 39
+      - 84
+      - ""
+    - - label
+      - 2
+      - 2
+      - 18
+      - 5
+      - ✿ HIMAWARI
+    - - dashed
+      - 3
+      - 14
+      - 15
+      - 6
+      - phrase
+    - - dashed
+      - 19
+      - 14
+      - 17
+      - 6
+      - phrase
+    - - dashed
+      - 3
+      - 21
+      - 22
+      - 6
+      - <mark>phrase</mark>
+    - - dashed
+      - 3
+      - 28
+      - 12
+      - 6
+      - phrase
+    - - text
+      - 3
+      - 38
+      - 33
+      - 10
+    - - note
+      - 3
+      - 52
+      - 33
+      - 14
+      - "each phrase is a span that doesn't wrap: lines break between them"

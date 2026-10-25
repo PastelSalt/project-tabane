@@ -1,0 +1,9 @@
+flowchart LR
+  views[(page_views, last 88 days)] --> series[dailySeries]
+  daily[(daily_page_views, older days)] --> series
+  series --> charts[day, week and month charts]
+  views --> breakdowns[top tens and views by hour]
+  gh[GitHub releases API] -->|download counts| downloads[downloads per release, live]
+  charts --> page[admin stats page, drawn on the server]
+  breakdowns --> page
+  downloads --> page

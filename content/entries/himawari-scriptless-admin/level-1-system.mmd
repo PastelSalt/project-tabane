@@ -1,0 +1,8 @@
+flowchart LR
+  owner[Owner] -->|plain HTML forms, checkOrigin| pages[admin pages, on demand, no scripts]
+  pages --> guard[requireAdmin]
+  guard -->|signed out| login[admin login]
+  guard -->|temporary password| password[admin password]
+  guard --> db[(Neon: news, activity_log, views)]
+  pages -->|news changed| hook[Vercel deploy hook]
+  pages --> charts[server-drawn SVG charts]

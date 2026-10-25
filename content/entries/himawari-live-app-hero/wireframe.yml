@@ -1,0 +1,115 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 144
+      - 90
+      - ""
+    - - box
+      - 14
+      - 12
+      - 120
+      - 70
+      - ""
+    - - panel
+      - 10
+      - 8
+      - 120
+      - 70
+    - - bar
+      - 10
+      - 8
+      - 120
+      - 6
+      - • • •  Himawari Studio · start.hws
+    - - panel
+      - 14
+      - 18
+      - 54
+      - 56
+      - SCREENPLAY
+    - - pill
+      - 17
+      - 25
+      - 16
+      - 4
+      - Narration
+    - - text
+      - 36
+      - 25
+      - 28
+      - 6
+    - - dashed
+      - 16
+      - 35
+      - 50
+      - 22
+      - ""
+    - - pill
+      - 18
+      - 43
+      - 10
+      - 4
+      - Hana
+    - - pill
+      - 30
+      - 43
+      - 10
+      - 4
+      - happy
+    - - label
+      - 42
+      - 38
+      - 22
+      - 14
+      - line being typed…|
+    - - pill
+      - 17
+      - 66
+      - 13
+      - 4
+      - + Line
+    - - pill
+      - 32
+      - 66
+      - 15
+      - 4
+      - + Choice
+    - - pill
+      - 49
+      - 66
+      - 14
+      - 4
+      - + Stage
+    - - image
+      - 72
+      - 18
+      - 54
+      - 40
+      - "game: sky, field"
+    - - label
+      - 88
+      - 21
+      - 22
+      - 4
+      - Hana · happy
+    - - circle
+      - 92
+      - 26
+      - 14
+      - 14
+      - ^_^
+    - - bar
+      - 74
+      - 50
+      - 50
+      - 10
+      - "Hana: the same line"
+    - - note
+      - 72
+      - 62
+      - 54
+      - 12
+      - 42 ms a character, hold 1.7 s, mood bump; stops off screen

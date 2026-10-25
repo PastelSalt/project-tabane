@@ -13,32 +13,6 @@ Every open question from every project file, in one place, for Kyle to answer la
 
 ---
 
-## Himawari Website · [`himawari-website.md`](himawari-website.md) §15
-
-The site only; the engine and Studio are out of scope.
-
-- [x] **W1. Shared pieces:** where Himawari reuses Aqua's or Kotoha's code (CSP hashes, build gates, reveals, `make-og`), add Himawari to those entries' Used in rather than making new entries?
-  *Recommended:* yes.
-  _Answer:_ Yes.
-- [x] **W2. Auth:** Himawari's admin auth is Kotoha's design rewritten in TypeScript with Drizzle and an env bootstrap. Its own entry, or a second implementation inside `kotoha-admin-auth`?
-  *Recommended:* its own entry; the code differs and it's the one to copy for Astro projects.
-  _Answer:_ Its own entry (`himawari-admin-auth`), linked to `kotoha-admin-auth`.
-- [x] **W3. Preact:** installed and configured but unused. Remove it from the site later (its own task), or is an island planned?
-  *Recommended:* leave Preact out of the entries' Stack, and remove it from the site later as its own small task in the website repository.
-  _Answer:_ As recommended: Preact is left out of the Stack; removing it from the site is a later task of its own.
-- [x] **W4. The portfolio:** the counter and the user-agent parser come from "the portfolio" (`moekoworks_official`). Write that project file next, so these entries can point to the original?
-  *Recommended:* yes.
-  _Answer:_ Yes; done the same day (`moekoworks-official.md`). `himawari-daily-salt-counter` links to `moekoworks-event-analytics` as its source.
-- [x] **W5. Shared:** every entry starts with Shared off. Are any safe to show visitors (for example the release sync or the design system)?
-  *Recommended:* keep all off for now.
-  _Answer:_ Keep all off for now.
-- [x] **W6. Replication guide order:** is the order in §13 how you would rebuild it?
-  *Recommended:* yes; it follows the commits and the plan's milestones.
-  _Answer:_ Yes, use the §13 order.
-- [x] **W7. New tag values:** add all 3 proposed in §14?
-  *Recommended:* add all.
-  _Answer:_ Add all 3.
-
 ## Moeko Works Portfolio · [`moekoworks-official.md`](moekoworks-official.md) §15
 
 - [x] **M1. Hard rule 6 in Tabane:** the portfolio never links source code, codenames, a photo or your handle. Should entries from this file still leave out the repository link and anything rule 6 covers, in case an entry is ever Shared?
@@ -138,3 +112,29 @@ Each section moves here when its project file is applied, with the date.
 - [x] **A8. New tag values:** add all 15 proposed in §14, or only some?
   *Recommended:* add all.
   _Answer:_ Add all 15.
+
+### Himawari Website · [`himawari-website.md`](himawari-website.md) §15 · applied 2026-10-25 (18 entries, Himawari added to 5 earlier entries, guide `replicate-himawari-website`)
+
+The site only; the engine and Studio are out of scope.
+
+- [x] **W1. Shared pieces:** where Himawari reuses Aqua's or Kotoha's code (CSP hashes, build gates, reveals, `make-og`), add Himawari to those entries' Used in rather than making new entries?
+  *Recommended:* yes.
+  _Answer:_ Yes.
+- [x] **W2. Auth:** Himawari's admin auth is Kotoha's design rewritten in TypeScript with Drizzle and an env bootstrap. Its own entry, or a second implementation inside `kotoha-admin-auth`?
+  *Recommended:* its own entry; the code differs and it's the one to copy for Astro projects.
+  _Answer:_ Its own entry (`himawari-admin-auth`), linked to `kotoha-admin-auth`.
+- [x] **W3. Preact:** installed and configured but unused. Remove it from the site later (its own task), or is an island planned?
+  *Recommended:* leave Preact out of the entries' Stack, and remove it from the site later as its own small task in the website repository.
+  _Answer:_ As recommended: Preact is left out of the Stack; removing it from the site is a later task of its own.
+- [x] **W4. The portfolio:** the counter and the user-agent parser come from "the portfolio" (`moekoworks_official`). Write that project file next, so these entries can point to the original?
+  *Recommended:* yes.
+  _Answer:_ Yes; done the same day (`moekoworks-official.md`). `himawari-daily-salt-counter` links to `moekoworks-event-analytics` as its source.
+- [x] **W5. Shared:** every entry starts with Shared off. Are any safe to show visitors (for example the release sync or the design system)?
+  *Recommended:* keep all off for now.
+  _Answer:_ Keep all off for now.
+- [x] **W6. Replication guide order:** is the order in §13 how you would rebuild it?
+  *Recommended:* yes; it follows the commits and the plan's milestones.
+  _Answer:_ Yes, use the §13 order.
+- [x] **W7. New tag values:** add all 3 proposed in §14?
+  *Recommended:* add all.
+  _Answer:_ Add all 3.

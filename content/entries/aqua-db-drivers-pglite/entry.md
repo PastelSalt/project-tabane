@@ -29,6 +29,7 @@ related:
   - hanon-pglite-preview
   - kotoha-sleeping-db-cache
   - aqua-build-gates
+  - himawari-build-migrations
 usedIn:
   - Aqua Iro Archive
 shared: false

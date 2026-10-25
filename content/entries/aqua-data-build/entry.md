@@ -28,6 +28,7 @@ related:
   - kotoha-image-pipeline
 usedIn:
   - Aqua Iro Archive
+  - Himawari Website
 shared: false
 created: 2026-10-25
 updated: 2026-10-25
@@ -43,3 +44,4 @@ The scripts that turn raw material into the archive's content.
 - **Images** (`prepare-images.ts`): copies only files the art list, poses and logos reference; long edge 2000 px, metadata stripped, near-lossless WebP for transparent images and JPEG otherwise; writes image, credit and source back into `arts.yaml` (comments kept); fails above a size budget. Astro re-encodes to AVIF/WebP at build; one 1600 px lightbox size.
 - **Share images** (`make-og.ts`): 1200×630 per chapter from official art, the title and a credit line.
 - **Curation rule:** press images, duplicates, animated GIFs and pin-up pieces were left out to keep the archive all-ages.
+- **Himawari Website:** reuses `make-og.ts` for English and Japanese 1200×630 share images, run by hand with the output committed; sharp's text renderer can't read woff2, so it fetches the fonts as TTF into `node_modules/.cache/og-fonts`.

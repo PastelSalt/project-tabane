@@ -1,0 +1,129 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 144
+      - 90
+      - ""
+    - - label
+      - 6
+      - 2
+      - 22
+      - 5
+      - ✿ Himawari Studio
+    - - pill
+      - 92
+      - 2.5
+      - 16
+      - 4
+      - EN / 日本語
+    - - pill
+      - 110
+      - 2.5
+      - 18
+      - 4
+      - MOTION OFF
+    - - circle
+      - 130
+      - 2
+      - 5
+      - 5
+    - - circle
+      - 136
+      - 2
+      - 5
+      - 5
+    - - line
+      - 6
+      - 9
+      - 132
+      - 0.4
+    - - label
+      - 6
+      - 10
+      - 18
+      - 4
+      - HIMAWARI
+    - - label
+      - 64
+      - 10
+      - 74
+      - 4
+      - FEATURES · DOWNLOAD · LEARN · NEWS · FAQ
+    - - line
+      - 6
+      - 15
+      - 132
+      - 0.4
+    - - line
+      - 6
+      - 22
+      - 132
+      - 0.4
+    - - pill
+      - 58
+      - 20
+      - 28
+      - 5
+      - FEATURES
+    - - box
+      - 14
+      - 32
+      - 52
+      - 34
+      - ""
+    - - panel
+      - 10
+      - 30
+      - 52
+      - 34
+    - - bar
+      - 10
+      - 30
+      - 52
+      - 5
+      - • • •
+    - - image
+      - 12
+      - 37
+      - 48
+      - 25
+      - window frame
+    - - button
+      - 74
+      - 34
+      - 26
+      - 7
+      - Download
+    - - pill
+      - 104
+      - 34
+      - 26
+      - 7
+      - Learn more
+    - - dashed
+      - 74
+      - 46
+      - 56
+      - 18
+      - "card: thin border, duotone icon"
+    - - circle
+      - 68
+      - 72
+      - 6
+      - 6
+      - ✿
+    - - note
+      - 78
+      - 70
+      - 60
+      - 10
+      - thick outlines only on clickable things and windows
+    - - note
+      - 6
+      - 70
+      - 56
+      - 10
+      - "Motion OFF or ?still: durations become 0 ms"

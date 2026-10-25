@@ -37,6 +37,7 @@ related:
   - kotoha-bilingual-i18n
   - kotoha-motion-calm-mode
   - aqua-bottom-dock
+  - himawari-nav-panels
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

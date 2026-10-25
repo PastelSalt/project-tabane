@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 840" width="390" height="840">
+<rect width="390" height="840" fill="#f4f4f7"/>
+<rect x="0" y="0" width="390" height="840" rx="12" fill="#e3e3ea"/>
+<text x="110" y="45" font-family="Segoe UI, sans-serif" font-size="22.5" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">✿ HIMAWARI</text>
+<rect x="290" y="20" width="80" height="50" rx="25" fill="#9a9aa3"/><text x="330" y="45" font-family="Segoe UI, sans-serif" font-size="22.5" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">≡</text>
+<rect x="80" y="20" width="300" height="560" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="98" y="44" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">MENU (POPOVER)</text>
+<circle cx="335" cy="65" r="25" fill="#c9c9d2"/><text x="335" y="65" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">×</text>
+<text x="230" y="135" font-family="Segoe UI, sans-serif" font-size="22.5" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">FEATURES</text>
+<text x="230" y="205" font-family="Segoe UI, sans-serif" font-size="22.5" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">DOWNLOAD</text>
+<text x="230" y="275" font-family="Segoe UI, sans-serif" font-size="22.5" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">LEARN</text>
+<text x="230" y="345" font-family="Segoe UI, sans-serif" font-size="22.5" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">NEWS</text>
+<text x="230" y="415" font-family="Segoe UI, sans-serif" font-size="22.5" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">FAQ</text>
+<text x="230" y="505" font-family="Segoe UI, sans-serif" font-size="22.5" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">日本語</text>
+<rect x="30" y="600" width="330" height="80" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="195" y="626.8" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">on /ja each label has its</text><text x="195" y="653.1999999999999" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">Japanese name under it</text>
+<rect x="30" y="720" width="330" height="90" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="195" y="751.8" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">popovertarget: no script</text><text x="195" y="778.1999999999999" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">to open or close</text>
+</svg>

@@ -1,0 +1,207 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 144
+      - 90
+      - ""
+    - - label
+      - 6
+      - 2
+      - 22
+      - 5
+      - ✿ Himawari Studio
+    - - pill
+      - 92
+      - 2.5
+      - 16
+      - 4
+      - EN / 日本語
+    - - pill
+      - 110
+      - 2.5
+      - 18
+      - 4
+      - MOTION OFF
+    - - circle
+      - 130
+      - 2
+      - 5
+      - 5
+    - - circle
+      - 136
+      - 2
+      - 5
+      - 5
+    - - line
+      - 6
+      - 9
+      - 132
+      - 0.4
+    - - label
+      - 6
+      - 10
+      - 18
+      - 4
+      - HIMAWARI
+    - - label
+      - 64
+      - 10
+      - 74
+      - 4
+      - FEATURES · DOWNLOAD · LEARN · NEWS · FAQ
+    - - line
+      - 6
+      - 15
+      - 132
+      - 0.4
+    - - pill
+      - 40
+      - 17
+      - 64
+      - 4
+      - "news bar: latest post ✿"
+    - - heading
+      - 8
+      - 25
+      - 50
+      - 6
+    - - text
+      - 8
+      - 33
+      - 44
+      - 5
+    - - button
+      - 8
+      - 41
+      - 22
+      - 5
+      - Download
+    - - panel
+      - 70
+      - 23
+      - 66
+      - 26
+      - Studio window
+    - - dashed
+      - 8
+      - 52
+      - 40
+      - 9
+      - promise
+    - - dashed
+      - 52
+      - 52
+      - 40
+      - 9
+      - promise
+    - - dashed
+      - 96
+      - 52
+      - 40
+      - 9
+      - promise
+    - - text
+      - 8
+      - 64
+      - 56
+      - 6
+    - - image
+      - 72
+      - 63
+      - 64
+      - 9
+      - feature screenshot
+    - - bar
+      - 0
+      - 75
+      - 144
+      - 7
+      - COMING SOON (the one dark band)
+    - - label
+      - 8
+      - 84
+      - 128
+      - 4
+      - download · learn · news · FAQ · get involved
+phone:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 39
+      - 84
+      - ""
+    - - pill
+      - 12
+      - 2
+      - 15
+      - 3.4
+      - DOWNLOAD
+    - - button
+      - 3
+      - 8
+      - 33
+      - 5
+      - Download for Windows
+    - - label
+      - 3
+      - 14
+      - 33
+      - 3
+      - 0.4.1 · date · size
+    - - pill
+      - 14
+      - 21
+      - 11
+      - 3.4
+      - LEARN
+    - - dashed
+      - 3
+      - 26
+      - 16
+      - 9
+      - card
+    - - dashed
+      - 20
+      - 26
+      - 16
+      - 9
+      - card
+    - - pill
+      - 14
+      - 38
+      - 11
+      - 3.4
+      - NEWS
+    - - text
+      - 3
+      - 43
+      - 33
+      - 8
+    - - pill
+      - 15
+      - 54
+      - 9
+      - 3.4
+      - FAQ
+    - - panel
+      - 3
+      - 59
+      - 33
+      - 5
+      - ▸ question
+    - - panel
+      - 3
+      - 65
+      - 33
+      - 5
+      - ▸ question
+    - - panel
+      - 3
+      - 71
+      - 33
+      - 5
+      - ▸ question

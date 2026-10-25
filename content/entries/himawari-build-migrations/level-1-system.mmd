@@ -1,0 +1,8 @@
+flowchart TD
+  push[push to a branch] --> preview[Vercel preview build]
+  main[push to main] --> prod[Vercel production build]
+  preview -->|Neon integration| pbranch[(preview database branch)]
+  prod --> pdb[(production database)]
+  preview --> migrate[migrate.ts: drizzle-kit migrate]
+  prod --> migrate
+  migrate -->|no DATABASE_URL_UNPOOLED| skip[skipped: local and CI]

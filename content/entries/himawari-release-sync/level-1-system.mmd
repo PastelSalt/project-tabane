@@ -1,0 +1,12 @@
+flowchart TD
+  SR[sync-release.ts] -->|releases/latest + all releases| RJ[src/data/release.json]
+  SR -->|raw files at the tag| SH[src/assets/shots]
+  SR -->|git tree at the tag, adaptDoc| DOCS[src/content/docs]
+  SR -.->|GitHub unreachable| KEEP[keep last committed files]
+  MG[migrate.ts] -->|DATABASE_URL_UNPOOLED set| DK[drizzle-kit migrate]
+  RJ --> AC[astro check]
+  DOCS --> AC
+  DK --> AC
+  AC --> AB[astro build]
+  NL[news loader] -->|published rows, or Markdown offline| AB
+  AB --> CH[csp-hash.ts writes vercel.json]

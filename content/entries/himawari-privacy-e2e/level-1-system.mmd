@@ -1,0 +1,8 @@
+flowchart LR
+  build[astro build] --> serve[serve-dist.mjs with the vercel.json headers]
+  serve --> pw[Playwright: Chromium, WebKit, mobile]
+  pw --> fixture[errors fixture]
+  fixture --> f1[page errors and console errors]
+  fixture --> f2[CSP violations]
+  fixture --> f3[requests leaving the site]
+  pw --> checks[axe, links, one h1, lang, no sideways scroll, no cookies]

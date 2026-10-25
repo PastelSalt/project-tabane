@@ -27,6 +27,7 @@ related:
   - aqua-build-gates
 usedIn:
   - Aqua Iro Archive
+  - Himawari Website
 shared: false
 created: 2026-10-25
 updated: 2026-10-25
@@ -40,6 +41,7 @@ A strict `script-src` that still allows exactly the inline scripts the build pro
 - **The pre-paint script must stay byte-identical**, or its hash changes.
 - **Served from the committed file:** the live hashes match the committed `vercel.json`, so after changing an inline script or upgrading Astro, build locally and commit `vercel.json` (answer A4).
 - **The rest of the policy:** `script-src 'self'` + the hashes + Turnstile and YouTube hosts, `frame-ancestors 'none'`, `object-src 'none'`, `form-action 'self'`, `upgrade-insecure-requests`; HSTS with preload, `nosniff`, a Permissions-Policy; CSRF by Astro's `checkOrigin`.
+- **Himawari Website:** uses Aqua's `csp-hash.ts` as it is (two hashes live). Its admin pages are rendered on demand, so their inline scripts couldn't be hashed at build: the admin panel runs no scripts at all (`himawari-scriptless-admin`).
 
 ## Key code
 

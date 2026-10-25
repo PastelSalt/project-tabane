@@ -1,0 +1,16 @@
+sequenceDiagram
+  participant O as Owner
+  participant A as /admin/news/[id]
+  participant D as Neon
+  participant H as Vercel deploy hook
+  participant B as Build
+  O->>A: POST form (checkOrigin)
+  A->>A: requireAdmin, NewsForm (Zod)
+  A->>D: savePost (draft or published) + activity_log
+  alt the public news changed
+    A->>H: POST (8 s timeout)
+    H->>B: rebuild main
+    B->>D: select published news_posts
+    B-->>O: live in about two minutes
+  end
+  A-->>O: inline note: started, no hook, or failed

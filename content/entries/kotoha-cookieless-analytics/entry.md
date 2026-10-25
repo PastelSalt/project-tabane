@@ -32,6 +32,7 @@ diagrams:
 related:
   - kotoha-analytics-dashboard
   - aqua-first-party-umami
+  - himawari-daily-salt-counter
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

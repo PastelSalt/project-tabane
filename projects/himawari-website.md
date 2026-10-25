@@ -11,7 +11,7 @@ The site was built on top of Aqua Iro Archive and the Kotoha fan site, and its c
 | Live site | https://himawari-moekoworks.vercel.app/ |
 | Repository | [PastelSalt/himawari-website](https://github.com/PastelSalt/himawari-website) (private) |
 | Local folder | `C:\Users\Myaako\Documents\MoekoWorks\himawari-website` |
-| Read at | commit `4eb655c` (`main`, 2026-10-23), 6 commits, read 2026-10-25. Plan: `himawari-c/planning/WEBSITE.md` at `d934e8f` |
+| Read at | commit `4eb655c` (`main`, 2026-10-23), 6 commits, read 2026-10-25. Plan: `himawari-c/planning/WEBSITE.md` at `d934e8f`. Applied at `4eb655c` |
 | Target | Website (static public site + a small private admin panel at `/admin`) |
 | Status on the site | Live, showing Himawari Studio 0.4.1. Admin panel and statistics added 2026-10-23 |
 | Embeddable | **No.** The site sends `Content-Security-Policy: … frame-ancestors 'none'`, so Tabane must show screenshots, not a live frame |
@@ -211,7 +211,7 @@ From `WEBSITE.md` §6.1 (what is taken from nanahira.jp, and what is changed):
 | no animation | one moving thing per screen |
 
 - **Rule of weight:** thick (2.5 px black) only on things you click and on window frames; 1.5 px on pills and small controls; 1 px on cards.
-- **Labels in capitals stay English in both languages** ("as on nanahira.jp"), with the Japanese name under them in the phone menu.
+- **Labels in capitals stay English in both languages** ("as on nanahira.jp"), with the Japanese name under them in the phone menu on the Japanese pages (`Header.astro`: `lang === 'ja'`).
 - **Light theme only** for v1.
 
 ### 5.2 Tokens (`src/styles/tokens.css`)
@@ -305,8 +305,8 @@ BudouX splits a headline into phrases at build time; each phrase becomes a `<spa
 
 ### 6.8 Pages
 
-- **Download (`DownloadPage.astro`):** installer button, install steps, requirements, SmartScreen, SHA-256, and every earlier version from `release.history`.
-- **Docs (`DocsPage.astro`, `src/lib/docs.ts`):** one page of the engine's docs at the released version, with a sidebar in four groups (Tutorials, How-to guides, Reference, Explanation). Japanese pages list their own first, then the English ones, marked. The language switch goes to the same page in the other language when it exists, else that language's docs home. Code blocks are plain (G9).
+- **Download (`DownloadPage.astro`):** installer button, install steps, requirements, SmartScreen, SHA-256, and every earlier version from `release.history`. Below 760 px the download blocks add a note (`.dl__phone`) to open the page on a computer, since Himawari runs on Windows PCs.
+- **Docs (`DocsPage.astro`, `src/lib/docs.ts`):** one page of the engine's docs at the released version, with a sidebar of a "Start" group (pages in no group) and four groups (Tutorials, How-to guides, Reference, Explanation), and a line "For Himawari 0.4.1" with "This page on GitHub". Japanese pages list their own first, then the English ones, marked. The language switch goes to the same page in the other language when it exists, else that language's docs home. Code blocks are plain (G9).
 - **News:** index and post pages from the news collection.
 - **About and Privacy:** Markdown from `src/content/pages/<lang>/`; Privacy describes exactly what the counter stores, and the code comment says to keep the two in step.
 
@@ -496,6 +496,8 @@ Reusability: **High** = lift with little change · **Medium** = needs rebranding
 ## 12. Proposed entries
 
 All own-project entries start as **Proven** (live site), **Shared off**, Target **Website**, `projectFile: himawari-website`, Used in: Himawari Website. Live site: https://himawari-moekoworks.vercel.app/ with **Embeddable: false**. Code location ref: `4eb655c`. Slugs use the `himawari-` prefix.
+
+*Applied 2026-10-25:* all 18 entries and `replicate-himawari-website` written at code ref `4eb655c` (no changes since the read). Himawari added to Used in, with a note, on `aqua-csp-build-hashes`, `aqua-build-gates`, `aqua-motion-budget`, `aqua-data-build` and `kotoha-admin-auth` (answer W1). `himawari-server-charts` has no live-site link or screenshot (the charts are behind sign-in). The link from `himawari-daily-salt-counter` to `moekoworks-event-analytics` (answer W4) is added when the portfolio file is applied. Checked while capturing: the docs sidebar's "Start" group, the phone menu's Japanese names (Japanese pages only) and the phone download note, now in §5.1 and §6.8.
 
 **Shared with earlier projects instead of new entries** (Himawari is added to their Used in when both files are applied): Aqua's `aqua-csp-build-hashes`, `aqua-build-gates` (contrast, budget), `aqua-motion-budget` (reveal and off-screen patterns), `aqua-data-build` (`make-og`), and Kotoha's `kotoha-admin-auth` (design reused; Himawari's TypeScript version is H-B6, see question W2).
 

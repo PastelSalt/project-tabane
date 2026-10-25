@@ -1,0 +1,8 @@
+site: himawari-website
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    motion: true
+    scrollTo: "#download"
+    before: "(() => { const b = document.querySelector('#download [data-confetti]') || document.querySelector('[data-confetti]'); b.addEventListener('click', (e) => e.preventDefault(), { capture: true }); b.click(); })()"
+    wait: 650

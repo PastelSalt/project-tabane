@@ -34,6 +34,7 @@ related:
   - kotoha-cloudinary-uploads
   - hanon-admin-smoke-test
   - aqua-moderation-audit
+  - himawari-db-news-static
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

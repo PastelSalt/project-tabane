@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="0" y="0" width="1440" height="900" rx="12" fill="#e3e3ea"/>
+<text x="170" y="45" font-family="Segoe UI, sans-serif" font-size="20.5" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">✿ Himawari Studio</text>
+<rect x="920" y="25" width="160" height="40" rx="20" fill="#c9c9d2"/><text x="1000" y="45" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">EN / 日本語</text>
+<rect x="1100" y="25" width="180" height="40" rx="20" fill="#c9c9d2"/><text x="1190" y="45" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">MOTION OFF</text>
+<circle cx="1325" cy="45" r="25" fill="#c9c9d2"/>
+<circle cx="1385" cy="45" r="25" fill="#c9c9d2"/>
+<rect x="60" y="90" width="1320" height="4" rx="2" fill="#9a9aa3"/>
+<text x="150" y="120" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">HIMAWARI</text>
+<text x="1010" y="120" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">FEATURES · DOWNLOAD · LEARN · NEWS · FAQ</text>
+<rect x="60" y="150" width="1320" height="4" rx="2" fill="#9a9aa3"/>
+<rect x="60" y="220" width="1320" height="4" rx="2" fill="#9a9aa3"/>
+<rect x="580" y="200" width="280" height="50" rx="25" fill="#c9c9d2"/><text x="720" y="225" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">FEATURES</text>
+<rect x="140" y="320" width="520" height="340" rx="12" fill="#e3e3ea"/>
+<rect x="100" y="300" width="520" height="340" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/>
+<rect x="100" y="300" width="520" height="50" fill="#c9c9d2"/><text x="124" y="325" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">• • •</text>
+<rect x="120" y="370" width="480" height="250" rx="12" fill="#c9c9d2"/><path d="M132 382 L588 608 M588 382 L132 608" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/><rect x="266" y="477" width="188" height="36" rx="18" fill="#c9c9d2"/><text x="360" y="495" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">window frame</text>
+<rect x="740" y="340" width="260" height="70" rx="35" fill="#9a9aa3"/><text x="870" y="375" font-family="Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">Download</text>
+<rect x="1040" y="340" width="260" height="70" rx="35" fill="#c9c9d2"/><text x="1170" y="375" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Learn more</text>
+<rect x="740" y="460" width="560" height="180" rx="18" fill="none" stroke="#9a9aa3" stroke-width="4" stroke-dasharray="14 10"/><text x="1020" y="550" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">card: thin border, duotone icon</text>
+<circle cx="710" cy="750" r="30" fill="#c9c9d2"/><text x="710" y="750" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">✿</text>
+<rect x="780" y="700" width="600" height="100" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="1080" y="736.8" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">thick outlines only on clickable things and</text><text x="1080" y="763.1999999999999" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">windows</text>
+<rect x="60" y="700" width="560" height="100" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="340" y="750" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">Motion OFF or ?still: durations become 0 ms</text>
+</svg>

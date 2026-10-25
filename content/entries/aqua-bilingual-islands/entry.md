@@ -32,6 +32,7 @@ screenshots:
 related:
   - kotoha-bilingual-i18n
   - aqua-chapter-skeleton
+  - himawari-budoux-phrases
 usedIn:
   - Aqua Iro Archive
 shared: false

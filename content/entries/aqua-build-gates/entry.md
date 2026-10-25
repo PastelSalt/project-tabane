@@ -33,8 +33,10 @@ related:
   - aqua-csp-build-hashes
   - aqua-db-drivers-pglite
   - hanon-cdp-test-harness
+  - himawari-privacy-e2e
 usedIn:
   - Aqua Iro Archive
+  - Himawari Website
 shared: false
 created: 2026-10-25
 updated: 2026-10-25
@@ -50,6 +52,7 @@ The build and CI refuse anything that breaks the site's own rules.
 - **Talk validation** (`validate-talk.ts`): schema and graph checks; errors fail the build, warnings print.
 - **Pruning** (`prune-assets.ts`): deletes images Astro emitted that no HTML, CSS, JS or JSON references, keeping the deploy under 80 MB.
 - **CI** (`.github/workflows/ci.yml`): Turnstile testing keys; a cache for Astro's font and image downloads (flaky without it); lint, contrast, unit, data and PGlite integration tests; migrations and seed on a temporary Neon branch when a key exists; the build retried once; the JS budget; Playwright on Chromium and WebKit (WebKit with reduced motion), axe accessibility, 37 visual baselines, a "nothing covers content" check; the report uploaded on failure; the Neon branch deleted.
+- **Himawari Website:** the same gates, smaller: contrast script, a 40 KB JS budget per page, build retried once, Playwright on Chromium, WebKit and a mobile profile, plus `npm audit` in CI and a privacy fixture on every e2e test (`himawari-privacy-e2e`).
 
 ## Key code
 

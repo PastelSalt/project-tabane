@@ -25,6 +25,7 @@ diagrams:
 related:
   - aqua-keeper-panel
   - kotoha-cookieless-analytics
+  - himawari-daily-salt-counter
 usedIn:
   - Aqua Iro Archive
 shared: false

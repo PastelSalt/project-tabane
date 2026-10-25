@@ -1,0 +1,92 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 144
+      - 90
+      - ""
+    - - bar
+      - 0
+      - 0
+      - 144
+      - 7
+      - ✿ Admin · News · Statistics · Password
+    - - pill
+      - 8
+      - 10
+      - 14
+      - 4
+      - 7 days
+    - - button
+      - 23
+      - 10
+      - 14
+      - 4
+      - 30 days
+    - - pill
+      - 38
+      - 10
+      - 14
+      - 4
+      - 88 days
+    - - panel
+      - 8
+      - 17
+      - 128
+      - 30
+      - VISITS PER DAY · 1,234 views · 567 visitors
+    - - chart
+      - 12
+      - 24
+      - 120
+      - 20
+    - - dashed
+      - 8
+      - 49
+      - 128
+      - 8
+      - the same numbers in a table, for screen readers
+    - - panel
+      - 8
+      - 60
+      - 62
+      - 26
+      - TOP PAGES
+    - - line
+      - 12
+      - 68
+      - 48
+      - 2
+    - - line
+      - 12
+      - 73
+      - 36
+      - 2
+    - - line
+      - 12
+      - 78
+      - 22
+      - 2
+    - - panel
+      - 74
+      - 60
+      - 62
+      - 26
+      - SOURCES
+    - - line
+      - 78
+      - 68
+      - 44
+      - 2
+    - - line
+      - 78
+      - 73
+      - 30
+      - 2
+    - - line
+      - 78
+      - 78
+      - 16
+      - 2

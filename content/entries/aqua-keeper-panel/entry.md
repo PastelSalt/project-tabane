@@ -33,6 +33,7 @@ related:
   - aqua-keeper-auth-totp
   - aqua-first-party-umami
   - kotoha-admin-panel
+  - himawari-scriptless-admin
 usedIn:
   - Aqua Iro Archive
 shared: false

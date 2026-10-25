@@ -35,6 +35,7 @@ related:
   - hanon-sazanami-theme
   - hanon-sticker-sprite
   - aqua-harbour-design-system
+  - himawari-sticker-design-system
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

@@ -1,0 +1,152 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - box
+      - 0
+      - 0
+      - 144
+      - 90
+      - ""
+    - - label
+      - 6
+      - 2
+      - 22
+      - 5
+      - ✿ Himawari Studio
+    - - pill
+      - 92
+      - 2.5
+      - 16
+      - 4
+      - EN / 日本語
+    - - pill
+      - 110
+      - 2.5
+      - 18
+      - 4
+      - MOTION OFF
+    - - circle
+      - 130
+      - 2
+      - 5
+      - 5
+    - - circle
+      - 136
+      - 2
+      - 5
+      - 5
+    - - line
+      - 6
+      - 9
+      - 132
+      - 0.4
+    - - label
+      - 6
+      - 10
+      - 18
+      - 4
+      - HIMAWARI
+    - - label
+      - 64
+      - 10
+      - 74
+      - 4
+      - FEATURES · DOWNLOAD · LEARN · NEWS · FAQ
+    - - line
+      - 6
+      - 15
+      - 132
+      - 0.4
+    - - panel
+      - 6
+      - 19
+      - 34
+      - 66
+    - - label
+      - 9
+      - 21
+      - 28
+      - 4
+      - START
+    - - text
+      - 9
+      - 26
+      - 26
+      - 4
+    - - label
+      - 9
+      - 32
+      - 28
+      - 4
+      - TUTORIALS
+    - - text
+      - 9
+      - 37
+      - 26
+      - 4
+    - - label
+      - 9
+      - 43
+      - 28
+      - 4
+      - HOW-TO GUIDES
+    - - text
+      - 9
+      - 48
+      - 26
+      - 7
+    - - label
+      - 9
+      - 57
+      - 28
+      - 4
+      - REFERENCE
+    - - text
+      - 9
+      - 62
+      - 26
+      - 3
+    - - label
+      - 9
+      - 68
+      - 28
+      - 4
+      - EXPLANATION
+    - - text
+      - 9
+      - 73
+      - 26
+      - 4
+    - - label
+      - 46
+      - 19
+      - 60
+      - 4
+      - For Himawari 0.4.1 · This page on GitHub
+    - - heading
+      - 46
+      - 24
+      - 60
+      - 5
+    - - text
+      - 46
+      - 31
+      - 88
+      - 12
+    - - dashed
+      - 46
+      - 46
+      - 88
+      - 14
+      - code block, plain ink on white
+    - - text
+      - 46
+      - 63
+      - 80
+      - 10
+    - - note
+      - 46
+      - 76
+      - 88
+      - 9
+      - "ja: Japanese pages first, then English ones, marked"

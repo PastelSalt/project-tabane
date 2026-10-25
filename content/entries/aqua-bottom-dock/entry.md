@@ -38,6 +38,7 @@ related:
   - aqua-log-drawer
   - aqua-bgm-capsule
   - kotoha-nav-pill-circle-menu
+  - himawari-nav-panels
 usedIn:
   - Aqua Iro Archive
 shared: false

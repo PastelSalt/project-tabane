@@ -41,9 +41,11 @@ related:
   - kotoha-content-crud-archive
   - hanon-admin-smoke-test
   - aqua-keeper-auth-totp
+  - himawari-admin-auth
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site
+  - Himawari Website
 shared: false
 created: 2026-10-25
 updated: 2026-10-25
@@ -59,6 +61,7 @@ A complete admin sign-in without an auth service.
 - **Sessions:** 32 random bytes as base64url in a `__Host-kf_session` cookie (HttpOnly, SameSite=Strict, Secure; a plain name on http localhost); only the SHA-256 is stored; 2-hour idle and 7-day absolute expiry; `last_seen_at` touched at most every 5 minutes.
 - **Guards:** `requireAdmin(req, { allowPasswordChange, ownerOnly })` → 401, `403 PASSWORD_CHANGE_REQUIRED` or `403 FORBIDDEN`.
 - **Accounts:** exactly one Owner (unique partial index), bootstrapped by `scripts/admin-bootstrap.js`; the Owner creates admins with numbered usernames and 8-character temporary passwords (no look-alike characters, valid 7 days, shown once); reset revokes sessions; removal deactivates and archives a snapshot without the hash. Changing a password signs out every other device.
+- **Himawari Website:** the same design rewritten in TypeScript with Drizzle, with the first owner created from environment values instead of a bootstrap script (`himawari-admin-auth`, `himawari-scriptless-admin`).
 
 ## Key code
 

@@ -1,0 +1,11 @@
+flowchart TD
+  signin[sign-in] --> throttle{too many failures from this IP hash?}
+  throttle -->|yes| no[too many]
+  throttle -->|no| verify[Argon2id verify, or a dummy verify for unknown names]
+  verify -->|5 wrong| lock[lock 15 min]
+  verify -->|ok| token[32-byte token, SHA-256 stored]
+  token --> cookie[__Host- cookie, httpOnly, SameSite Strict]
+  cookie --> expiry[2 h idle or 7 days]
+  change[change password] --> policy[12-128 chars, not username, not only guessable words]
+  policy --> hibp[HIBP range check, 3 s]
+  hibp --> everywhere[sign out every browser, fresh session]

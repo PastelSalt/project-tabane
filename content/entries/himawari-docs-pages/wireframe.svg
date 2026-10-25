@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="0" y="0" width="1440" height="900" rx="12" fill="#e3e3ea"/>
+<text x="170" y="45" font-family="Segoe UI, sans-serif" font-size="20.5" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">✿ Himawari Studio</text>
+<rect x="920" y="25" width="160" height="40" rx="20" fill="#c9c9d2"/><text x="1000" y="45" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">EN / 日本語</text>
+<rect x="1100" y="25" width="180" height="40" rx="20" fill="#c9c9d2"/><text x="1190" y="45" font-family="Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">MOTION OFF</text>
+<circle cx="1325" cy="45" r="25" fill="#c9c9d2"/>
+<circle cx="1385" cy="45" r="25" fill="#c9c9d2"/>
+<rect x="60" y="90" width="1320" height="4" rx="2" fill="#9a9aa3"/>
+<text x="150" y="120" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">HIMAWARI</text>
+<text x="1010" y="120" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">FEATURES · DOWNLOAD · LEARN · NEWS · FAQ</text>
+<rect x="60" y="150" width="1320" height="4" rx="2" fill="#9a9aa3"/>
+<rect x="60" y="190" width="340" height="660" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/>
+<text x="230" y="230" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">START</text>
+<rect x="90" y="260" width="260" height="12" rx="6" fill="#c9c9d2"/><rect x="90" y="280" width="156" height="12" rx="6" fill="#c9c9d2"/>
+<text x="230" y="340" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">TUTORIALS</text>
+<rect x="90" y="370" width="260" height="12" rx="6" fill="#c9c9d2"/><rect x="90" y="390" width="156" height="12" rx="6" fill="#c9c9d2"/>
+<text x="230" y="450" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">HOW-TO GUIDES</text>
+<rect x="90" y="480" width="260" height="12" rx="6" fill="#c9c9d2"/><rect x="90" y="500" width="260" height="12" rx="6" fill="#c9c9d2"/><rect x="90" y="520" width="156" height="12" rx="6" fill="#c9c9d2"/>
+<text x="230" y="590" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">REFERENCE</text>
+<rect x="90" y="620" width="260" height="12" rx="6" fill="#c9c9d2"/>
+<text x="230" y="700" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">EXPLANATION</text>
+<rect x="90" y="730" width="260" height="12" rx="6" fill="#c9c9d2"/><rect x="90" y="750" width="156" height="12" rx="6" fill="#c9c9d2"/>
+<text x="760" y="210" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">For Himawari 0.4.1 · This page on GitHub</text>
+<rect x="460" y="240" width="600" height="50" rx="25" fill="#9a9aa3"/>
+<rect x="460" y="310" width="880" height="12" rx="6" fill="#c9c9d2"/><rect x="460" y="330" width="880" height="12" rx="6" fill="#c9c9d2"/><rect x="460" y="350" width="880" height="12" rx="6" fill="#c9c9d2"/><rect x="460" y="370" width="880" height="12" rx="6" fill="#c9c9d2"/><rect x="460" y="390" width="880" height="12" rx="6" fill="#c9c9d2"/><rect x="460" y="410" width="528" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="460" y="460" width="880" height="140" rx="18" fill="none" stroke="#9a9aa3" stroke-width="4" stroke-dasharray="14 10"/><text x="900" y="530" font-family="Segoe UI, sans-serif" font-size="30" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">code block, plain ink on white</text>
+<rect x="460" y="630" width="800" height="12" rx="6" fill="#c9c9d2"/><rect x="460" y="650" width="800" height="12" rx="6" fill="#c9c9d2"/><rect x="460" y="670" width="800" height="12" rx="6" fill="#c9c9d2"/><rect x="460" y="690" width="800" height="12" rx="6" fill="#c9c9d2"/><rect x="460" y="710" width="480" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="460" y="760" width="880" height="90" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="900" y="805" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">ja: Japanese pages first, then English ones, marked</text>
+</svg>

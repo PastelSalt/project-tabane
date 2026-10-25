@@ -1,0 +1,5 @@
+site: himawari-website
+shots:
+  - file: screenshot-phone.webp
+    device: phone
+    path: /ja

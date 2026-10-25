@@ -1,0 +1,14 @@
+flowchart LR
+  P[Page loads] --> G{https, no GPC, no Do Not Track?}
+  G -- no --> X[nothing sent]
+  G -- yes --> B[sendBeacon path, lang, referrer host]
+  B --> T[POST /api/track]
+  T --> Z{size up to 1 KB, Zod ok, not a bot?}
+  Z -- no --> N[204]
+  Z -- yes --> S[today's salt, created on first use]
+  S --> RL{60 per minute per hashed IP?}
+  RL -- over --> N
+  RL -- ok --> I[insert page_views, visitor_hash = HMAC of salt, ip, ua, host]
+  I --> N
+  C[Daily cron] --> R[roll up the last 3 Manila days, production only]
+  R --> DEL[delete old views, salts, rate rows, attempts, sessions]

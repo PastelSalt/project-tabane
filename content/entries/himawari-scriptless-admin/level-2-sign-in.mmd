@@ -1,0 +1,16 @@
+flowchart TD
+  L[admin login form] --> RL{failures from this IP hash in 15 min: 5 for the user or 20 in total?}
+  RL -- yes --> TM[too many]
+  RL -- no --> U{account exists?}
+  U -- no --> BOOT{no accounts and matches ADMIN_USERNAME and ADMIN_TEMP_PASSWORD?}
+  BOOT -- yes --> MK[create owner, must change password]
+  BOOT -- no --> DUMMY[burn verify time, record failure] --> INV[invalid]
+  U -- yes --> LOCK{locked?}
+  LOCK -- yes --> TM
+  LOCK -- no --> VER{Argon2id verify}
+  VER -- no --> FAIL[count; lock 15 min at 5] --> INV
+  VER -- yes --> SES[session token, hash stored, __Host- cookie]
+  MK --> SES
+  SES --> PW{must change password?}
+  PW -- yes --> CH[admin password: policy and HIBP, sign out everywhere]
+  PW -- no --> ADM[admin overview]

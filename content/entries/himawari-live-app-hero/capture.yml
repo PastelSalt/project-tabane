@@ -1,0 +1,5 @@
+site: himawari-website
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    element: "[data-studio]"

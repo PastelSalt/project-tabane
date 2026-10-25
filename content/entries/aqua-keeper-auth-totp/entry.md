@@ -32,6 +32,7 @@ related:
   - aqua-keeper-panel
   - aqua-moderation-audit
   - kotoha-admin-auth
+  - himawari-admin-auth
 usedIn:
   - Aqua Iro Archive
 shared: false

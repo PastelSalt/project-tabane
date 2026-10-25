@@ -1,0 +1,10 @@
+site: himawari-website
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    scrollTo: "#about"
+    before: window.scrollBy(0, -40)
+  - file: screenshot-phone.webp
+    device: phone
+    scrollTo: "#faq"
+    before: window.scrollBy(0, -20)

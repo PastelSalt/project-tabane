@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 840" width="390" height="840">
+<rect width="390" height="840" fill="#f4f4f7"/>
+<rect x="0" y="0" width="390" height="840" rx="12" fill="#e3e3ea"/>
+<rect x="30" y="40" width="300" height="40" rx="20" fill="#9a9aa3"/>
+<rect x="30" y="120" width="330" height="60" rx="30" fill="#9a9aa3"/><text x="195" y="150" font-family="Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">Download</text>
+<text x="195" y="205" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">0.4.1 · date · 146 MB</text>
+<text x="195" y="244.5" font-family="Segoe UI, sans-serif" font-size="17.5" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">Open this page on your computer</text><text x="195" y="265.5" font-family="Segoe UI, sans-serif" font-size="17.5" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">to download it.</text>
+<rect x="30" y="300" width="330" height="130" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="48" y="324" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">STEPS</text>
+<rect x="30" y="460" width="330" height="160" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="48" y="484" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">REQUIREMENTS</text>
+<rect x="30" y="650" width="330" height="160" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><text x="48" y="674" font-family="Segoe UI, sans-serif" font-size="20" font-weight="700" fill="#6c6c75" text-anchor="start" dominant-baseline="middle">SHA-256</text>
+</svg>

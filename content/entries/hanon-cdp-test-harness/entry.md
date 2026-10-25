@@ -33,6 +33,7 @@ related:
   - kotoha-scroll-life
   - kotoha-scroll-reveals
   - aqua-build-gates
+  - himawari-privacy-e2e
 usedIn:
   - Hanon Fan Site
 shared: false

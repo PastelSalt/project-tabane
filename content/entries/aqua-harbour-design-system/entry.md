@@ -32,6 +32,7 @@ related:
   - aqua-filler-kit
   - kotoha-scrapbook-design-system
   - aqua-tide-shutter
+  - himawari-sticker-design-system
 usedIn:
   - Aqua Iro Archive
 shared: false

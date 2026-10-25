@@ -35,6 +35,7 @@ related:
   - aqua-tide-shutter
 usedIn:
   - Aqua Iro Archive
+  - Himawari Website
 shared: false
 lastChecked: 2026-10-25
 created: 2026-10-25
@@ -53,3 +54,4 @@ Four kinds of animation, each with its own rules, behind one Motion switch (`doc
 - **Budget** on a Ryzen 3 at 1366×649: scrolling ≥ 55 fps, idle main thread < 15 % busy, ≤ 40 KB of JS added per page, the bubble canvas ≤ 30 fps and ≤ 40 sprites; measured by `scripts/dev/perf.mjs`.
 - **Odometer:** digits roll as strips of 0–9 moved with transform only, so masonry never re-lays out; screen readers get the plain number.
 - **Lesson:** off-screen pausing must not freeze one-shot entrances (content appeared late or stayed invisible).
+- **Himawari Website:** reuses `reveal.ts` and `offscreen.ts` (reveals use the observer's first report, so anything already on screen is left alone), with one moving thing per screen and duration tokens that become 0 ms when Motion is off (`himawari-sticker-design-system`).

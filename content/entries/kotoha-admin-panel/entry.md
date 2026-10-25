@@ -34,6 +34,7 @@ related:
   - kotoha-scrapbook-design-system
   - kotoha-analytics-dashboard
   - aqua-keeper-panel
+  - himawari-scriptless-admin
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

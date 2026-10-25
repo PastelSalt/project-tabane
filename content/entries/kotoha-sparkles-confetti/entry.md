@@ -30,6 +30,7 @@ screenshots:
 related:
   - kotoha-motion-calm-mode
   - kotoha-profile-card
+  - himawari-download-confetti
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

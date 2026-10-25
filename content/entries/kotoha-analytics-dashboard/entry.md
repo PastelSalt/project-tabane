@@ -24,6 +24,8 @@ wireframe:
 related:
   - kotoha-cookieless-analytics
   - kotoha-admin-panel
+  - himawari-admin-stats
+  - himawari-server-charts
 usedIn:
   - Kotoha Fan Site
   - Hanon Fan Site

@@ -1,0 +1,8 @@
+flowchart LR
+  tag[engine repo at the release tag] -->|docs/**/*.md| sync[sync-release.ts]
+  sync --> adapt[adaptDoc]
+  adapt -->|docs link| site[site URL: /docs or /ja/docs]
+  adapt -->|other repo file| gh[GitHub at the tag]
+  adapt -->|code| keep[left exactly as it is]
+  adapt --> out[(src/content/docs)]
+  out --> pages[DocsPage with the four-group sidebar]

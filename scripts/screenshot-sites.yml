@@ -30,3 +30,9 @@ aqua-iro-archive:
   session: { "aia:splash": "1" }
   ready: "document.documentElement.dataset.splash === 'seen' && document.fonts.status === 'loaded' && !!document.querySelector('.dock')"
   settle: 2000
+himawari-website:
+  url: https://himawari-moekoworks.vercel.app
+  # the cookieless counter's beacon, and the installer (a capture must never add to the download counts)
+  block: ["*/api/track*", "*/releases/download/*"]
+  ready: "document.fonts.status === 'loaded'"
+  settle: 1200
