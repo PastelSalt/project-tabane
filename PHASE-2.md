@@ -22,7 +22,7 @@ When Phase 2 is done:
 |---|---|---|
 | 1. Ask | Kyle | "Make the project file for Kotoha" (or a site to research) |
 | 2. Write | Claude | Pulls and reads the project's repository (or reads the site's pages), then writes `projects/<name>.md` with everything about it, citing where each fact came from |
-| 3. Review | Kyle | Reads the file, edits it or asks for changes, and answers its open questions |
+| 3. Review | Kyle | Reads the file, edits it or asks for changes, and answers its open questions, which are also collected in `projects/OPEN-QUESTIONS.md` for all projects |
 | 4. Apply | Claude, when Kyle says | Turns the project file into entries (UI/UX and Backend) and a replication guide, runs the content check, commits, and logs it |
 | 5. Update | Claude, when asked | If the project file changes later, applying it again updates the entries to match |
 
