@@ -97,6 +97,32 @@ The site only; the engine and Studio are out of scope.
   *Recommended:* add all.
   _Answer:_
 
+## Moeko Works Portfolio · [`moekoworks-official.md`](moekoworks-official.md) §15
+
+- [ ] **M1. Hard rule 6 in Tabane:** the portfolio never links source code, codenames, a photo or your handle. Should entries from this file still leave out the repository link and anything rule 6 covers, in case an entry is ever Shared?
+  *Recommended:* keep the repository link (Tabane hides it from visitors anyway), and nothing else rule 6 covers.
+  _Answer:_
+- [ ] **M2. Analytics lineage:** the portfolio's analytics as its own entry, with Himawari's counter linking to it as a smaller copy, or one "cookieless analytics" entry with Kotoha, the portfolio and Himawari under Used in?
+  *Recommended:* its own entry; it is event-based and much wider.
+  _Answer:_
+- [ ] **M3. The rebrand:** keep the rebrand script as an entry and the incident as notes in the guide, or also make a "renaming a live project" playbook?
+  *Recommended:* script as an entry, incident as notes.
+  _Answer:_
+- [ ] **M4. CSP:** still report-only with `'unsafe-inline'`. Record it as is, or is enforcing it planned soon?
+  *Recommended:* record as is.
+  _Answer:_
+- [ ] **M5. GSAP:** installed but unused. Leave it out of the Stack?
+  *Recommended:* leave it out.
+  _Answer:_
+- [ ] **M6. Shared:** every entry starts with Shared off. Are any safe to show visitors (for example the accent theming or the capture pipeline)?
+  *Recommended:* keep all off for now.
+  _Answer:_
+- [ ] **M7. Replication guide order:** is the order in §13 how you would rebuild it?
+  _Answer:_
+- [ ] **M8. New tag values:** add all 3 proposed in §14?
+  *Recommended:* add all.
+  _Answer:_
+
 ---
 
 ## Answered and applied
