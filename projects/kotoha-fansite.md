@@ -650,6 +650,7 @@ Learned in this project (from `MIGRATION.md`, `FORHANON.md`, `docs/PERFORMANCE_P
 | G21 | No inline scripts are allowed by the CSP | pre-paint logic must live in small classic files |
 | G22 | Speech bubbles must never put words in Kotoha's mouth | they are the site's voice |
 | G23 | Short laptops (≥ 1100 wide, ≤ 960 tall) | Home must fit one screen: hide secondary cards there |
+| G24 | Marquee can break after scrolling up | an infinite Web Animation played in reverse finishes at `currentTime = 0` and `play()` then throws; fixed in the Hanon site with a HEADROOM start (see [`hanon-fansite.md`](hanon-fansite.md) §3.1), **not yet in Kotoha** |
 
 ---
 
