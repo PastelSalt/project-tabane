@@ -12,5 +12,5 @@
 <g transform="rotate(-2.5 1050 670)"><rect x="820" y="520" width="460" height="300" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/></g>
 <g transform="rotate(-2.5 1050 640)"><rect x="850" y="550" width="400" height="180" rx="12" fill="#c9c9d2"/><path d="M862 562 L1238 718 M1238 562 L862 718" stroke="#f4f4f7" stroke-width="4" stroke-linecap="round"/></g>
 <g transform="rotate(-8 350 135)"><rect x="280" y="120" width="140" height="30" rx="12" fill="#e3e3ea"/></g>
-<rect x="520" y="840" width="400" height="50" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="720" y="865" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">tilts: −3° to +3°, tape on corners</text>
+<rect x="520" y="840" width="400" height="50" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="720" y="865" font-family="Segoe UI, sans-serif" font-size="20" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">tilts: −3° to +3°, tape on corners</text>
 </svg>
