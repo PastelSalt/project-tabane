@@ -4,6 +4,8 @@ Everything that happens on Project Tabane, by Kyle and by Claude. Newest first. 
 
 | Date | Who | Action |
 |---|---|---|
+| 2026-10-25 | Claude | Phase 1 step 2 done: design tokens in `globals.css` (colors, tints, wireframe greys, radius, lines, sticker shadows, spacing, type scale, graph-paper grid, motion, focus ring, reduced motion); Nunito and JetBrains Mono via `next/font`; site-wide noindex; `/styleguide` page shows every token; starter page and images removed. Typecheck, lint and build pass. Committed locally, not pushed |
+| 2026-10-25 | Kyle | Asked for Phase 1 step 2 (design tokens and global styles) |
 | 2026-10-25 | Claude | Phase 1 step 1 done: Next.js 16.3.8 app (React 19, TypeScript, ESLint, npm, `src/` layout) set up in this folder; `typecheck` script runs `next typegen` first; starter `CLAUDE.md` and README; `.drafts/` stays git-ignored; `git init` with `origin` set to PastelSalt/project-tabane; first local commit. Not pushed |
 | 2026-10-25 | Kyle | Started Phase 1 step 1 (repository setup); commit locally only |
 | 2026-10-25 | Claude | Wrote `PHASE-1.md` (working UI with sample data: pages, components, design tokens, 15 steps). Spec: build phases re-ordered (1 Working UI, 2 Content, 3 Upkeep tools, 4 Deploy, 5 Login) |
