@@ -1,0 +1,133 @@
+# Every tag's fixed list, with labels (spec: "Organizing entries" and "Playbook fields").
+# Layer, Origin, Status, Target and the Playbook's Kind and Status are also fixed in src/lib/tags.ts, because pages
+# behave differently for them; the content check fails if the two disagree. Stack and Feature grow here: add a value
+# first, then use it. One spelling per value, lowercase with hyphens.
+
+layer:
+  label: Layer
+  values:
+    ui-ux: UI/UX
+    backend: Backend
+
+origin:
+  label: Origin
+  values:
+    own-project: Own project
+    researched: Researched
+    created-for-tabane: Created for Tabane
+
+status:
+  label: Status
+  values:
+    proven: Proven
+    candidate: Candidate
+    outdated: Outdated
+
+target:
+  label: Target
+  values:
+    website: Website
+    mobile-application: Mobile Application
+    desktop-application: Desktop Application
+
+stack:
+  label: Stack
+  values:
+    # spec's starting list
+    html: HTML
+    css: CSS
+    javascript: JavaScript
+    typescript: TypeScript
+    react: React
+    nextjs: Next.js
+    preact: Preact
+    astro: Astro
+    material-ui: Material UI
+    gsap: GSAP
+    node-js: Node.js
+    c: C
+    sdl-3: SDL 3
+    freetype: FreeType
+    neon-postgres: Neon Postgres
+    # kotoha-fansite.md §14
+    cloudinary: Cloudinary
+    argon2: Argon2
+    vercel: Vercel
+    sharp: sharp
+    canvas-confetti: canvas-confetti
+    lucide: Lucide
+    # hanon-fansite.md §8
+    pglite: PGlite
+    # aqua-iro-archive.md §14
+    drizzle: Drizzle ORM
+    better-auth: Better Auth
+    turnstile: Cloudflare Turnstile
+    umami: Umami
+    fuse-js: Fuse.js
+    uplot: uPlot
+    playwright: Playwright
+    vitest: Vitest
+    # himawari-website.md §14
+    budoux: BudouX
+    # moekoworks-official.md §14
+    lenis: Lenis
+    simple-icons: Simple Icons
+    zod: Zod
+
+feature:
+  label: Feature
+  values:
+    # spec's starting list
+    auth: Auth
+    admin-panel: Admin panel
+    dashboard: Dashboard
+    cards: Cards
+    gallery: Gallery
+    forms: Forms
+    search: Search
+    timeline: Timeline
+    countdown: Countdown
+    statistics: Statistics
+    layout: Layout
+    editor: Editor
+    export-pipeline: Export pipeline
+    # kotoha-fansite.md §14
+    loader: Loader
+    navigation: Navigation
+    motion: Motion
+    localization: Localization
+    video: Video
+    uploads: Uploads
+    security: Security
+    image-pipeline: Image pipeline
+    database: Database
+    api: API
+    pagination: Pagination
+    design-system: Design system
+    # hanon-fansite.md §8
+    testing: Testing
+    # aqua-iro-archive.md §14
+    moderation: Moderation
+    page-transition: Page transition
+    onboarding: Onboarding
+    dialogue: Dialogue
+    audio: Audio
+    cron: Scheduled jobs
+    performance: Performance
+    # himawari-website.md §14
+    download: Download
+    docs: Documentation
+
+playbookKind:
+  label: Kind
+  values:
+    replication-guide: Replication guide
+    reverse-engineered-idea: Reverse-engineered idea
+    personal-workflow: Personal workflow
+
+playbookStatus:
+  label: Status
+  values:
+    draft: Draft
+    verified: Verified
+    outdated: Outdated

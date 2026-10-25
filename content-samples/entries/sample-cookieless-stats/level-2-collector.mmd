@@ -1,0 +1,6 @@
+flowchart LR
+  view[Page view] --> route[API route]
+  route --> hash[Hash day + path]
+  route --> bots[Drop bots]
+  hash --> store[Store]
+  bots --> store
