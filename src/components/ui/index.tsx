@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { statuses, type Status } from "@/lib/tags";
+import { playbookStatuses, statuses, type PlaybookStatus, type Status } from "@/lib/tags";
 import styles from "./ui.module.css";
 
 const cx = (...names: (string | false | undefined)[]) => names.filter(Boolean).join(" ");
@@ -8,6 +8,12 @@ const cx = (...names: (string | false | undefined)[]) => names.filter(Boolean).j
 /** Status label: Proven is violet, Candidate yellow, Outdated struck through. */
 export function StatusPill({ status }: { status: Status }) {
   return <span className={cx(styles.pill, styles[`status-${status}`])}>{statuses[status]}</span>;
+}
+
+/** Playbook status: Verified is violet, Draft yellow, Outdated struck through. */
+export function PlaybookStatusPill({ status }: { status: PlaybookStatus }) {
+  const look = { verified: "proven", draft: "candidate", outdated: "outdated" }[status];
+  return <span className={cx(styles.pill, styles[`status-${look}`])}>{playbookStatuses[status]}</span>;
 }
 
 /** A plain outlined pill, such as the layer or target. */

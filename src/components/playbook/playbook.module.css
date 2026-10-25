@@ -1,0 +1,242 @@
+/* ---------- Filters ---------- */
+.group {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.groupHead {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.groupHead i {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  border: 1.5px solid var(--black);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.count {
+  font-size: 10px;
+  font-weight: 800;
+  opacity: 0.7;
+}
+
+.clear {
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+/* ---------- List ---------- */
+.kind {
+  margin-bottom: var(--space-8);
+}
+
+.kindHead {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+  font-size: var(--text-xl);
+}
+
+.kindHead span {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px 26px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+  height: 100%;
+  padding: 18px 18px var(--space-4);
+  background: var(--white);
+  border: var(--line) solid var(--black);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--card-shadow);
+  transition:
+    transform var(--lift-duration) var(--lift-ease),
+    box-shadow var(--lift-duration) var(--lift-ease);
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translate(-4px, -6px) rotate(-0.6deg);
+  box-shadow: 10px 12px 0 var(--card-shadow);
+}
+
+.cardSuit {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-right: 40px;
+}
+
+.cardTitle {
+  font-size: var(--text-lg);
+  line-height: 1.25;
+}
+
+.cardLink {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.cardLink:hover {
+  color: var(--black);
+}
+
+.cardLink::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+}
+
+.cardLink:focus-visible {
+  box-shadow: none;
+}
+
+.cardLink:focus-visible::after {
+  box-shadow: var(--focus-ring);
+}
+
+.goal {
+  font-size: var(--text-sm);
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px var(--space-3);
+  padding-top: var(--space-2);
+  border-top: var(--line-thin) dashed var(--black);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ---------- One playbook ---------- */
+.checklist,
+.gotchas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--space-2);
+  font-size: 14px;
+}
+
+.checklist li,
+.gotchas li {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.checklist li::before {
+  content: "";
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  border: var(--line-thin) solid var(--black);
+  border-radius: 5px;
+  background: var(--white);
+}
+
+.gotchas li::before {
+  content: "!";
+  flex: none;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--violet);
+  color: var(--white);
+  font-size: var(--text-xs);
+  font-weight: 800;
+}
+
+.steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--space-5);
+  counter-reset: step;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: var(--space-4);
+  counter-increment: step;
+}
+
+.step::before {
+  content: counter(step, decimal-leading-zero);
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: var(--yellow);
+  border: var(--line) solid var(--black);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-small);
+  font-weight: 800;
+  rotate: -4deg;
+}
+
+.step h3 {
+  font-size: var(--text-md);
+  margin: 4px 0 4px;
+}
+
+.step p {
+  font-size: 14px;
+}
+
+.finished {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.finished svg {
+  flex: none;
+}
