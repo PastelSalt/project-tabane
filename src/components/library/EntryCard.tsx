@@ -1,27 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SuitBadge, WashiTape, type Suit } from "@/components/motifs";
+import { SuitBadge, WashiTape } from "@/components/motifs";
 import { Pill, StatusPill, Tag } from "@/components/ui";
+import { formatDate, suitFor } from "@/lib/format";
 import { outlineMermaid } from "@/lib/mermaid-outline";
 import { features, layers, stacks } from "@/lib/tags";
 import type { Entry } from "@/lib/types";
 import styles from "./library.module.css";
 
-const suits: Suit[] = ["heart", "club", "diamond", "spade"];
 const shadows = ["var(--blue)", "var(--violet)", "var(--yellow)"];
 const tints = ["var(--yellow-tint)", "var(--blue-tint)", "var(--violet-tint)"];
-
-/** The same entry always gets the same suit. */
-function suitFor(slug: string): Suit {
-  let hash = 0;
-  for (const char of slug) hash = (hash * 31 + char.charCodeAt(0)) >>> 0;
-  return suits[hash % suits.length];
-}
-
-/** 2026-10-04 → 2026.10.04 */
-export function formatDate(date: string): string {
-  return date.replaceAll("-", ".");
-}
 
 /** One concept card: a preview, then status, layer, date, title, reuse note and tags. Opens the entry page. */
 export function EntryCard({ entry, index }: { entry: Entry; index: number }) {
