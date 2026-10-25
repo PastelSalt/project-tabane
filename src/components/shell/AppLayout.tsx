@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { MoekoWorksLogo } from "@/components/motifs";
+import { SidebarFrame } from "./SidebarFrame";
 import styles from "./shell.module.css";
 
 /**
@@ -21,17 +22,13 @@ export function AppLayout({ sidebar, children }: { sidebar: ReactNode; children:
 export function Sidebar({ title, label, children }: { title: string; label: string; children: ReactNode }) {
   return (
     <aside className={styles.sidebar} aria-label={label}>
-      <div className={styles.sidebarHead}>
-        <h2 className={styles.sidebarTitle}>{title}</h2>
-        <span className={styles.suits} aria-hidden>
-          <span className={styles.suitRed}>♥</span>♠<span className={styles.suitRed}>♦</span>♣
-        </span>
-      </div>
-      <div className={styles.sidebarBody}>{children}</div>
-      <div className={styles.sidebarFoot}>
-        <MoekoWorksLogo />
-        <small>Private library of Moeko Works</small>
-      </div>
+      <SidebarFrame title={title}>
+        <div className={styles.sidebarBody}>{children}</div>
+        <div className={styles.sidebarFoot}>
+          <MoekoWorksLogo />
+          <small>Private library of Moeko Works</small>
+        </div>
+      </SidebarFrame>
     </aside>
   );
 }

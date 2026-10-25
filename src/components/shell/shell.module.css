@@ -143,6 +143,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--space-3);
+}
+
+/* Desktop: the fold is always open and its button is hidden */
+.sidebarToggle {
+  display: none;
+}
+
+.sidebarFold {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-5);
 }
 
 .sidebarTitle {
@@ -264,6 +277,36 @@
   .sidebar {
     position: static;
     min-height: 0;
+    gap: 0;
+  }
+
+  /* Phones: the sidebar folds behind Show / Hide so the content comes first */
+  .suits {
+    margin-left: auto;
+  }
+
+  .sidebarToggle {
+    display: inline-flex;
+    padding: 3px 14px;
+    background: var(--yellow);
+    border: var(--line-thin) solid var(--black);
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-small);
+    font-size: var(--text-sm);
+    font-weight: 800;
+  }
+
+  .sidebarFold[data-open="false"] {
+    display: none;
+  }
+
+  .sidebarFold[data-open="true"] {
+    margin-top: var(--space-5);
+  }
+
+  .sectionTitle {
+    flex: 1;
+    min-width: 0;
   }
 
   .sectionTitle h1 {
