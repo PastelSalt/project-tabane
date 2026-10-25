@@ -1,0 +1,77 @@
+/* Pocket watch: second hand jumps once a second, minute hand creeps */
+.secondHand,
+.minuteHand {
+  transform-box: view-box;
+  transform-origin: 32px 42px;
+}
+
+.secondHand {
+  animation: tick 60s steps(60) infinite;
+}
+
+.minuteHand {
+  animation: tick 3600s linear infinite;
+}
+
+@keyframes tick {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Suit badge */
+.suit {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  line-height: 1;
+  border-radius: 50%;
+  background: var(--white);
+  border: var(--line-thin) solid var(--black);
+  color: var(--black);
+}
+
+.suitRed {
+  color: var(--violet);
+}
+
+/* Washi tape */
+.tape {
+  display: block;
+  width: 86px;
+  height: 24px;
+  border: 1.5px solid rgb(11 11 11 / 0.25);
+  transform: rotate(var(--tilt));
+  opacity: 0.95;
+}
+
+.tapeYellow {
+  background: repeating-linear-gradient(45deg, var(--yellow) 0 8px, rgb(255 255 255 / 0.9) 8px 16px);
+}
+
+.tapeBlue {
+  background: repeating-linear-gradient(45deg, var(--blue) 0 8px, rgb(255 255 255 / 0.9) 8px 16px);
+}
+
+/* Stamp */
+.stamp {
+  display: inline-block;
+  transform: rotate(var(--tilt));
+  border: var(--line) solid var(--violet);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  color: var(--violet);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  white-space: nowrap;
+}
+
+/* Chessboard strip */
+.chess {
+  height: 14px;
+  border-bottom: var(--line) solid var(--black);
+  background: conic-gradient(var(--black) 25%, var(--white) 0 50%, var(--black) 0 75%, var(--white) 0) 0 0 / 14px 14px;
+}

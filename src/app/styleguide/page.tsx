@@ -1,4 +1,16 @@
 import type { Metadata } from "next";
+import {
+  CarrotPod,
+  ChessStrip,
+  Flower,
+  MoekoWorksLogo,
+  PocketWatch,
+  RabbitEars,
+  Stamp,
+  SuitBadge,
+  Teacup,
+  WashiTape,
+} from "@/components/motifs";
 import styles from "./styleguide.module.css";
 
 export const metadata: Metadata = { title: "Styleguide" };
@@ -181,6 +193,91 @@ export default function Styleguide() {
           </button>
           <input className={styles.input} placeholder="An input" aria-label="Sample input" />
           <a href="#focus">A link</a>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <h2>Motifs</h2>
+        <p className={styles.note}>
+          From <code>@/components/motifs</code>. Decorative, so hidden from screen readers unless given a title. Shown at
+          small, medium and large sizes.
+        </p>
+        <div className={styles.motifGrid}>
+          <figure className={styles.motif}>
+            <div className={styles.motifRow}>
+              <RabbitEars size={20} />
+              <RabbitEars size={40} />
+              <RabbitEars size={72} title="Tabane" />
+            </div>
+            <figcaption>RabbitEars · the logo</figcaption>
+          </figure>
+          <figure className={styles.motif}>
+            <div className={styles.motifRow}>
+              <Flower size={16} />
+              <Flower size={28} />
+              <Flower size={56} />
+            </div>
+            <figcaption>Flower</figcaption>
+          </figure>
+          <figure className={styles.motif}>
+            <div className={styles.motifRow}>
+              <PocketWatch size={18} ticking={false} />
+              <PocketWatch size={40} />
+              <PocketWatch size={72} />
+            </div>
+            <figcaption>PocketWatch · ticks</figcaption>
+          </figure>
+          <figure className={styles.motif}>
+            <div className={styles.motifRow}>
+              <Teacup size={40} />
+              <Teacup size={80} />
+            </div>
+            <figcaption>Teacup</figcaption>
+          </figure>
+          <figure className={styles.motif}>
+            <div className={styles.motifRow}>
+              <CarrotPod size={16} />
+              <CarrotPod size={34} />
+              <CarrotPod size={48} />
+            </div>
+            <figcaption>CarrotPod</figcaption>
+          </figure>
+          <figure className={styles.motif}>
+            <div className={styles.motifRow}>
+              <SuitBadge suit="heart" />
+              <SuitBadge suit="spade" />
+              <SuitBadge suit="diamond" />
+              <SuitBadge suit="club" />
+              <SuitBadge suit="heart" size={56} />
+            </div>
+            <figcaption>SuitBadge</figcaption>
+          </figure>
+          <figure className={styles.motif}>
+            <div className={styles.motifRow}>
+              <WashiTape />
+              <WashiTape color="blue" tilt={4} />
+            </div>
+            <figcaption>WashiTape · yellow and blue</figcaption>
+          </figure>
+          <figure className={styles.motif}>
+            <div className={styles.motifRow}>
+              <Stamp />
+              <Stamp tilt={-4}>Proven</Stamp>
+            </div>
+            <figcaption>Stamp</figcaption>
+          </figure>
+          <figure className={`${styles.motif} ${styles.motifWide}`}>
+            <ChessStrip />
+            <figcaption>ChessStrip</figcaption>
+          </figure>
+          <figure className={`${styles.motif} ${styles.motifWide}`}>
+            <div className={styles.motifRow}>
+              <MoekoWorksLogo width={120} />
+              <MoekoWorksLogo />
+              <MoekoWorksLogo width={260} />
+            </div>
+            <figcaption>MoekoWorksLogo</figcaption>
+          </figure>
         </div>
       </section>
 

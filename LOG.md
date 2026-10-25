@@ -4,6 +4,8 @@ Everything that happens on Project Tabane, by Kyle and by Claude. Newest first. 
 
 | Date | Who | Action |
 |---|---|---|
+| 2026-10-25 | Claude | Phase 1 step 3 done: motif components in `src/components/motifs` (RabbitEars, Flower, PocketWatch with ticking hands, Teacup, CarrotPod, SuitBadge, WashiTape, Stamp, ChessStrip, MoekoWorksLogo); logo copied to `public/brand/`; Motifs section on `/styleguide` at several sizes. Typecheck, lint and build pass. Committed locally, not pushed |
+| 2026-10-25 | Kyle | Asked for Phase 1 step 3 (motif components) |
 | 2026-10-25 | Claude | Phase 1 step 2 done: design tokens in `globals.css` (colors, tints, wireframe greys, radius, lines, sticker shadows, spacing, type scale, graph-paper grid, motion, focus ring, reduced motion); Nunito and JetBrains Mono via `next/font`; site-wide noindex; `/styleguide` page shows every token; starter page and images removed. Typecheck, lint and build pass. Committed locally, not pushed |
 | 2026-10-25 | Kyle | Asked for Phase 1 step 2 (design tokens and global styles) |
 | 2026-10-25 | Claude | Phase 1 step 1 done: Next.js 16.3.8 app (React 19, TypeScript, ESLint, npm, `src/` layout) set up in this folder; `typecheck` script runs `next typegen` first; starter `CLAUDE.md` and README; `.drafts/` stays git-ignored; `git init` with `origin` set to PastelSalt/project-tabane; first local commit. Not pushed |
