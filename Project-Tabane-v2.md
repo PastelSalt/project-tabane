@@ -127,7 +127,7 @@ Every entry uses the same fields, so people and Claude can read any entry the sa
 | Screenshot | UI/UX with a live site, and every Mobile or Desktop Application entry | PNGs in the entry's folder, saved when the entry is created. Shown if the live site cannot be embedded or is offline, and always for apps, which cannot be embedded |
 | Clip | Mobile or Desktop Application, optional | A short silent clip of the piece in use, shown only on the entry page and never on cards |
 | Technical details | All | How it operates: the techniques and stack for UI/UX, the backend logic for backend |
-| Diagrams | Backend | Mermaid files in the entry's folder, so Claude can read them. The front matter lists each diagram with its ID, level (1 for the whole system, then 2, 3 and lower), parent diagram ID and file name, so the levels link to each other |
+| Diagrams | Backend | Mermaid files in the entry's folder, so Claude can read them. The front matter lists each diagram with its ID, level (1 for the whole system, then 2, 3 and lower), parent diagram ID, file name, and the box in the parent that opens it (when its name differs from the diagram ID), so the levels link to each other |
 | Related entries | All | The folder names (slugs) of other entries this one pairs with, such as the Backend entry behind a UI/UX entry |
 | Shared | All | Off by default; only Shared entries are visible to someone using an access code |
 | Used in | All | The projects that have reused this entry, added after a project built with Tabane |

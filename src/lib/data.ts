@@ -153,8 +153,16 @@ function check() {
     const diagramIds = new Set(entry.diagrams?.map((diagram) => diagram.id));
     for (const diagram of entry.diagrams ?? []) {
       if (diagram.parent && !diagramIds.has(diagram.parent)) problems.push(`${entry.slug}: diagram "${diagram.id}" has no parent "${diagram.parent}"`);
+      const parent = entry.diagrams?.find((other) => other.id === diagram.parent);
+      const box = diagram.expands ?? diagram.id;
+      if (parent && !new RegExp(`(^|[\\s>])${box}(\\[|\\s|$)`, "m").test(parent.mermaid)) {
+        problems.push(`${entry.slug}: diagram "${diagram.id}" expands box "${box}", which is not in "${parent.id}"`);
+      }
     }
     if (entry.layer === "backend" && !entry.diagrams?.length) problems.push(`${entry.slug}: backend entries need diagrams`);
+    if (entry.diagrams?.length && entry.diagrams.filter((diagram) => diagram.level === 1).length !== 1) {
+      problems.push(`${entry.slug}: needs exactly one level-1 diagram`);
+    }
     if (entry.layer === "ui-ux" && !entry.wireframe) problems.push(`${entry.slug}: UI/UX entries need a wireframe`);
   }
   for (const playbook of samplePlaybooks) {

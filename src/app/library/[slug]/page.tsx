@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { DiagramLevels } from "@/components/entry/DiagramLevels";
 import { EntryHeader } from "@/components/entry/EntryHeader";
+import { Panel } from "@/components/entry/Panel";
 import { EntrySidebar } from "@/components/entry/EntrySidebar";
 import styles from "@/components/entry/entry.module.css";
 import {
@@ -33,8 +35,16 @@ export default async function EntryPage({ params, searchParams }: PageProps<"/li
     <AppLayout sidebar={<EntrySidebar entry={entry} />}>
       <EntryHeader entry={entry} />
 
-      {entry.layer === "backend" ? (
-        <Placeholder>The diagram with its levels arrives in step 8.</Placeholder>
+      {entry.layer === "backend" && entry.diagrams ? (
+        <Panel
+          title="Diagram"
+          color="violet"
+          tape="yellow"
+          flush
+          actions={<span>{entry.diagrams.length === 1 ? "1 level" : `${entry.diagrams.length} diagrams`}</span>}
+        >
+          <DiagramLevels diagrams={entry.diagrams} initial={typeof query.diagram === "string" ? query.diagram : undefined} />
+        </Panel>
       ) : (
         <div className={styles.row}>
           <WireframePanel entry={entry} view={view} frame={frame} />

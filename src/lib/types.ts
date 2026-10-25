@@ -20,6 +20,8 @@ export type Diagram = {
   level: number;
   /** The diagram one level up; empty for level 1. */
   parent?: string;
+  /** The box in the parent diagram that opens this one. Defaults to this diagram's id. */
+  expands?: string;
   title: string;
   /** Mermaid source, so Claude can read it. */
   mermaid: string;
