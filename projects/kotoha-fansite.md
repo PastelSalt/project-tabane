@@ -9,9 +9,9 @@ Full architectural analysis (visual, operation, process, code) of the Kotoha fan
 | Live site | https://kotoha-fansite.vercel.app/ |
 | Repository | [PastelSalt/kotoha-fansite](https://github.com/PastelSalt/kotoha-fansite) (private) |
 | Local folder | `C:\Users\Myaako\Documents\MoekoWorks\kotoha-fansite` |
-| Read at | commit `79bbd5e` (`main`, 2026-10-21), 41 commits, read 2026-10-25 |
+| Read at | commit `79bbd5e` (`main`, 2026-10-21), 41 commits, read 2026-10-25. **Updated** for the admin UI refresh at `2fa67f2` (`main`, 2026-10-25, 44 commits): sections 4, 6.10, 9, 10, 11, 12, 15 and 16 |
 | Target | Website (public site + private admin panel) |
-| Status on the site | Live; design v2 "Clover Scrapbook" since 2026-10-02; performance pass 2026-10-09 |
+| Status on the site | Live; design v2 "Clover Scrapbook" since 2026-10-02; performance pass 2026-10-09; admin UI refresh live 2026-10-25 (a check with real data, by the owner signing in, is still open) |
 | Embeddable | **No.** The site sends `X-Frame-Options: DENY` and `frame-ancestors 'none'`, so Tabane must show screenshots, not a live frame |
 | Size | ≈ 8,000 lines of code (HTML, CSS, JS, SQL) plus ≈ 3,500 lines of docs |
 
@@ -246,7 +246,7 @@ kotoha-fansite/
     locales/              en.json, ja.json, admin/en.json, admin/ja.json
     assets/               bg/ (36 WebP), img/ (15), svg/ (sprite + generated)
   assets/, references/    untouched originals and design references (not deployed)
-  docs/                   implementation plan, progress log, design system, design v2 plan, performance plan, data sheets
+  docs/                   implementation plan, progress log, design system, design v2 plan, performance plan, admin UI plan, JA review list, data sheets
   MIGRATION.md            handoff for the next Claude session
   FORHANON.md             guide for copying this site into the Hanon fan site
   vercel.json             rewrites, security headers, caching
@@ -434,7 +434,21 @@ Cookieless: a random visit id in memory only; `data-track`, `data-track-id`, `da
 - **Gallery manager** (`admin/gallery.js`): `prepareFile` shrinks oversize images in the browser (canvas → WebP, scale and quality stepped down up to 6 times) to Cloudinary's free limits; XHR upload with progress; credit editing; permanent delete.
 - **Dashboard** (`admin/analytics.js`): KPIs, visits per day/week/month and a 24-hour chart **in plain SVG, no chart library**; bar lists for devices, browsers, languages, countries, sources, sections, videos, outbound links, news links, gallery.
 - **UI kit** (`admin/ui.js`): toasts, a promise-based `<dialog>` (`openDialog({title, body, actions, onSubmit})`), form fields, Lucide icons that render once the async script arrives.
-- **Look:** separate calmer stylesheet `admin.css` (same fonts and brand colours, denser).
+
+#### Admin UI refresh (2026-10-25, front end only; `docs/ADMIN_UI_PLAN.md`, commit `dc82320`, merge `4568cac`)
+
+A redesign of `/admin` and `/login` that changed only `admin.html`, `login.html`, `css/admin.css`, `js/admin/*` and the admin locales. **Ground rules:** no API, `lib/`, database, script or `vercel.json` change; every number comes from what the endpoints already return (totals and splits may be computed in the browser); no new features or libraries; every behaviour kept (routes, dialogs, validation, paging, archive/restore, owner-only screens, forced password change, the render guard, the "waking up" hint).
+
+- **Problems it fixed** (plan §1.4, 14 found): content counts and visitor KPIs looked identical; drafts were easy to miss; the range control sat *below* the two KPIs it changes (Avg visit, Avg loading) while Today/Week/Month and the chart ignore it; a small chart with only slow native `<title>` tooltips; twelve breakdown cards in one flat grid; a 24 px tick-font hack for phones; a mobile sidebar with no backdrop or Esc; a flat 10-link sidebar; inline styles in JS; filler `<span>`s to fill grid columns; 2 px borders everywhere; an admin palette that had drifted from the public tokens.
+- **Look: the public site's theme, calmer.** `admin.css` (490 lines) copies the v2 token values (pink and green scales, paper `#fffaf2`, sunken paper, ink, tinted shadows) into its own `:root` (no `@layer` import, to avoid cascade surprises). Brand-pink page with a white dot pattern, paper cards, green **sticker titles** with the illustrated clover from the public sprite (`/assets/svg/v2-sprite.svg#cl-leaf`), the dashed "stitch" only on the welcome card and the drop zone. No tape, no tilt on data. **Colour meaning:** green = site content and primary actions, pink = visitors, dashed = draft.
+- **Shell:** sidebar in groups (Dashboard; Content: videos → gallery; Records: archive, activity; Account: accounts, my account) with clover group labels, a floating paper sidebar and a sticker-style active link; user badge with a clover avatar (green for owner, pink for admin) and a role pill. **Mobile menu:** a scrim behind it; tap outside, Esc or a route change closes it; focus moves into the menu when it opens and back to the toggle when it closes. Inline styles moved to classes.
+- **Dashboard, top to bottom:** welcome card with today's date in Japan time → **Site content** tiles (the sidebar's Lucide icon, published count, a draft pill only when there are drafts, a thin published/draft split bar, the whole tile a link) → **Visitors**: a compact Today / This week / This month strip, then the visits chart → **Details for 7 / 30 / 90 / 365 days**: the range control together with Avg visit, Avg loading and "N visits in this period", and the breakdown cards grouped **Audience** (devices, browsers, languages, countries), **Traffic** (sources, busiest hours) and **Engagement** (sections reached, video plays, official link clicks, news links, gallery), with ranks and the busiest hour highlighted.
+- **Visits chart:** drawn at the box's real pixel width (re-drawn by a `ResizeObserver` when the width changes by more than 30 px), so tick labels stay readable on phones without the font hack; three grid lines; totals for the shown series summed in the browser; a value label on hover, tap and **arrow keys** (the chart box is focusable, the label is `aria-live`); the SVG `<title>`s stay for screen readers.
+- **Loading and errors:** skeleton cards and rows at their final size (`skeletonRows()`), so nothing jumps; on a range change the old content dims with `aria-busy`; one `stateBox(text, { kind, small, action })` for empty and error states (clover or alert icon, optional Retry button).
+- **Other screens:** rows get an icon instead of filler elements (content without thumbnails, archive, activity, accounts); draft rows dashed; gallery cards with a 1 px border and shadow; the dialog gets a header, body and a sticky action row; toasts get an icon per kind (`check`, `circle-alert`, `info`); password rules become CSS badges.
+- **Login page:** a paper card with a sticker title and clover decorations.
+- **New strings:** about ten keys (`dashboard.contentTitle`, `dashboard.draftsN`, `analytics.groups.*`, `analytics.totalShown`, `nav.groups.*` …) in both admin locales, with the Japanese appended to `docs/JA_REVIEW_LIST.md`.
+- **Wide screens:** after the owner's preview ("right side too empty at 1920 px") the content max-width became sidebar + 1640 px and tile and stat grids use `auto-fit`.
 
 ---
 
@@ -541,6 +555,7 @@ Conventions: all timestamps `timestamptz`; "today" means Japan time; a shared `s
 | 2026-10-02 | D2–D4 + D6: the real page moves to the new design; style tile removed; merged into `main` with the owner's OK; `MIGRATION.md` handoff written |
 | 2026-10-09 | Performance pass (snap and Lenis removed, blur removed, single ticker, backdrop layer merge, `.is-far`); discography data fixes; `FORHANON.md` guide for the sister site |
 | 2026-10-21 | Rebrand Moesoft → Moeko Works; footer maker card, sister sites, contact form |
+| 2026-10-25 | Admin UI refresh (front end only): plan `docs/ADMIN_UI_PLAN.md` written after analysing every admin file, approved ("make sure it still adheres to the actual site theme"), built on branch `admin-ui-refresh`, previewed by the owner on a mock server, one wide-screen fix, merged and deployed (`dc82320`, `4568cac`, docs `2fa67f2`) |
 
 ### 9.2 Working method seen in the repo
 
@@ -550,6 +565,8 @@ Conventions: all timestamps `timestamptz`; "today" means Japan time; a shared `s
 - **Measured performance work:** diagnosis ranked by cost, targets, a plan, then before/after numbers in `docs/PERFORMANCE_PLAN.md`.
 - **Handoff documents:** `MIGRATION.md` for the next Claude session; `FORHANON.md` for reusing the codebase.
 - **Testing:** headless Edge/Chrome over the DevTools protocol (screenshots per section, ≈ 50 behaviour checks, frame timing). The scripts lived in a temporary scratchpad and were lost; the docs say to commit them next time.
+- **Front-end-only redesigns with a fence:** the admin refresh plan lists exactly which files may change and which may not, "existing data only", "no new features", "keep every behaviour", then the problems found, the target layout as an ASCII wireframe, new strings, risks and a phase checklist with owner checkpoints.
+- **Mock preview when the real backend isn't reachable:** the checkout had no `.env.local`, so a scratchpad server served `public/` with the `vercel.json` headers (CSP), proxied `/api/public/*` read-only to production for real content, faked `/api/auth/*` and `/api/admin/*` in memory (any sign-in works, saves only change memory) and swallowed `/api/track`. The owner reviewed the redesign there before it went live. The server itself stayed in the scratchpad (not committed).
 
 ### 9.3 Operations
 
@@ -595,10 +612,11 @@ Reusability: **High** = lift with little change · **Medium** = needs rebranding
 | U19 | Bilingual i18n with attributes | `shared/i18n-core.js`, `prepaint.js`, `locales/*.json`, `/api/public/geo` | JSON dictionaries, `data-i18n` and `data-i18n-attr`, placeholders, arrays/objects, geo default, explicit choice stored, JP/EN switches, re-render on change | High | languages, storage key |
 | U20 | Footer with maker card and credits | footer markup, `.foot`, `.maker-card`, `main.js` `renderFooterCredits` | a scallop-edged footer with a quiet maker card, sister-site links, and artist credits merged from static data and the gallery (unknown artists grouped) | Medium | links, credits |
 | U21 | Mascot state notes | `render.js` `stateNote`, `.state-note` | friendly empty/error states with a retry button | High | image, text |
-| U22 | Admin panel shell | `admin.html`, `admin/main.js`, `admin/api.js`, `admin/ui.js`, `admin.css` | hash-routed admin with a per-render guard, forced-password-change flow, owner-only links, toasts, promise dialog, translated errors and a "waking up" hint | High | routes, brand |
+| U22 | Admin panel shell | `admin.html`, `admin/main.js`, `admin/api.js`, `admin/ui.js`, `admin.css` | hash-routed admin with a per-render guard, forced-password-change flow, owner-only links, grouped sidebar, mobile menu with scrim, Esc and focus handling, toasts with icons, promise dialog with a sticky action row, translated errors and a "waking up" hint | High | routes, brand |
 | U23 | Config-driven admin forms | `admin/content.js` `RESOURCES`, `buildForm`, `linksEditor` | declaring a resource's fields once to get its list and edit form (text, textarea, date, url, select, youtube, links, status) | High | resources |
 | U24 | Browser-side image shrink + upload with progress | `admin/gallery.js` `prepareFile`, `uploadToCloudinary` | shrinking an image in the browser to a size and pixel limit (canvas → WebP, stepping quality and scale), then an XHR upload with progress | High | limits, target |
-| U25 | Library-free SVG analytics dashboard | `admin/analytics.js` | KPIs, bar charts per day/week/month, an hours chart and bar lists in plain SVG with `Intl` formatting | High | metrics |
+| U25 | Library-free SVG analytics dashboard | `admin/analytics.js`, `admin/pages.js` | content tiles with draft pills and split bars, a fixed-period KPI strip, a visits chart drawn at real width with a hover/tap/arrow-key value label, a range block holding only the KPIs it drives, grouped breakdown cards with ranks, an hours chart with the peak highlighted; plain SVG with `Intl` formatting | High | metrics |
+| U27 | Admin UI kit in the public site's theme | `admin.css`, `admin/ui.js` (`clover`, `sticker`, `stateBox`, `skeletonRows`, toast icons), `login.html` | an admin that reuses the public design tokens and sprite but stays calm: sticker titles, paper cards, one empty/error box, skeletons at final size, colour meaning fixed (content / visitors / draft) | High | tokens, sprite symbol |
 | U26 | Section wipe (unused) | `motion/wipe.js`, `.wipe` | a striped accent panel that sweeps across between sections | Medium | not wired today |
 
 ### 10.2 Backend pieces
@@ -651,6 +669,9 @@ Learned in this project (from `MIGRATION.md`, `FORHANON.md`, `docs/PERFORMANCE_P
 | G22 | Speech bubbles must never put words in Kotoha's mouth | they are the site's voice |
 | G23 | Short laptops (≥ 1100 wide, ≤ 960 tall) | Home must fit one screen: hide secondary cards there |
 | G24 | Marquee can break after scrolling up | an infinite Web Animation played in reverse finishes at `currentTime = 0` and `play()` then throws; fixed in the Hanon site with a HEADROOM start (see [`hanon-fansite.md`](hanon-fansite.md) §3.1), **not yet in Kotoha** |
+| G25 | SVG charts in a `viewBox` scale their text with the box | on phones the tick labels became unreadable (the old fix was a 24 px font hack); the refresh draws the chart at the box's real pixel width and re-draws on resize |
+| G26 | A control placed below the numbers it changes | the range switch drove Avg visit and Avg loading above it while the chart beside it ignored it; the refresh puts the control in the heading of the block it drives |
+| G27 | No `.env.local` in a checkout means no real admin check | the refresh was verified on a mock server and production files only; the owner's first real sign-in is the real-data check (still open) |
 
 ---
 
@@ -679,7 +700,7 @@ All own-project entries start as **Proven** (live site), **Shared off**, Target 
 | `kotoha-sparkles-confetti` | Kotoha · Cursor sparkles, confetti and boing | U17, U18 | javascript | motion *(new)* | `kotoha-motion-calm-mode` |
 | `kotoha-bilingual-i18n` | Kotoha · Bilingual i18n with attribute bindings | U19, B13 | javascript, nodejs | localization *(new)* | `kotoha-nav-pill-circle-menu` |
 | `kotoha-footer-credits` | Kotoha · Footer with maker card and merged credits | U20, U21 | html, css, javascript | layout | `kotoha-masonry-lightbox` |
-| `kotoha-admin-panel` | Kotoha · Admin panel shell and config-driven forms | U22, U23, U24 | javascript, css | admin-panel, forms | `kotoha-admin-auth`, `kotoha-content-crud-archive` |
+| `kotoha-admin-panel` | Kotoha · Admin panel shell, UI kit and config-driven forms | U22, U23, U24, U27 | javascript, css | admin-panel, forms | `kotoha-admin-auth`, `kotoha-content-crud-archive`, `kotoha-scrapbook-design-system` |
 | `kotoha-analytics-dashboard` | Kotoha · Library-free SVG analytics dashboard | U25 | javascript | dashboard, statistics | `kotoha-cookieless-analytics` |
 
 ### 12.2 Backend entries
@@ -733,13 +754,13 @@ All own-project entries start as **Proven** (live site), **Shared off**, Target 
 | 9 | Page: loader, backdrop, nav + menu, sections, footer, lightbox; builders and lists | U1, U2, U5–U12, U20, U21 |
 | 10 | i18n with JA/EN dictionaries and the geo default | U19 |
 | 11 | Motion: prefs, beat, scroll life, marquee, reveals, sparkles, confetti, GSAP arrivals | U13–U18 |
-| 12 | Admin panel UI | U22–U24 |
+| 12 | Admin panel UI in the public site's theme (tokens copied, sticker titles, grouped sidebar, mobile scrim) | U22–U24, U27 |
 | 13 | Cookieless analytics and the dashboard | B8, U25 |
 | 14 | CSP + SRI; verify hashes against the served bytes | B10 |
 | 15 | Performance pass rules from the start; commit the test harness | section 11 |
 | 16 | Deploy; pre-launch reset; Owner changes the password | B12 |
 
-Gotchas for the guide: G1–G23. Finished looks like: the public page passes the behaviour checks in EN and JA, the admin can publish, upload, archive and restore, and the dashboard shows the first visits.
+Gotchas for the guide: G1–G27. Finished looks like: the public page passes the behaviour checks in EN and JA, the admin can publish, upload, archive and restore, and the dashboard shows the first visits.
 
 ---
 
@@ -780,13 +801,13 @@ For Kyle to answer before this file is applied:
 4. **Shared:** every entry starts with Shared off. Are any of these safe to show visitors (for example the design system or the loader)?
 5. **The replication guide:** the build order in section 13 follows the commit history and `FORHANON.md`. Is that how you would rebuild it, or do you prefer another order?
 6. **New tag values:** add all 18 in section 14, or only some?
-7. **Admin pieces:** the admin panel keeps an older, calmer look (`admin.css`). Treat its look as reusable too, or only its behaviour?
+7. **Admin look** *(rewritten 2026-10-25 after the admin refresh)*: the admin now uses the public site's theme, calmer (U27). Fold its look into `kotoha-admin-panel` (proposed), or make "admin UI kit in the site's theme" its own entry?
 
 ---
 
 ## 16. Sources
 
-All in the `kotoha-fansite` repository at `79bbd5e`, unless marked live.
+All in the `kotoha-fansite` repository at `79bbd5e`, unless marked live. The admin refresh update was read at `2fa67f2`: `docs/ADMIN_UI_PLAN.md` (full), the `docs/PROGRESS.md` diff, `git diff 79bbd5e..2fa67f2` of `admin.html`, `js/admin/main.js` and `ui.js`, the head of the new `css/admin.css`, and the outline of the new `js/admin/analytics.js`.
 
 | Area | Files read |
 |---|---|

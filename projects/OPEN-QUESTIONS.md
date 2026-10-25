@@ -30,8 +30,8 @@ Every open question from every project file, in one place, for Kyle to answer la
 - [ ] **K6. New tag values:** add all 18 proposed in §14, or only some?
   *Recommended:* add all.
   _Answer:_
-- [ ] **K7. Admin look:** the admin panel keeps an older, calmer look (`admin.css`). Treat its look as reusable too, or only its behaviour?
-  *Recommended:* behaviour only.
+- [ ] **K7. Admin look** *(rewritten 2026-10-25 after the admin UI refresh)*: the admin now uses the public site's theme, calmer (Kotoha §6.10, piece U27; Hanon has the same in its own theme). Fold its look into `kotoha-admin-panel`, or make "admin UI kit in the site's theme" its own entry?
+  *Recommended:* fold it into `kotoha-admin-panel`; the kit only makes sense with that panel.
   _Answer:_
 
 ## Hanon Fan Site · [`hanon-fansite.md`](hanon-fansite.md) §9

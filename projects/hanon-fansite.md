@@ -11,7 +11,7 @@ Every fact comes from comparing the two repositories file by file and from the l
 | Live site | https://hanon-fansite.vercel.app/ |
 | Repository | [PastelSalt/hanon-fansite](https://github.com/PastelSalt/hanon-fansite) (private) |
 | Local folder | `C:\Users\Myaako\Documents\MoekoWorks\hanon-fansite` |
-| Read at | commit `24afad0` (`main`, 2026-10-21), 13 commits, read 2026-10-25 |
+| Read at | commit `24afad0` (`main`, 2026-10-21), 13 commits, read 2026-10-25. **Updated** for the admin UI refresh at `114682e` (`main`, 2026-10-25, 16 commits): §1, §3.5, §4, §5, §6, §7 and §10 |
 | Derived from | Kotoha fan site at its 2026-10-09 `main` (after the performance pass) |
 | Target | Website (public site + private admin panel) |
 | Theme | "Sazanami Scrapbook" (さざなみ, ripples): the Kotoha scrapbook system in Hanon's blue and penguin gold |
@@ -29,7 +29,7 @@ Every fact comes from comparing the two repositories file by file and from the l
 | 3 Architecture (all diagrams) | Same, **plus** the preview database path in §3.3 |
 | 4 Repository structure | Same, **minus** `MIGRATION.md`, `docs/DESIGN_V2_PLAN.md`, the four `docs/kotoha_*` data sheets and `public/js/public/motion/wipe.js`; **plus** `scripts/dev-db.js` and `scripts/perf/` (six files) |
 | 5 Visual design | **Different identity** (§2): tokens, sticker sprite, loader spinner, About stage, favicon. Layout, breakpoints, layering and the surface vocabulary are unchanged |
-| 6 How the front end operates | Same modules and behaviour, with the changes in §3.1 and §3.2 |
+| 6 How the front end operates | Same modules and behaviour, with the changes in §3.1 and §3.2. The **admin panel** got Kotoha's 2026-10-25 UI refresh (Kotoha §6.10) with the same layout, components, behaviour and locale keys; only its theme differs (§3.5) |
 | 7 How the back end operates | Same code; only names change (cookie `__Host-hf_session`, storage keys `hf_lang` / `hf_motion`, Cloudinary folder `hanon-fansite/gallery`, User-Agent, guessable-word list), **plus** the preview database hook in `lib/db.js` (§3.3) |
 | 8 Data model | Identical schema (`0001_init.sql` differs only in comments); seed data is Hanon's |
 | 9 Process | Different: a copy-and-rebrand process with its own phases (§4) |
@@ -170,6 +170,30 @@ Kotoha's tests lived in a scratchpad and were lost (Kotoha gotcha G16). Hanon co
 - **Where the time goes:** the GPU process (raster and compositing). All animations off → 14 fps; backdrop off → 17.6; animations + backdrop + filters + shadows + text strokes off → 27.9.
 - **Comparing with Kotoha:** Kotoha's earlier 35–38 fps came from a different machine, so the numbers aren't comparable.
 
+### 3.5 Admin UI refresh, ported from Kotoha (2026-10-25; `docs/ADMIN_UI_PLAN.md` v0.2, commit `27caad2`, merge `bb32e5e`)
+
+Everything described in Kotoha §6.10 "Admin UI refresh" applies here. Hanon's plan lists only what differs, under one rule: **the two admin panels stay identical in layout, components, behaviour and locale keys; only the theme differs.**
+
+- **Starting point:** Hanon's admin was Kotoha's old admin re-skinned sky blue, with every `js/admin/*` file byte-identical to Kotoha's pre-refresh version. So the port was: take Kotoha's refreshed `admin.html`, `login.html`, `js/admin/{analytics,content,gallery,main,pages,ui}.js` and admin locales as they are; put Hanon's branding back (titles, `logo-400.webp` 400×131, `hanon` / `penguin` in the password blocklist); re-theme `css/admin.css` and swap the sprite references. After the port, `content.js` and `gallery.js` are still identical to Kotoha's; `analytics.js`, `main.js`, `pages.js` and `ui.js` differ only in a few lines (sprite helper and colour flag names).
+- **Theme mapping (Clover Scrapbook → Sazanami Scrapbook), by colour role:**
+
+| Role | Kotoha | Hanon |
+|---|---|---|
+| Page | pink-300 + white dots | sky-300 `#b7d7ef` + the same dots (0.36 alpha); ink on it 8.6:1 |
+| Paper / sunken paper | `#fffaf2` / `#f7efe3` | `#f7fbff` / `#eaf2fa` |
+| Ink / ink-soft | `#2b3326` / `#56614f` | `#22324a` / `#4a5b72` (6.7:1 on paper) |
+| **Content** (buttons, tiles, active nav, split bars, drop zone, hours bars) | green | sky-500/600/700/900 (sky-700 on paper 6.4:1; white on sky-700 6.7:1) |
+| **Visitors** (KPI numbers, visits chart, chart tip, legend, visitor sticker, record row icons, topbar "Admin" badge) | pink | **gold** 200–700 (+ admin-only gold-50 `#fff8e6`); sticker = Hanon's `.sticker--gold`; KPI numbers gold-700 on paper 4.8:1 |
+| Sidebar link hover | pink | sky-50 / sky-900, as the public nav pill (10:1) |
+| Focus ring | pink-700 | gold-700 |
+| Shadows | pink/green-tinted | Hanon's navy-tinted shadows + a gold sticker shadow |
+| Draft dashes, hairlines | beige | `--dash #a9c3dd`, `--line #d6e3ef` |
+| Dialog backdrop, mobile scrim | plum | navy `rgb(16 36 64)` |
+
+- **Sprite icons:** `clover(variant)` became `penguin(variant, extraClass, symbol = 'pg-penguin')` with class `.pg` (`.pg--gold`, `.pg--white`), same call sites; `sticker(…, { pink })` became `{ gold }`. Sidebar group labels: Content = penguin, Records = gold `#shell`, Account = `#star`. Welcome card corner: gold star. Avatar: penguin for owner, gold-bow penguin for admin. Empty states: penguin (big), `#drop` (small). Login card: penguin top left, gold star bottom right.
+- **Judgment calls:** visitors became **gold**, because gold-700 is Hanon's public warm accent (NEW stamp, ribbons, active nav link) and it stays clearly apart from the blue content colour; the logo pink was rejected because the public design system keeps it decorative only. White text on the sky and gold sticker gradients is 3.3–5.0:1, so small sticker titles went from 18 to 19 px bold to count as AA large text.
+- **Preview:** the same kind of mock server as Kotoha's (scratchpad only), on port **3001** so both previews can run side by side, proxying to the Hanon production public API, with mock users and two Japanese mock drafts. Checked: all 10 routes in EN and JA at 1920 / 1366 / 1024 / 375 px, chart hover, range switch, edit dialog and save, mobile menu, CSP, clean console. Owner approved with no changes; production files match the commit byte for byte. The real-data check (owner signs in) is still open.
+
 ---
 
 ## 4. Unique: the copy-and-rebrand process
@@ -187,6 +211,7 @@ Kotoha's tests lived in a scratchpad and were lost (Kotoha gotcha G16). Hanon co
 | 6 Admin smoke | throwaway Neon branch (copy of production), 50/50 |
 | 7 Harness | perf + behaviour harness committed; marquee fix |
 | 8–9 | QA ✋ and launch ✋ (open at read time) |
+| Admin refresh (2026-10-25) | port of Kotoha's admin UI refresh the same day: read Hanon's design docs and Kotoha's plan and commit, confirm the admin JS was identical to Kotoha's old version, port and re-theme on branch `admin-ui-refresh`, mock preview ✋, merge and deploy (§3.5) |
 
 Asset gaps handled: no mascot → penguin sticker; only one loader artwork left after sections → reuse section art; no favicon/OG → generated in the image script; no clover frames or divider → not needed.
 
@@ -207,6 +232,7 @@ Artwork credits were researched (reverse image search, cover thumbnails, X): bg4
 | H7 | Reverse-safe infinite Web Animation | `motion/marquee.js` | the HEADROOM fix for infinite animations played in reverse | High |
 | H8 | Single schedule constant | `countdown.js`, `home.js` | one exported schedule for the countdown and the week strip | High |
 | H9 | Flattened SVG favicon from a sprite sticker | `scripts/optimize-images.js` | a favicon generated from the site's own sticker, with fixed colours so every renderer draws it | Medium |
+| H10 | Porting a redesign to a sister site by theme only | `css/admin.css`, `js/admin/ui.js` (`penguin`, `sticker`), `docs/ADMIN_UI_PLAN.md` | keep layout, components, behaviour and locale keys identical and map only colour roles (content, visitors, draft) and sprite symbols, so one redesign serves several sites | High |
 
 ---
 
@@ -222,6 +248,8 @@ Artwork credits were researched (reverse image search, cover thumbnails, X): bg4
 | HG6 | Rebranding leaves leftovers | grep the whole rename list again after the copy (EN and JA), keeping only intentional duo mentions |
 | HG7 | Scroll benchmarks differ by machine | compare back-to-back on one machine only |
 | HG8 | Stale note in `docs/PROGRESS.md` | "Known issues" still says the image and seed scripts list Kotoha file names, but the code already uses Hanon's |
+| HG9 | White text on light brand gradients | Hanon's sky and gold sticker gradients give 3.3–5.0:1, so sticker labels must stay ≥ 19 px bold (AA large text) |
+| HG10 | A role colour must not be a decorative-only colour | the admin's "visitors" role couldn't use the logo pink (decorative only in the design system), so it became gold |
 
 ---
 
@@ -239,6 +267,7 @@ All 29 proposed Kotoha entries exist unchanged (apart from names and colours) in
 | `kotoha-stream-ticket-week` | use Hanon's single schedule constant (H8) |
 | `kotoha-image-pipeline` | Hanon adds the flattened sticker favicon (H9) |
 | `kotoha-db-scripts` | Hanon adds the PGlite preview (H3) |
+| `kotoha-admin-panel` | Hanon has the same refreshed admin in the Sazanami theme, visitors in gold (H10, §3.5) |
 
 ### 7.2 New entries
 
@@ -252,7 +281,7 @@ All new entries: Origin Own project, Status Proven, Target Website, Shared off, 
 | `hanon-sticker-sprite` | Hanon · Multi-shape recolourable sticker sprite | UI/UX | H4 | css | design-system *(new)* | `kotoha-scrapbook-design-system` |
 | `hanon-sazanami-theme` | Hanon · Sazanami Scrapbook re-theme | UI/UX | H5, H6 | css, javascript | layout, design-system *(new)* | `kotoha-scrapbook-design-system`, `kotoha-clover-loader` |
 
-H7, H8 and H9 are small fixes, so they go into the Kotoha entries as notes rather than entries of their own.
+H7, H8 and H9 are small fixes, and H10 is a way of working rather than code of its own, so they go into the Kotoha entries as notes rather than entries of their own (H10 also into the `replicate-hanon-fan-site` guide).
 
 ### 7.3 Replication guide
 
@@ -288,5 +317,6 @@ In addition to the Kotoha file's list:
 | Hanon only | `scripts/dev-db.js`; headers and check lists of all six `scripts/perf/*.js` |
 | Hanon docs | `docs/IMPLEMENTATION_PLAN.md` (headings, asset gaps), `docs/PROGRESS.md` (phases 6–7, known issues, session log), `public/js/public/data.js`, sprite symbol list |
 | History | `git log` (13 commits, 2026-10-09 → 2026-10-21) |
+| Admin refresh update (`114682e`) | `docs/ADMIN_UI_PLAN.md` (full), `git log` and `diff --stat` since `24afad0`, the head of the new `css/admin.css`, and a file-by-file diff of the refreshed admin against Kotoha's (`admin.html`, `js/admin/*.js`) |
 | Live | `https://hanon-fansite.vercel.app/` headers (`X-Frame-Options: DENY`); `/api/public/home` 200 (3.5 s, database waking), `geo` and `gallery` 200 (2026-10-25) |
 | Base analysis | [`kotoha-fansite.md`](kotoha-fansite.md) for everything shared |
