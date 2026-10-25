@@ -31,8 +31,10 @@ screenshots:
 related:
   - kotoha-scroll-reveals
   - kotoha-motion-calm-mode
+  - hanon-cdp-test-harness
 usedIn:
   - Kotoha Fan Site
+  - Hanon Fan Site
 shared: false
 lastChecked: 2026-10-25
 created: 2026-10-25
@@ -47,6 +49,7 @@ One `requestAnimationFrame` loop drives every scroll-linked JavaScript effect, a
 - **Lean:** cards marked `.lean` tilt up to ±2° with scroll speed. `--lean` is written only on cards that are on screen (IntersectionObserver plus a MutationObserver for cards added later), never on `<html>`, because a per-frame property on the root restyles the whole document.
 - **Marquee** (`motion/marquee.js`): one looping Web Animation per ribbon on the compositor; scroll speed only changes its `playbackRate`, negative when scrolling up. It starts `HEADROOM` loops into its timeline, because an infinite animation played in reverse finishes at 0 and `play()` then throws (fixed 2026-10-25, ported from the Hanon site).
 - **Rules that made it smooth:** no CSS transition on any property JavaScript changes every frame; no smooth-scroll library or snapping (both were removed for lag); off-screen and calm mode stop everything.
+- **Hanon Fan Site:** The marquee's reverse-playback fix came from Hanon and has been in both sites since 2026-10-25.
 
 ## Key code
 

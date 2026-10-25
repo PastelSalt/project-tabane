@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Markdown from "react-markdown";
-import { getEntry } from "@/lib/data";
+import { getEntry, getPlaybook } from "@/lib/data";
 
 /**
- * Playbook text in Markdown (code, bold, links). A code span that is an entry's slug, such as `kotoha-admin-auth`,
- * links to that entry. `inline` drops the paragraph wrapper, for list items.
+ * Playbook text in Markdown (code, bold, links). A code span that is an entry's or playbook's slug, such as `kotoha-admin-auth`,
+ * links to it. `inline` drops the paragraph wrapper, for list items.
  */
 export function PlaybookText({ text, inline = false }: { text: string; inline?: boolean }) {
   return (
@@ -14,8 +14,10 @@ export function PlaybookText({ text, inline = false }: { text: string; inline?: 
         code: ({ children }) => {
           const value = String(children);
           const entry = getEntry(value);
-          return entry ? (
-            <Link href={`/library/${entry.slug}`} title={entry.title}>
+          const playbook = entry ? undefined : getPlaybook(value);
+          const target = entry ? { href: `/library/${entry.slug}`, title: entry.title } : playbook ? { href: `/playbook/${playbook.slug}`, title: playbook.title } : null;
+          return target ? (
+            <Link href={target.href} title={target.title}>
               <code>{value}</code>
             </Link>
           ) : (

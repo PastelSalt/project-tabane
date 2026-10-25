@@ -27,6 +27,7 @@ related:
   - kotoha-sparkles-confetti
 usedIn:
   - Kotoha Fan Site
+  - Hanon Fan Site
 shared: false
 created: 2026-10-25
 updated: 2026-10-25

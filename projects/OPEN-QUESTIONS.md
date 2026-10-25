@@ -13,22 +13,6 @@ Every open question from every project file, in one place, for Kyle to answer la
 
 ---
 
-## Hanon Fan Site · [`hanon-fansite.md`](hanon-fansite.md) §9
-
-- [x] **H1. Marquee fix in Kotoha:** apply Hanon's marquee fix to the Kotoha repository? That is a change outside Tabane, so it would be its own task.
-  *Recommended:* yes, as its own task in the Kotoha repository, not part of Tabane work.
-  _Answer:_ Yes, as its own task. Until it's done, `kotoha-scroll-life` keeps the note that Kotoha still has the bug (G24).
-  *Done 2026-10-25:* ported (`c4dcee4`), merged into Kotoha's `main` (`52e0184`) with Kyle's OK, live and checked on the live site.
-- [x] **H2. Sazanami theme:** keep `hanon-sazanami-theme` as its own entry, or fold it into `kotoha-scrapbook-design-system` as a "theme variant" section?
-  *Recommended:* its own entry.
-  _Answer:_ Its own entry.
-- [x] **H3. Main replication guide:** keep both guides, or make the Hanon one ("derive a sister fan site from Kotoha") the main guide for new fan sites?
-  *Recommended:* Hanon's as the main guide.
-  _Answer:_ Hanon's guide is the main guide for new fan sites; Kotoha's guide stays as the history of how the original was built.
-- [x] **H4. Harness reach:** the test harness also works on Kotoha. List Kotoha under its Used in?
-  *Recommended:* no, not until it has actually been run on Kotoha.
-  _Answer:_ No, not until it has been run on Kotoha.
-
 ## Aqua Iro Archive · [`aqua-iro-archive.md`](aqua-iro-archive.md) §15
 
 - [x] **A1. Entry granularity:** 28 entries; the board alone is four (pipeline, reports, moderation, island). Keep this split, or merge the board into one or two entries?
@@ -138,3 +122,19 @@ Each section moves here when its project file is applied, with the date.
 - [x] **K7. Admin look** *(rewritten 2026-10-25 after the admin UI refresh)*: the admin now uses the public site's theme, calmer (Kotoha §6.10, piece U27; Hanon has the same in its own theme). Fold its look into `kotoha-admin-panel`, or make "admin UI kit in the site's theme" its own entry?
   *Recommended:* fold it into `kotoha-admin-panel`; the kit only makes sense with that panel.
   _Answer:_ Fold it into `kotoha-admin-panel`.
+
+### Hanon Fan Site · [`hanon-fansite.md`](hanon-fansite.md) §9 · applied 2026-10-25 (5 entries, Hanon added to the 29 Kotoha entries, guide `replicate-hanon-fan-site`)
+
+- [x] **H1. Marquee fix in Kotoha:** apply Hanon's marquee fix to the Kotoha repository? That is a change outside Tabane, so it would be its own task.
+  *Recommended:* yes, as its own task in the Kotoha repository, not part of Tabane work.
+  _Answer:_ Yes, as its own task. Until it's done, `kotoha-scroll-life` keeps the note that Kotoha still has the bug (G24).
+  *Done 2026-10-25:* ported (`c4dcee4`), merged into Kotoha's `main` (`52e0184`) with Kyle's OK, live and checked on the live site.
+- [x] **H2. Sazanami theme:** keep `hanon-sazanami-theme` as its own entry, or fold it into `kotoha-scrapbook-design-system` as a "theme variant" section?
+  *Recommended:* its own entry.
+  _Answer:_ Its own entry.
+- [x] **H3. Main replication guide:** keep both guides, or make the Hanon one ("derive a sister fan site from Kotoha") the main guide for new fan sites?
+  *Recommended:* Hanon's as the main guide.
+  _Answer:_ Hanon's guide is the main guide for new fan sites; Kotoha's guide stays as the history of how the original was built.
+- [x] **H4. Harness reach:** the test harness also works on Kotoha. List Kotoha under its Used in?
+  *Recommended:* no, not until it has actually been run on Kotoha.
+  _Answer:_ No, not until it has been run on Kotoha.

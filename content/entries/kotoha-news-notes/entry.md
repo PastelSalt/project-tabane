@@ -32,6 +32,7 @@ related:
   - kotoha-scrapbook-design-system
 usedIn:
   - Kotoha Fan Site
+  - Hanon Fan Site
 shared: false
 lastChecked: 2026-10-25
 created: 2026-10-25

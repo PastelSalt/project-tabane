@@ -28,6 +28,7 @@ related:
   - kotoha-clover-loader
 usedIn:
   - Kotoha Fan Site
+  - Hanon Fan Site
 shared: false
 created: 2026-10-25
 updated: 2026-10-25
@@ -44,3 +45,4 @@ One script turns the original artwork into everything the site serves.
 - **Share image:** an Open Graph image composited from artwork and the logo.
 - **Inputs stay untouched:** originals live in `assets/`, outside `public/`, and `.vercelignore` keeps them out of the deploy (patterns must start with `/`: an unanchored `assets` also removed `public/assets`).
 - **Rebuild:** `npm run images:optimize` skips up-to-date files; `-- --force` rebuilds everything.
+- **Hanon Fan Site:** Hanon's script also makes the favicon from its penguin sticker, flattened to fixed colours so every renderer can draw it.

@@ -32,8 +32,11 @@ related:
   - kotoha-news-notes
   - kotoha-profile-card
   - kotoha-admin-panel
+  - hanon-sazanami-theme
+  - hanon-sticker-sprite
 usedIn:
   - Kotoha Fan Site
+  - Hanon Fan Site
 shared: false
 lastChecked: 2026-10-25
 created: 2026-10-25
@@ -51,3 +54,4 @@ The "Clover Scrapbook" design system (`docs/DESIGN_SYSTEM.md`): one token file, 
 - **Sprite:** one SVG sprite of clover and UI symbols, recoloured with CSS variables (`--c1`…`--c4`). Never put `--` in a sprite comment: it silently breaks the whole sprite.
 - **Rules learned:** keep `[hidden] { display: none !important }` (grid overrides `hidden`); apply Japanese line-height to body text only, or display titles stretch.
 - The Hanon fan site re-themes the same system (`hanon-sazanami-theme`), and the admin panel reuses its tokens in a calmer form.
+- **Hanon Fan Site:** Hanon re-themes the whole system as Sazanami Scrapbook (`hanon-sazanami-theme`) with one multi-shape sticker sprite (`hanon-sticker-sprite`).

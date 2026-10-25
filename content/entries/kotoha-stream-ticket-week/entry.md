@@ -34,6 +34,7 @@ related:
   - kotoha-scrapbook-design-system
 usedIn:
   - Kotoha Fan Site
+  - Hanon Fan Site
 shared: false
 lastChecked: 2026-10-25
 created: 2026-10-25
@@ -51,6 +52,7 @@ A notched ticket that counts down to the next stream, and a Monday-first strip o
 - **Screen readers:** a hidden sentence updates once a minute, not every second.
 - **Week strip** (`home.js` `renderWeek`): the current Japan-time week, Monday first, stream days highlighted with their time, today ringed.
 - **Known wrinkle:** the schedule is written twice (`STREAM_DAYS` in `countdown.js` and a hard-coded check in `home.js`); the Hanon site exports one constant instead.
+- **Hanon Fan Site:** Hanon exports one `STREAM_DAYS` constant (Mon and Thu) used by both the countdown and the week strip, instead of writing the schedule twice.
 
 ## Key code
 

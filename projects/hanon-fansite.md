@@ -11,7 +11,7 @@ Every fact comes from comparing the two repositories file by file and from the l
 | Live site | https://hanon-fansite.vercel.app/ |
 | Repository | [PastelSalt/hanon-fansite](https://github.com/PastelSalt/hanon-fansite) (private) |
 | Local folder | `C:\Users\Myaako\Documents\MoekoWorks\hanon-fansite` |
-| Read at | commit `24afad0` (`main`, 2026-10-21), 13 commits, read 2026-10-25. **Updated** for the admin UI refresh at `114682e` (`main`, 2026-10-25, 16 commits): §1, §3.5, §4, §5, §6, §7 and §10 |
+| Read at | commit `24afad0` (`main`, 2026-10-21), 13 commits, read 2026-10-25. **Updated** for the admin UI refresh at `114682e` (`main`, 2026-10-25, 16 commits): §1, §3.5, §4, §5, §6, §7 and §10; then at `1e5d114` (17 commits) for a Home artwork crop (§2.5). Applied at `1e5d114` |
 | Derived from | Kotoha fan site at its 2026-10-09 `main` (after the performance pass) |
 | Target | Website (public site + private admin panel) |
 | Theme | "Sazanami Scrapbook" (さざなみ, ripples): the Kotoha scrapbook system in Hanon's blue and penguin gold |
@@ -104,7 +104,7 @@ The full-body model stands on a pale star (`.ripple-stage__star`, `pg--pale`) wi
 | Sparkles | gold and blue sparkles, pink heart, gold star, blue drop (no clovers) |
 | Favicon | the penguin sticker flattened to fixed colours (no CSS variables, no `<use>`) inside `optimize-images.js`, so every renderer can draw it; apple-touch icon on the sky background |
 | Logo | name logo recovered from the archived aiceclass.com, trimmed to its content (822 × 270) before resizing |
-| Artwork | 7 owner-supplied backgrounds mapped to 5 sections + 1 loader; loaders 2 and 3 reuse section art as placeholders (own output files, so each slot is one line to swap) |
+| Artwork | 7 owner-supplied backgrounds mapped to 5 sections + 1 loader; loaders 2 and 3 reuse section art as placeholders (own output files, so each slot is one line to swap). On the three-column Home (≥ 1100 px, landscape), the Home art is widened to 140 % and cropped from the left so her face sits in the gap between the columns, not under the news column (`1e5d114`, `sections.css`) |
 
 ---
 

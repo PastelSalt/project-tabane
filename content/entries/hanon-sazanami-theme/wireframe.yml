@@ -1,0 +1,73 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - image
+      - 0
+      - 0
+      - 144
+      - 90
+      - sky artwork, face between the columns
+    - - pill
+      - 24
+      - 1.6
+      - 96
+      - 6
+    - - heading
+      - 28
+      - 3.4
+      - 12
+      - 2.4
+    - - button
+      - 44
+      - 3
+      - 10
+      - 3.2
+      - home
+    - - label
+      - 56
+      - 3
+      - 40
+      - 3.2
+      - about · news · discography · gallery
+    - - panel
+      - 4
+      - 12
+      - 36
+      - 18
+      - LOGO + PILLS
+    - - panel
+      - 4
+      - 33
+      - 36
+      - 12
+      - SOCIALS
+    - - panel
+      - 4
+      - 48
+      - 36
+      - 18
+      - NEXT STREAM
+    - - panel
+      - 104
+      - 12
+      - 36
+      - 24
+      - LATEST NEWS
+    - - panel
+      - 104
+      - 40
+      - 36
+      - 28
+      - VIDEO
+    - - bar
+      - 0
+      - 78
+      - 144
+      - 7
+      - marquee
+    - - note
+      - 44
+      - 64
+      - 56
+      - 12
+      - "loader: a four-point star, gold rays, a still penguin in the middle"

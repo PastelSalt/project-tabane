@@ -1,0 +1,12 @@
+site: hanon-fansite
+shots:
+  - file: screenshot-desktop.webp
+    device: desktop
+    scrollTo: "#home"
+  - file: screenshot-phone.webp
+    device: phone
+    scrollTo: "#home"
+  - file: screenshot-loader.webp
+    device: desktop
+    early: true
+    wait: 900

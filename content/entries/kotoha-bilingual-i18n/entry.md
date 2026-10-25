@@ -34,6 +34,7 @@ related:
   - kotoha-profile-card
 usedIn:
   - Kotoha Fan Site
+  - Hanon Fan Site
 shared: false
 lastChecked: 2026-10-25
 created: 2026-10-25

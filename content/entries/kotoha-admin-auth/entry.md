@@ -39,8 +39,10 @@ diagrams:
 related:
   - kotoha-admin-panel
   - kotoha-content-crud-archive
+  - hanon-admin-smoke-test
 usedIn:
   - Kotoha Fan Site
+  - Hanon Fan Site
 shared: false
 created: 2026-10-25
 updated: 2026-10-25

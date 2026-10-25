@@ -25,8 +25,10 @@ diagrams:
 related:
   - kotoha-admin-auth
   - kotoha-sleeping-db-cache
+  - hanon-pglite-preview
 usedIn:
   - Kotoha Fan Site
+  - Hanon Fan Site
 shared: false
 created: 2026-10-25
 updated: 2026-10-25
@@ -40,3 +42,4 @@ The scripts that set up and reset the database.
 - **Seeds:** `db/seed.sql` is idempotent (safe to run again); `seed-gallery.js` uploads the starter gallery to Cloudinary, also idempotent.
 - **First Owner:** `npm run admin:bootstrap` creates the Owner from environment values and refuses if one exists; the first sign-in forces a password change.
 - **Launch day:** `prelaunch-reset.js` wipes test data so launch starts clean; it is a dry run by default and only acts with `-- --yes-reset-everything`. Needed because development and production share one database and Cloudinary folder.
+- **Hanon Fan Site:** Hanon adds an in-memory Postgres preview for running without a database (`hanon-pglite-preview`).

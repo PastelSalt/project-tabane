@@ -31,8 +31,10 @@ screenshots:
 related:
   - kotoha-crossfade-backdrop
   - kotoha-motion-calm-mode
+  - hanon-sazanami-theme
 usedIn:
   - Kotoha Fan Site
+  - Hanon Fan Site
 shared: false
 lastChecked: 2026-10-25
 created: 2026-10-25
@@ -51,6 +53,7 @@ A loading screen that is static markup in `index.html`, so it paints and spins b
 - **Exit:** all petals lit → a fast spin → a circular iris opens from the clover's centre (`--iris` mask with `@property`) → the loader leaves the DOM. Calm mode or no `@property`: a fade.
 - **Never traps anyone:** an inline `<style>` fades the loader after 12 s even if no script runs, and `boot().catch` hides it on errors.
 - **Random art:** `prepaint.js` picks one of three loader artworks (`data-loader-art`) before paint.
+- **Hanon Fan Site:** Hanon's variant: a four-point star with gold rays and a still penguin in the centre (`hanon-sazanami-theme`).
 
 ## Key code
 

@@ -35,6 +35,7 @@ related:
   - kotoha-analytics-dashboard
 usedIn:
   - Kotoha Fan Site
+  - Hanon Fan Site
 shared: false
 lastChecked: 2026-10-25
 created: 2026-10-25
@@ -53,3 +54,4 @@ The admin panel at `/admin` (vanilla ES modules, no build step), refreshed on 20
 - **Shell details:** sidebar grouped Content / Records / Account; on phones a scrim, Escape and tap-outside close the menu, and focus moves in and back.
 - **UI kit** (`admin/ui.js`): toasts with an icon per kind, a promise-based `<dialog>` with a sticky action row, `stateBox` for empty and error states, `skeletonRows` at final size, sticker titles.
 - **Rules:** database text only through `textContent`; every behaviour kept when the look changed (front-end-only refresh).
+- **Hanon Fan Site:** Hanon has the same refreshed admin in its Sazanami theme, with visitors in gold instead of pink: one redesign, two sites, only the theme mapped.

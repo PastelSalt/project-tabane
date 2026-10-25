@@ -1,0 +1,122 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - - label
+      - 4
+      - 4
+      - 60
+      - 4
+      - ONE SPRITE · ONE CLASS (.pg)
+    - - circle
+      - 6
+      - 12
+      - 14
+      - 14
+      - penguin
+    - - circle
+      - 24
+      - 12
+      - 14
+      - 14
+      - star
+    - - circle
+      - 42
+      - 12
+      - 14
+      - 14
+      - drop
+    - - circle
+      - 60
+      - 12
+      - 14
+      - 14
+      - ripple
+    - - circle
+      - 78
+      - 12
+      - 14
+      - 14
+      - shell
+    - - circle
+      - 96
+      - 13
+      - 10
+      - 10
+      - spark
+    - - circle
+      - 110
+      - 13
+      - 10
+      - 10
+      - heart
+    - - label
+      - 4
+      - 32
+      - 60
+      - 4
+      - VARIANTS (CUSTOM PROPERTIES)
+    - - circle
+      - 6
+      - 40
+      - 12
+      - 12
+      - gold
+    - - circle
+      - 22
+      - 40
+      - 12
+      - 12
+      - pink
+    - - circle
+      - 38
+      - 40
+      - 12
+      - 12
+      - mint
+    - - circle
+      - 54
+      - 40
+      - 12
+      - 12
+      - lav
+    - - circle
+      - 70
+      - 40
+      - 12
+      - 12
+      - navy
+    - - circle
+      - 86
+      - 40
+      - 12
+      - 12
+      - pale
+    - - circle
+      - 102
+      - 40
+      - 12
+      - 12
+      - white
+    - - panel
+      - 4
+      - 58
+      - 64
+      - 26
+      - USED AS
+    - - text
+      - 8
+      - 66
+      - 54
+      - 13
+    - - note
+      - 74
+      - 58
+      - 66
+      - 12
+      - --pg-body / --pg-shade / --pg-bow for the penguin
+    - - note
+      - 74
+      - 72
+      - 66
+      - 12
+      - --c1 … --c4 for every other shape

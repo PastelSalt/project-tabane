@@ -1,0 +1,7 @@
+flowchart TB
+  req[Request] --> track{/api/track?}
+  track -->|yes| none[204, nothing recorded]
+  track -->|no| api{/api/public GET?}
+  api -->|yes| cache[proxy to the deployed site, cached in memory]
+  api -->|other /api| notfound[404]
+  api -->|no| static[file from public/ + headers matched from vercel.json]

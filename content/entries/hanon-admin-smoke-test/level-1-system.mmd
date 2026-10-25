@@ -1,0 +1,7 @@
+flowchart LR
+  prod[(production database)] -->|copy| branch[(throwaway Neon branch)]
+  branch --> server[local dev-server.js]
+  smoke[admin-smoke.js] -->|localhost only| server
+  smoke --> groups[50 checks: auth, videos, news, achievements, gallery, accounts, other]
+  groups --> report[PASS or FAIL per line, exit code]
+  report --> cleanup[delete the branch]

@@ -1,0 +1,6 @@
+flowchart LR
+  scripts[behaviour.js, scroll-bench.js, shots.js] --> cdp[cdp.js: headless Chrome over WebSocket]
+  cdp --> page[the page under test]
+  page --> server[server.js test server]
+  server --> files[(site public/ with vercel.json headers)]
+  server --> live[(deployed /api/public, read-only)]

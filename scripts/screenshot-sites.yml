@@ -15,3 +15,10 @@ kotoha-fansite:
   local: { kf_lang: en }
   ready: "!document.getElementById('loader') && document.fonts.status === 'loaded'"
   settle: 1500
+
+hanon-fansite:
+  url: https://hanon-fansite.vercel.app
+  block: ["*/api/track*"]
+  local: { hf_lang: en }
+  ready: "!document.getElementById('loader') && document.fonts.status === 'loaded'"
+  settle: 1500

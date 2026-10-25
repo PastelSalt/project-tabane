@@ -1,0 +1,7 @@
+flowchart LR
+  dev[dev-server.js] -->|DATABASE_URL set| neon[(Neon)]
+  dev -->|no DATABASE_URL| pglite[(PGlite in memory)]
+  pglite --> mig[db/migrations/*.sql]
+  pglite --> seed[db/seed.sql]
+  pub[api/public.js] --> dbjs[lib/db.js]
+  dbjs -->|globalThis.__hfDevDb| pglite
