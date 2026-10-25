@@ -73,6 +73,30 @@ Every open question from every project file, in one place, for Kyle to answer la
   *Recommended:* add all.
   _Answer:_
 
+## Himawari Website · [`himawari-website.md`](himawari-website.md) §15
+
+The site only; the engine and Studio are out of scope.
+
+- [ ] **W1. Shared pieces:** where Himawari reuses Aqua's or Kotoha's code (CSP hashes, build gates, reveals, `make-og`), add Himawari to those entries' Used in rather than making new entries?
+  *Recommended:* yes.
+  _Answer:_
+- [ ] **W2. Auth:** Himawari's admin auth is Kotoha's design rewritten in TypeScript with Drizzle and an env bootstrap. Its own entry, or a second implementation inside `kotoha-admin-auth`?
+  *Recommended:* its own entry; the code differs and it's the one to copy for Astro projects.
+  _Answer:_
+- [ ] **W3. Preact:** installed and configured but unused. Remove it from the site later (its own task), or is an island planned?
+  _Answer:_
+- [ ] **W4. The portfolio:** the counter and the user-agent parser come from "the portfolio" (`moekoworks_official`). Write that project file next, so these entries can point to the original?
+  *Recommended:* yes.
+  _Answer:_
+- [ ] **W5. Shared:** every entry starts with Shared off. Are any safe to show visitors (for example the release sync or the design system)?
+  *Recommended:* keep all off for now.
+  _Answer:_
+- [ ] **W6. Replication guide order:** is the order in §13 how you would rebuild it?
+  _Answer:_
+- [ ] **W7. New tag values:** add all 3 proposed in §14?
+  *Recommended:* add all.
+  _Answer:_
+
 ---
 
 ## Answered and applied
