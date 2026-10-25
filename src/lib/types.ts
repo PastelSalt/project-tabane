@@ -1,5 +1,5 @@
 // Entry and Playbook shapes, field for field from the spec's "Entry model" and "Playbook fields".
-// Phase 2 reads these same fields from content/entries/<slug>/entry.md front matter.
+// src/lib/content.ts reads them from content/entries/<slug>/entry.md and content/playbooks/<slug>.md.
 
 import type { Feature, Layer, Origin, PlaybookKind, PlaybookStatus, Stack, Status, Target } from "./tags";
 
@@ -7,7 +7,7 @@ import type { Feature, Layer, Origin, PlaybookKind, PlaybookStatus, Stack, Statu
 export type IsoDate = string;
 
 export type Image = {
-  /** Path under /public, such as /samples/wireframes/countdown.svg */
+  /** Served by the image route: /content/<entry slug>/<file in the entry's folder> */
   src: string;
   alt: string;
   width: number;
@@ -52,6 +52,8 @@ export type Entry = {
   keyCode?: { language: string; path: string; code: string };
   /** Researched entries: where the idea came from and its usage terms. */
   sourceAndLicense?: string;
+  /** The project file in projects/ this entry was made from (all real entries; the samples have none). */
+  projectFile?: string;
 
   /** UI/UX entries. */
   wireframe?: { desktop?: Image; phone?: Image };
@@ -90,4 +92,6 @@ export type Playbook = {
   lastVerified?: IsoDate;
   status: PlaybookStatus;
   target: Target;
+  /** Replication guides: the project file in projects/ the guide was made from. */
+  projectFile?: string;
 };

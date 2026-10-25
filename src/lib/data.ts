@@ -1,7 +1,6 @@
-// The only place pages get entries and playbooks from.
-// Phase 1 reads the samples; Phase 2 changes this file alone to read content/ files instead.
+// The only place pages get entries and playbooks from: the content folder, through src/lib/content.ts.
 
-import { samplePlaybooks, sampleEntries } from "./samples";
+import { loadContent } from "./content";
 import { entryTags, playbookKinds, playbookStatuses, targets, type EntryTagName } from "./tags";
 import type { Entry, Playbook } from "./types";
 
@@ -48,7 +47,7 @@ export function getRelatedEntries(entry: Entry, audience: Audience = "owner"): E
 
 /** The playbooks that use an entry. Owner only. */
 export function getPlaybooksUsing(entry: Entry): Playbook[] {
-  return samplePlaybooks.filter((playbook) => playbook.basedOn.entries.includes(entry.slug));
+  return loadContent().playbooks.filter((playbook) => playbook.basedOn.entries.includes(entry.slug));
 }
 
 /** How many of the given entries carry each value of each tag, for the filter sidebar. */
@@ -82,7 +81,7 @@ export function parseEntryFilters(params: Record<string, string | string[] | und
 // ---------- Playbooks ----------
 
 export function getPlaybooks(filters: PlaybookFilters = {}): Playbook[] {
-  return samplePlaybooks.filter(
+  return loadContent().playbooks.filter(
     (playbook) =>
       (!filters.kind?.length || filters.kind.includes(playbook.kind)) &&
       (!filters.status?.length || filters.status.includes(playbook.status)) &&
@@ -91,7 +90,7 @@ export function getPlaybooks(filters: PlaybookFilters = {}): Playbook[] {
 }
 
 export function getPlaybook(slug: string): Playbook | undefined {
-  return samplePlaybooks.find((playbook) => playbook.slug === slug);
+  return loadContent().playbooks.find((playbook) => playbook.slug === slug);
 }
 
 export function parsePlaybookFilters(params: Record<string, string | string[] | undefined>): PlaybookFilters {
@@ -102,9 +101,10 @@ export function parsePlaybookFilters(params: Record<string, string | string[] | 
 // ---------- Helpers ----------
 
 function visibleEntries(audience: Audience): Entry[] {
-  if (audience === "owner") return sampleEntries;
+  const { entries } = loadContent();
+  if (audience === "owner") return entries;
   // Visitors: Shared entries only, and never a link to a repository.
-  return sampleEntries
+  return entries
     .filter((entry) => entry.shared)
     .map((entry) => ({
       ...entry,
@@ -115,7 +115,7 @@ function visibleEntries(audience: Audience): Entry[] {
 }
 
 function isShared(slug: string): boolean {
-  return sampleEntries.some((entry) => entry.slug === slug && entry.shared);
+  return loadContent().entries.some((entry) => entry.slug === slug && entry.shared);
 }
 
 function searchText(entry: Entry): string {
@@ -132,43 +132,3 @@ function list(value: string | string[] | undefined): string[] {
   return (Array.isArray(value) ? value : [value]).flatMap((part) => part.split(",")).filter(Boolean);
 }
 
-// ---------- Check ----------
-// The Phase 1 stand-in for the Phase 2 schema check: a bad sample fails the build.
-
-function check() {
-  const problems: string[] = [];
-  const slugs = new Set<string>();
-  for (const entry of sampleEntries) {
-    if (slugs.has(entry.slug)) problems.push(`duplicate slug ${entry.slug}`);
-    slugs.add(entry.slug);
-  }
-  for (const entry of sampleEntries) {
-    for (const tag of Object.keys(entryTags) as EntryTagName[]) {
-      const values = Array.isArray(entry[tag]) ? (entry[tag] as string[]) : [entry[tag] as string];
-      for (const value of values) {
-        if (!(value in entryTags[tag].values)) problems.push(`${entry.slug}: unknown ${tag} "${value}"`);
-      }
-    }
-    for (const slug of entry.related) if (!slugs.has(slug)) problems.push(`${entry.slug}: related entry "${slug}" does not exist`);
-    const diagramIds = new Set(entry.diagrams?.map((diagram) => diagram.id));
-    for (const diagram of entry.diagrams ?? []) {
-      if (diagram.parent && !diagramIds.has(diagram.parent)) problems.push(`${entry.slug}: diagram "${diagram.id}" has no parent "${diagram.parent}"`);
-      const parent = entry.diagrams?.find((other) => other.id === diagram.parent);
-      const box = diagram.expands ?? diagram.id;
-      if (parent && !new RegExp(`(^|[\\s>])${box}(\\[|\\s|$)`, "m").test(parent.mermaid)) {
-        problems.push(`${entry.slug}: diagram "${diagram.id}" expands box "${box}", which is not in "${parent.id}"`);
-      }
-    }
-    if (entry.layer === "backend" && !entry.diagrams?.length) problems.push(`${entry.slug}: backend entries need diagrams`);
-    if (entry.diagrams?.length && entry.diagrams.filter((diagram) => diagram.level === 1).length !== 1) {
-      problems.push(`${entry.slug}: needs exactly one level-1 diagram`);
-    }
-    if (entry.layer === "ui-ux" && !entry.wireframe) problems.push(`${entry.slug}: UI/UX entries need a wireframe`);
-  }
-  for (const playbook of samplePlaybooks) {
-    for (const slug of playbook.basedOn.entries) if (!slugs.has(slug)) problems.push(`${playbook.slug}: based-on entry "${slug}" does not exist`);
-  }
-  if (problems.length > 0) throw new Error(`Sample data problems:\n- ${problems.join("\n- ")}`);
-}
-
-check();
