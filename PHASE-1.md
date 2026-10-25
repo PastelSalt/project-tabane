@@ -2,6 +2,16 @@
 
 2026-10-25 · Plan by Claude for Kyle Q. Zoleta
 
+**Status: all 15 steps built, checked and committed locally (not pushed). Waiting for Kyle's review.** Each step's details are in `LOG.md`.
+
+### Changes from the plan made while building
+
+- **Diagram levels:** diagrams gained an `expands` field naming the box in the parent that opens them.
+- **Embeddable:** entries record whether their live site can be shown in a frame.
+- **Route groups:** the Library and Playbook list pages live in `(list)` route groups, so their loading screen doesn't cover entry pages and missing entries keep a real 404.
+- **Phone sidebar:** on phones the sidebar folds behind a Show / Hide button so content comes first.
+- **Stamp:** the "Genius approved" stamp sits in the "Showing X of Y" row instead of floating, so it never covers a card.
+
 ## Goal
 
 Turn the approved mock-up into a real, working Tabane site that runs on this machine. Every page, layout, motif and interaction works, filled with **sample entries only**. No real project content goes in during this phase.
