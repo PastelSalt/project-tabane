@@ -1,0 +1,24 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - [bar, 0, 0, 144, 7]
+    - [heading, 4, 2.6, 14, 2]
+    - [pill, 114, 2.6, 9, 2]
+    - [pill, 125, 2.6, 9, 2]
+    - [heading, 47, 18, 50, 3.6]
+    - [text, 57, 23.6, 30, 1]
+    - { kind: panel, x: 33, y: 32, w: 17, h: 20 }
+    - [box, 37, 37, 9, 5.6, "12"]
+    - [label, 33, 46, 17, 3, DAYS]
+    - { kind: panel, x: 53, y: 32, w: 17, h: 20 }
+    - [box, 57, 37, 9, 5.6, "08"]
+    - [label, 53, 46, 17, 3, HOURS]
+    - { kind: panel, x: 73, y: 32, w: 17, h: 20 }
+    - [box, 77, 37, 9, 5.6, "45"]
+    - [label, 73, 46, 17, 3, MIN]
+    - { kind: panel, x: 93, y: 32, w: 17, h: 20 }
+    - [box, 97, 37, 9, 5.6, "09"]
+    - [label, 93, 46, 17, 3, SEC]
+    - [note, 112, 37, 22, 10, ticks every second]
+    - [button, 62, 59, 20, 5.6, Remind me]
+    - [text, 52, 69, 40, 1]

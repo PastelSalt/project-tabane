@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844"><rect width="390" height="844" fill="#f4f4f7"/><circle cx="195" cy="190" r="56" fill="#c9c9d2"/><rect x="105" y="280" width="180" height="26" rx="13" fill="#9a9aa3"/><rect x="30" y="360" width="330" height="64" rx="16" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><rect x="50" y="384" width="120" height="16" rx="8" fill="#c9c9d2"/><rect x="30" y="450" width="330" height="64" rx="16" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><rect x="50" y="474" width="140" height="16" rx="8" fill="#c9c9d2"/><rect x="30" y="560" width="330" height="68" rx="34" fill="#9a9aa3" stroke="none" stroke-width="4"/><rect x="125" y="670" width="140" height="14" rx="7" fill="#c9c9d2"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 840" width="390" height="840">
+<rect width="390" height="840" fill="#f4f4f7"/>
+<circle cx="195" cy="185" r="65" fill="#c9c9d2"/>
+<rect x="90" y="300" width="210" height="30" rx="15" fill="#9a9aa3"/>
+<rect x="70" y="350" width="250" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="30" y="420" width="330" height="56" rx="12" fill="#fff" stroke="#9a9aa3" stroke-width="3"/><text x="48" y="448" font-family="Segoe UI, sans-serif" font-size="20" font-weight="500" fill="#9a9aa3" text-anchor="start" dominant-baseline="middle">Email</text>
+<rect x="30" y="500" width="330" height="56" rx="12" fill="#fff" stroke="#9a9aa3" stroke-width="3"/><text x="48" y="528" font-family="Segoe UI, sans-serif" font-size="20" font-weight="500" fill="#9a9aa3" text-anchor="start" dominant-baseline="middle">Password</text>
+<rect x="30" y="600" width="330" height="56" rx="28" fill="#9a9aa3"/><text x="195" y="628" font-family="Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">Sign in</text>
+<rect x="110" y="690" width="170" height="12" rx="6" fill="#c9c9d2"/>
+</svg>

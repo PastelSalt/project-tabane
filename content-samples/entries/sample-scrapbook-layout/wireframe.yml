@@ -1,0 +1,26 @@
+# Units of 10 px (scripts/wireframe-kit.ts). Run `npm run wireframes` after editing.
+desktop:
+  boxes:
+    - [bar, 0, 0, 144, 7]
+    - [heading, 4, 2.6, 14, 2]
+    - { kind: panel, x: 14, y: 14, w: 46, h: 30, r: -3 }
+    - { kind: image, x: 17, y: 17, w: 40, h: 18, r: -3 }
+    - { kind: panel, x: 84, y: 12, w: 46, h: 30, r: 2.5 }
+    - { kind: text, x: 88, y: 17, w: 36, h: 7, r: 2.5 }
+    - { kind: circle, x: 66, y: 40, w: 10, h: 10 }
+    - { kind: panel, x: 16, y: 54, w: 46, h: 28, r: 2 }
+    - { kind: text, x: 20, y: 59, w: 36, h: 7, r: 2 }
+    - { kind: panel, x: 82, y: 52, w: 46, h: 30, r: -2.5 }
+    - { kind: image, x: 85, y: 55, w: 40, h: 18, r: -2.5 }
+    - { kind: box, x: 28, y: 12, w: 14, h: 3, r: -8 }
+    - { kind: note, x: 52, y: 84, w: 40, h: 5, label: "tilts: −3° to +3°, tape on corners" }
+phone:
+  boxes:
+    - [bar, 0, 0, 39, 6]
+    - [heading, 2, 2, 12, 2]
+    - { kind: panel, x: 3, y: 10, w: 33, h: 22, r: -2 }
+    - { kind: image, x: 5, y: 12, w: 29, h: 12, r: -2 }
+    - { kind: panel, x: 3, y: 35, w: 33, h: 20, r: 2 }
+    - { kind: text, x: 6, y: 39, w: 27, h: 7, r: 2 }
+    - { kind: panel, x: 3, y: 58, w: 33, h: 22, r: -1.5 }
+    - { kind: image, x: 5, y: 60, w: 29, h: 12, r: -1.5 }

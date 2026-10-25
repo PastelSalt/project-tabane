@@ -7,6 +7,7 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
 import { listContent, readEntry, readPlaybook, sections, splitFrontMatter } from "../src/lib/content";
+import { renderSpec } from "./wireframe-kit";
 import { layers, origins, playbookKinds, playbookStatuses, statuses, tagsFile, targets } from "../src/lib/tags";
 import type { Entry, Playbook } from "../src/lib/types";
 
@@ -144,6 +145,18 @@ function checkRoot(root: string) {
   const known = new Set(entries.map((e) => e.slug));
   for (const e of entries) {
     const where = `${root}/entries/${e.slug}`;
+    // wireframes drawn with the kit must match their wireframe.yml (run `npm run wireframes` after editing it)
+    const spec = join(root, "entries", e.slug, "wireframe.yml");
+    if (existsSync(spec)) {
+      try {
+        for (const [file, svg] of Object.entries(renderSpec(readFileSync(spec, "utf8")))) {
+          const path = join(root, "entries", e.slug, file);
+          if (!existsSync(path) || readFileSync(path, "utf8").replace(/\r\n/g, "\n") !== svg) problem(where, `${file} is out of date with wireframe.yml (run npm run wireframes)`);
+        }
+      } catch (error) {
+        problem(where, `wireframe.yml: ${(error as Error).message}`);
+      }
+    }
     // the Entry model's "applies to" rules
     if (e.layer === "ui-ux" && !e.wireframe?.desktop && !e.wireframe?.phone) problem(where, "UI/UX entries need a wireframe");
     if (e.layer === "backend" && !e.diagrams?.length) problem(where, "Backend entries need diagrams");

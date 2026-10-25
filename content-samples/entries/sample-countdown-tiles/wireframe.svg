@@ -1,1 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900"><rect width="1440" height="900" fill="#f4f4f7"/><rect x="0" y="0" width="1440" height="72" rx="0" fill="#c9c9d2" stroke="none" stroke-width="4"/><rect x="40" y="26" width="140" height="20" rx="10" fill="#9a9aa3"/><rect x="1140" y="26" width="90" height="20" rx="10" fill="#9a9aa3"/><rect x="1250" y="26" width="90" height="20" rx="10" fill="#9a9aa3"/><rect x="470" y="180" width="500" height="36" rx="18" fill="#9a9aa3"/><rect x="570" y="236" width="300" height="18" rx="9" fill="#c9c9d2"/><rect x="330" y="320" width="170" height="200" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><rect x="370" y="370" width="90" height="56" rx="28" fill="#c9c9d2"/><text x="415" y="480" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle">DAYS</text><rect x="530" y="320" width="170" height="200" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><rect x="570" y="370" width="90" height="56" rx="28" fill="#c9c9d2"/><text x="615" y="480" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle">HOURS</text><rect x="730" y="320" width="170" height="200" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><rect x="770" y="370" width="90" height="56" rx="28" fill="#c9c9d2"/><text x="815" y="480" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle">MIN</text><rect x="930" y="320" width="170" height="200" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/><rect x="970" y="370" width="90" height="56" rx="28" fill="#c9c9d2"/><text x="1015" y="480" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#6c6c75" text-anchor="middle">SEC</text><rect x="620" y="590" width="200" height="56" rx="28" fill="#9a9aa3"/><rect x="520" y="690" width="400" height="16" rx="8" fill="#c9c9d2"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+<rect width="1440" height="900" fill="#f4f4f7"/>
+<rect x="0" y="0" width="1440" height="70" fill="#c9c9d2"/>
+<rect x="40" y="26" width="140" height="20" rx="10" fill="#9a9aa3"/>
+<rect x="1140" y="26" width="90" height="20" rx="10" fill="#c9c9d2"/>
+<rect x="1250" y="26" width="90" height="20" rx="10" fill="#c9c9d2"/>
+<rect x="470" y="180" width="500" height="36" rx="18" fill="#9a9aa3"/>
+<rect x="570" y="236" width="300" height="12" rx="6" fill="#c9c9d2"/>
+<rect x="330" y="320" width="170" height="200" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/>
+<rect x="370" y="370" width="90" height="56" rx="12" fill="#e3e3ea"/><text x="415" y="398" font-family="Segoe UI, sans-serif" font-size="25.2" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">12</text>
+<text x="415" y="475" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">DAYS</text>
+<rect x="530" y="320" width="170" height="200" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/>
+<rect x="570" y="370" width="90" height="56" rx="12" fill="#e3e3ea"/><text x="615" y="398" font-family="Segoe UI, sans-serif" font-size="25.2" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">08</text>
+<text x="615" y="475" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">HOURS</text>
+<rect x="730" y="320" width="170" height="200" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/>
+<rect x="770" y="370" width="90" height="56" rx="12" fill="#e3e3ea"/><text x="815" y="398" font-family="Segoe UI, sans-serif" font-size="25.2" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">45</text>
+<text x="815" y="475" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">MIN</text>
+<rect x="930" y="320" width="170" height="200" rx="24" fill="#fff" stroke="#9a9aa3" stroke-width="4"/>
+<rect x="970" y="370" width="90" height="56" rx="12" fill="#e3e3ea"/><text x="1015" y="398" font-family="Segoe UI, sans-serif" font-size="25.2" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">09</text>
+<text x="1015" y="475" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#6c6c75" text-anchor="middle" dominant-baseline="middle">SEC</text>
+<rect x="1120" y="370" width="220" height="100" rx="14" fill="none" stroke="#7a5cc9" stroke-width="3" stroke-dasharray="8 7"/><text x="1230" y="420" font-family="Segoe UI, sans-serif" font-size="22" font-weight="600" fill="#7a5cc9" text-anchor="middle" dominant-baseline="middle">ticks every second</text>
+<rect x="620" y="590" width="200" height="56" rx="28" fill="#9a9aa3"/><text x="720" y="618" font-family="Segoe UI, sans-serif" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" dominant-baseline="middle">Remind me</text>
+<rect x="520" y="690" width="400" height="12" rx="6" fill="#c9c9d2"/>
+</svg>
