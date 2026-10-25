@@ -10,7 +10,8 @@ import { parse } from "yaml";
 import type { Diagram, Entry, Image, Playbook } from "./types";
 
 export const contentRoot = () => process.env.TABANE_CONTENT || "content-samples";
-const abs = (...parts: string[]) => join(process.cwd(), ...parts);
+// The content folders reach the server through next.config.ts outputFileTracingIncludes, so the tracer can skip this.
+const abs = (...parts: string[]) => join(/*turbopackIgnore: true*/ process.cwd(), ...parts);
 
 export type Content = { entries: Entry[]; playbooks: Playbook[] };
 
