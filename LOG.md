@@ -4,6 +4,8 @@ Everything that happens on Project Tabane, by Kyle and by Claude. Newest first. 
 
 | Date | Who | Action |
 |---|---|---|
+| 2026-10-25 | Claude | Phase 1 step 5 done: tag lists (`src/lib/tags.ts`), Entry and Playbook types from the spec (`types.ts`), 12 sample entries and 2 sample playbooks (`samples.ts`), 9 sample wireframes and 10 sample screenshots in `public/samples/`, and `data.ts` with filters, search, visitor view (Shared only, no repository links), tag counts, URL parsing and a sample check that fails the build on bad data. Pages now show live counts. Spec: added the Embeddable field. No sample clip yet; one is added in step 9. Typecheck, lint and build pass. Committed locally, not pushed |
+| 2026-10-25 | Kyle | Asked for Phase 1 step 5 (types and sample data) |
 | 2026-10-25 | Claude | Phase 1 step 4 done: app shell in `src/components/shell` (Header with logo, nav pills marking the current page, owner badge placeholder, chessboard strip; AppLayout, Sidebar with Moeko Works logo, SectionHeading); skip-to-content link; `/` now redirects to `/library`; placeholder Library, Playbook and Access codes pages. Phone: sidebar above content, links on their own row, numbers dropped under 480 px so all three fit. Typecheck, lint and build pass. Committed locally, not pushed |
 | 2026-10-25 | Kyle | Asked for Phase 1 step 4 (app shell) |
 | 2026-10-25 | Claude | Phase 1 step 3 done: motif components in `src/components/motifs` (RabbitEars, Flower, PocketWatch with ticking hands, Teacup, CarrotPod, SuitBadge, WashiTape, Stamp, ChessStrip, MoekoWorksLogo); logo copied to `public/brand/`; Motifs section on `/styleguide` at several sizes. Typecheck, lint and build pass. Committed locally, not pushed |

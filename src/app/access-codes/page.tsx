@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PocketWatch } from "@/components/motifs";
 import { AppLayout, SectionHeading, Sidebar } from "@/components/shell";
 import { Placeholder, PlaceholderGroup } from "@/components/shell/Placeholder";
+import { getEntries } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Access codes" };
 
@@ -11,7 +12,8 @@ export default function AccessCodesPage() {
       sidebar={
         <Sidebar title="About codes" label="About access codes">
           <PlaceholderGroup label="How codes work" color="--blue">
-            One use, within 48 hours. Visitors see only Shared entries.
+            One use, within 48 hours. Visitors see only Shared entries: {getEntries({}, "visitor").length} of{" "}
+            {getEntries().length} right now.
           </PlaceholderGroup>
         </Sidebar>
       }

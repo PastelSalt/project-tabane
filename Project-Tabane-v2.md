@@ -118,6 +118,7 @@ Every entry uses the same fields, so people and Claude can read any entry the sa
 | Target | All | Website, Mobile Application or Desktop Application |
 | Reuse note | All | One or two lines on when to reuse it, so Claude can pick the right entry quickly |
 | Live site link | When one exists | The live site the concept came from, whether my own project or researched. Future ideas, created pieces and many backend entries have none |
+| Embeddable | With a live site link | Whether the live site can be shown in a frame on the entry page. Many sites refuse, and a browser cannot reliably tell, so Claude records it when creating the entry; when false, the screenshot is shown instead |
 | Repository link | Own projects | The project's repository |
 | Code location | Own projects | The repository path and commit or tag where the reusable code lives, so it can be lifted without searching |
 | Key code | Own projects, optional | A short excerpt of the code that makes the piece work (a few dozen lines at most), in a "Key code" part of the body. The full code stays in the project's repository |

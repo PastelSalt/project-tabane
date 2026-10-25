@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import { Flower } from "@/components/motifs";
 import { AppLayout, SectionHeading, Sidebar } from "@/components/shell";
 import { Placeholder, PlaceholderGroup } from "@/components/shell/Placeholder";
+import { getPlaybooks } from "@/lib/data";
 
 export const metadata: Metadata = { title: "Playbook" };
 
 export default function PlaybookPage() {
+  const playbooks = getPlaybooks();
   return (
     <AppLayout
       sidebar={
@@ -15,7 +17,7 @@ export default function PlaybookPage() {
         </Sidebar>
       }
     >
-      <SectionHeading number="02" title="Playbook" subtitle="Repeatable guides, owner only" decoration={<Flower size={28} />} />
+      <SectionHeading number="02" title="Playbook" subtitle={`${playbooks.length} playbooks · owner only`} decoration={<Flower size={28} />} />
       <Placeholder>Playbook cards arrive in step 10.</Placeholder>
     </AppLayout>
   );
