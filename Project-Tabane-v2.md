@@ -131,7 +131,7 @@ Every entry uses the same fields, so people and Claude can read any entry the sa
 | Related entries | All | The folder names (slugs) of other entries this one pairs with, such as the Backend entry behind a UI/UX entry |
 | Project file | All | The project file in `projects/` the entry was made from, so every entry traces back to its source notes |
 | Shared | All | Off by default; only Shared entries are visible to someone using an access code |
-| Used in | All | The projects that have reused this entry, added after a project built with Tabane |
+| Used in | All | The projects that contain this piece: the project it came from, plus every project that reuses it later (decided 2026-10-25 in `PHASE-2.md`) |
 | Last checked | When a live site exists | The date the link check last found the live site working |
 | Created and updated | All | Dates, used for the default newest-first order |
 
@@ -297,7 +297,7 @@ Every existing project is divided three ways:
 - **Backend entries:** how it works behind the interface, each with leveled diagrams, linked to the UI/UX entries it serves through Related entries.
 - **How it was created:** a Replication guide in the Playbook that walks through building the whole project, pointing to its UI/UX and Backend entries.
 
-First pass at the split, to be refined while writing the entries:
+First pass at the split, to be refined while writing the entries. **Superseded by the project files** in `projects/` (2026-10-25), which hold the real split: 98 entries and 5 guides. Himawari's project file covers the website only; the engine and Studio have no entries unless a project file is written for them later.
 
 | Project | UI/UX entries | Backend entries | Playbook |
 |---|---|---|---|
@@ -312,8 +312,8 @@ First pass at the split, to be refined while writing the entries:
 The order, so the site is useful early and grows as concepts are added:
 
 1. **Working UI.** The full site running locally with sample entries only: design system, motifs, every page, search, filters, diagram levels, motion, phone layout. Planned in detail in `PHASE-1.md`.
-2. **Content system and project files.** The content folder, `tags.yml`, the Markdown loader, the templates, the schema check, the project-file template and the full CLAUDE.md, then the first project file written, reviewed and applied, replacing the samples. Planned in `PHASE-2.md`.
-3. **Claude's upkeep tools.** The screenshot script and the link-check script.
+2. **Content system and project files.** The content folder, `tags.yml`, the Markdown loader, the templates, the schema check, the project-file template, a wireframe kit, the screenshot capture and the full CLAUDE.md, then the five project files applied (98 entries, 5 replication guides), replacing the samples. Planned in `PHASE-2.md`.
+3. **Claude's upkeep tools.** The link-check script, and re-capturing screenshots automatically when a site changes.
 4. **Deploy.** Vercel deployment behind the password gate, with noindex.
 5. **Login and access codes, last.** Neon connected for the first time, GitHub sign-in, and one-time codes that expire and work once, replacing the password gate.
 

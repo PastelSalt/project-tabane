@@ -1,92 +1,92 @@
-# Phase 2 · Content system and project files
+# Phase 2 · Content system and the five projects
 
-2026-10-25 · Plan by Claude for Kyle Q. Zoleta (revised the same day: entries now come from project files)
+2026-10-25 · Plan by Claude for Kyle Q. Zoleta. Revised twice the same day: first around project files, then (v3) for **all five project files at once**, now that they are written and their open questions answered.
+
+## Where things stand
+
+| Ready | Not ready |
+|---|---|
+| The working UI from Phase 1, on sample data | The content system: no `content/` folder, loader, content check, image route or templates yet (the site still reads `src/lib/samples.ts`) |
+| Five project files in `projects/`: Kotoha, Hanon, Aqua Iro Archive, Himawari website, Moeko Works portfolio | The entries themselves: **98 entries** (58 UI/UX, 40 Backend) and **5 replication guides** still have to be written as files, with wireframes, diagrams and screenshots |
+| All 34 open questions answered (`projects/OPEN-QUESTIONS.md`) | A way to draw ~58 wireframes that look alike, and to save screenshots of five sites that all refuse to be framed |
+
+So the projects can't go on the site yet. This plan builds the system first (steps 1–9), then applies the projects one at a time (steps 10–14).
 
 ## Goal
 
-Replace the Phase 1 sample data with real content files, and set up the way real content gets in: **one project file per project or site**.
-
-When Kyle asks, Claude writes a Markdown file holding everything about that project or site. Kyle reviews it, and when Kyle says to apply it, Claude turns it into Tabane entries and a replication guide.
-
 When Phase 2 is done:
 
-- Every entry and playbook is a file in `content/`.
-- A check stops any bad file from reaching the site.
-- The project-file template and the apply steps are written down.
-- `CLAUDE.md` tells any future Claude session exactly how to write a project file, apply it, and add or update entries.
-- At least one project file has been written and applied end to end, so the Library shows real entries.
+- Every entry and playbook is a file in `content/`, checked before every build.
+- The five project files are applied: 98 entries and 5 Draft replication guides, each traceable to its project file.
+- Every UI/UX entry has a wireframe and screenshots; every Backend entry has leveled diagrams.
+- The Library shows only real entries; the Phase 1 samples stay for UI testing only.
+- `CLAUDE.md` tells any future Claude session how to write, apply and update a project file.
 
 ## How content gets in
 
 | Step | Who | What happens |
 |---|---|---|
-| 1. Ask | Kyle | "Make the project file for Kotoha" (or a site to research) |
-| 2. Write | Claude | Pulls and reads the project's repository (or reads the site's pages), then writes `projects/<name>.md` with everything about it, citing where each fact came from |
-| 3. Review | Kyle | Reads the file, edits it or asks for changes, and answers its open questions, which are also collected in `projects/OPEN-QUESTIONS.md` for all projects |
-| 4. Apply | Claude, when Kyle says | Turns the project file into entries (UI/UX and Backend) and a replication guide, runs the content check, commits, and logs it |
-| 5. Update | Claude, when asked | If the project file changes later, applying it again updates the entries to match |
+| 1. Ask | Kyle | "Make the project file for X" |
+| 2. Write | Claude | Pulls and reads the project, writes `projects/<name>.md`, adds its questions to `projects/OPEN-QUESTIONS.md` |
+| 3. Review | Kyle | Reads the file and answers its questions |
+| 4. Apply | Claude, when Kyle says | Turns the file into entries and a replication guide, runs the content check, commits, logs, moves its questions to "Answered and applied" |
+| 5. Update | Claude, when asked | If the project or its file changes, applying again updates the entries to match |
 
-- **The project file is the source of truth.** The entries are made from it, and every entry links back to it.
-- **Project files are source notes.** They stay in the repository but are not shown on the site.
+- **The project file is the source of truth.** Entries are made from it and link back to it.
+- **Project files are source notes:** in the repository, not shown on the site.
+
+## Counts per project
+
+| Project file | UI/UX | Backend | Guide | Notes |
+|---|---|---|---|---|
+| `kotoha-fansite.md` | 19 | 10 | `replicate-kotoha-fan-site` | applied first; Hanon builds on it |
+| `hanon-fansite.md` | 2 | 3 | `replicate-hanon-fan-site` (**the main fan-site guide**, H3) | differences-only file; also adds Hanon to Used in on the 29 Kotoha entries, with notes |
+| `aqua-iro-archive.md` | 18 | 10 | `replicate-aqua-iro-archive` | |
+| `himawari-website.md` | 9 | 9 | `replicate-himawari-website` | the site only; adds Himawari to Used in on the Aqua and Kotoha entries it reuses (W1) |
+| `moekoworks-official.md` | 10 | 8 | `replicate-moekoworks-portfolio` | Himawari's counter links to it as its source (W4, M2) |
+| **Total** | **58** | **40** | **5** | **98 entries** |
 
 ## Project file format
 
-`projects/<name>.md`, one per project or site, from `projects/_template.md`:
+`projects/<name>.md`, one per project or site, from `projects/_template.md`. Two kinds:
 
-| Section | Holds |
-|---|---|
-| Header | Name, kind (own project or researched site), live URL, repository and local folder, the commit (or date) it was read at, Target |
-| Overview | What it is and what it is for, in a few lines |
-| Stack | Languages, frameworks, libraries, hosting and data, using `tags.yml` names where they exist; new values marked as proposed |
-| Structure | The folder layout and the main files, with what each does |
-| UI/UX pieces | Every interface piece worth reusing: what it does, where its code lives, how it works, what it looks like (enough to draw a wireframe), and whether it is reusable on its own |
-| Backend pieces | Every backend piece: what it does, where its code lives, how data flows (enough to draw diagrams in levels) |
-| How it was built | The order it was built in, setup steps, deploy steps (the base for the replication guide) |
-| Gotchas and quirks | Things that went wrong, workarounds, my own habits seen in the code |
-| Proposed entries | The entries Claude plans to create from this file: slug, layer, one-line summary, related entries |
-| Open questions | Anything Claude could not tell from the code or site, for Kyle to answer before applying |
-| Sources | The files and pages each fact came from |
+- **Full file** (Kotoha, Aqua Iro, Himawari website, portfolio): the 16 sections the four real files use — header, overview, stack, architecture, structure, visual design, front end, back end, data model, process, reusable pieces, gotchas, proposed entries, replication guide, new tag values, open questions, sources.
+- **Differences-only file** (Hanon): a header with **Derived from**, a section map back to the base file, then only what is unique, its own pieces, gotchas, proposed entries, guide, tags, questions and sources. Used when a project is a copy of another.
 
-**Researched sites** use the same format, written from the site's own pages:
-
-- They hold only notes and links, never copied code, images or text.
-- Their entries get Origin "Researched" and a Source and license note.
-
-## Starting point
-
-- **The working UI from Phase 1:** every page reads data through `src/lib/data.ts`, so only that file's insides change.
-- **The spec:** `Project-Tabane-v2.md`, especially Entry model, Data and storage, How Claude works on Tabane and Playbook fields.
-- **Your repositories:** all five, cloned under `C:\Users\Myaako\Documents\MoekoWorks\`.
+The template and the project-file check cover both kinds. **Researched sites** use the full kind, with notes and links only, never copied code, images or text.
 
 ## In scope
 
-- **Content folder:** `content/`, `tags.yml`, and the entry and playbook templates.
-- **Loader:** reads entry and playbook files (front matter, Markdown body, Mermaid diagram files) in place of `samples.ts`.
-- **Content check:** validates every file against the Entry model, the Playbook fields and `tags.yml`, and runs before every build.
-- **Image route:** serves entry images through the site rather than the public folder.
-- **Sample data:** the Phase 1 samples become files in `content-samples/`, used only for UI testing.
-- **Search improvement:** search matches the beginnings of words, so "stats" finds "statistics".
-- **Project files:** the `projects/` folder, its template, and the write and apply steps in `CLAUDE.md`.
-- **One project end to end:** the first project file (the one you ask for first) written, reviewed and applied.
+- **Content folder:** `content/`, `tags.yml`, entry and playbook templates.
+- **Loader:** entry and playbook files (front matter, Markdown body, Mermaid files) in place of `samples.ts`.
+- **Content check:** every file against the Entry model, the Playbook fields, `tags.yml` and the project files; runs before every build.
+- **Image route:** entry images served through the site, not the public folder.
+- **Search by word start.**
+- **Project files:** `_template.md` (both kinds) and the project-file check.
+- **Wireframe kit** *(new in v3)*: one way to draw every wireframe so 58 of them look alike.
+- **Screenshot capture** *(moved here from Phase 3)*: all five sites refuse to be framed, so without it every UI/UX entry would show "No screenshot saved yet".
+- **Full CLAUDE.md.**
+- **All five project files applied**, then the switch to real content.
 
 ## Out of scope
 
 | Not in Phase 2 | When |
 |---|---|
-| The other project files | Whenever you ask, one at a time, during or after Phase 2 |
-| Saving screenshots of live sites (the screenshot script) and the link-check script | Phase 3 |
-| Deploying to Vercel and the password gate | Phase 4 |
-| GitHub sign-in, working access codes, Neon | Phase 5 |
+| The link-check script (Last checked, Outdated) | Phase 3 |
+| Re-capturing screenshots automatically when a site changes | Phase 3 (Phase 2 captures once, by hand, per project) |
+| Himawari engine and Studio entries (`himawari-c`) | Only if Kyle asks for a project file for them later |
+| Deploying, the password gate | Phase 4 |
+| GitHub sign-in, access codes, Neon | Phase 5 |
 
 ## Rules for this phase
 
 - Commits stay local. Claude does not push and does not ask to push.
-- Every step, and every project file written or applied, gets a line in `LOG.md` and one local commit.
-- Claude only reads your project repositories. It runs `git pull` before reading and never commits to them.
-- **Nothing is invented.** Every fact in a project file comes from the code or the site, with its source listed. Anything unclear goes under Open questions instead of being guessed.
-- **Nothing is applied without your say-so.** A project file becomes entries only when you say to apply it.
-- All entries start with **Shared off**.
-- Replication guides start as **Draft**, and become Verified only after you've actually followed one.
+- Every step, and every project applied, gets a line in `LOG.md` and one local commit.
+- Claude only reads the project repositories (`git pull` before reading) and never commits to them.
+- **Nothing is invented:** every entry comes from its project file; if the project changed since the file was written, the file is updated first (as with the Kotoha and Hanon admin refresh).
+- **The answers in `OPEN-QUESTIONS.md` are followed** (for example: keep the fine-grained split, all entries Shared off, Hanon's guide is the main fan-site guide, the portfolio's repository link kept).
+- Replication guides start as **Draft**.
+- Screenshot runs never count as visits on the live sites: each site's analytics requests are blocked during capture.
 
 ## Content format
 
@@ -95,51 +95,59 @@ When Phase 2 is done:
 ```text
 projects/                                 project files: source notes, not shown on the site
   _template.md
-  kotoha-fansite.md
+  OPEN-QUESTIONS.md
+  kotoha-fansite.md … moekoworks-official.md
 content/
   tags.yml                                every tag's fixed list, with labels
   templates/
     entry.md
     playbook.md
   entries/
-    kotoha-stream-countdown/
+    kotoha-stream-ticket-week/
       entry.md                            front matter + Technical details + Key code
-      wireframe.svg                       UI/UX: desktop wireframe
-      wireframe-phone.svg                 UI/UX, optional: phone wireframe
-      screenshot.png                      added in Phase 3
-    portfolio-cookieless-stats/
+      wireframe.yml                       the wireframe as a layout spec (input to the kit)
+      wireframe.svg                       generated desktop wireframe
+      wireframe-phone.svg                 generated phone wireframe, optional
+      screenshot-desktop.png              captured from the live site
+      screenshot-phone.png
+    kotoha-sleeping-db-cache/
       entry.md
       level-1-system.mmd                  one Mermaid file per diagram
-      level-2-collector.mmd
+      level-2-retry.mmd
   playbooks/
     replicate-kotoha-fan-site.md
 content-samples/                          the Phase 1 samples, as files, for UI testing only
+scripts/
+  check-content.ts                        the content check
+  wireframes.ts                           the wireframe kit
+  screenshots.ts                          the screenshot capture
 ```
 
 ### An entry file
 
 ~~~markdown
 ---
-title: Kotoha · Stream countdown
+title: Kotoha · Stream ticket and week strip
 layer: ui-ux
 origin: own-project
-stack: [javascript, gsap]
+stack: [javascript, css]
 feature: [countdown]
 status: proven
 target: website
-reuseNote: A page counts down to a scheduled event, such as a launch or a stream.
-liveSite: { url: https://…, embeddable: true }
+reuseNote: A page counts down to the next scheduled stream and shows the week at a glance.
+liveSite: { url: https://kotoha-fansite.vercel.app/, embeddable: false }
 repository: { name: PastelSalt/kotoha-fansite, url: https://github.com/PastelSalt/kotoha-fansite }
-codeLocation: { path: js/countdown.js, ref: <commit> }
+codeLocation: { path: public/js/public/countdown.js, ref: 2fa67f2 }
 projectFile: kotoha-fansite
 wireframe: { desktop: wireframe.svg }
+screenshots: [screenshot-desktop.png, screenshot-phone.png]
 diagrams: []
-related: [kotoha-admin-panel]
-usedIn: [Kotoha Fan Site]
+related: [kotoha-scrapbook-design-system]
+usedIn: [Kotoha Fan Site, Hanon Fan Site]
 shared: false
-lastChecked: 2026-10-26
-created: 2026-10-26
-updated: 2026-10-26
+lastChecked: 2026-10-25
+created: 2026-10-25
+updated: 2026-10-25
 ---
 
 ## Technical details
@@ -148,73 +156,100 @@ How it works, in plain words, with short bullet lists.
 
 ## Key code
 
-```js path=js/countdown.js
+```js path=public/js/public/countdown.js
 // a short excerpt, a few dozen lines at most
 ```
 ~~~
 
-- **Front matter:** every field from the Entry model, plus `projectFile`, which names the project file the entry came from.
-- **Body:** a `## Technical details` section, then an optional `## Key code` section with one fenced code block.
+- **Front matter:** every Entry model field, plus `projectFile`.
+- **Body:** `## Technical details`, then an optional `## Key code` with one fenced block.
 - **Images and diagrams:** named relative to the entry's folder.
+- **Code location ref:** the commit the project file was read at (for Kotoha and Hanon, the admin-refresh update commit).
 
 ### Tags
 
-- **Where the values live:** `tags.yml` holds every list, each value with its label.
-- **Fixed lists:** Layer, Origin, Status, Target, and the Playbook's Kind and Status also stay fixed in the code, because pages behave differently for them. The check fails if the two ever disagree.
-- **Growing lists:** Stack and Feature grow by editing `tags.yml`. A project file can propose new values, which are added when it is applied.
+- **`tags.yml`** holds every list with labels. Layer, Origin, Status, Target and the Playbook's Kind and Status also stay fixed in code; the check fails if the two disagree.
+- **Stack and Feature** start from the spec's lists plus the **41 values the five project files propose** (Kotoha 18, Hanon 2, Aqua 15, Himawari 3, portfolio 3), merged in step 1.
+- **One spelling per value:** the project files mix `nodejs` and `node-js`; step 1 settles on `node-js` (matching the spec's "Node.js" label pattern) and the apply steps use it.
 
 ## Technical choices
 
 | Choice | Decision | Why |
 |---|---|---|
-| Front matter | The `yaml` package, plus a small splitter for the `---` block | Small, maintained and strict about YAML |
-| Content check | `zod` schemas that mirror the Entry and Playbook types | Readable errors; the types and the check can't drift apart |
-| Check command | `npm run check:content` (run with `tsx`), and also as `prebuild` | A bad file fails before the site builds |
-| Project-file check | The same command also checks each `projects/*.md` has every section, and that every entry's `projectFile` exists | Applied entries always trace back to a project file |
-| Reading files | `data.ts` reads `content/` once per server start, and again on every request in development | Edits show up instantly while working; production stays fast |
-| Which folder | `TABANE_CONTENT` setting: `content` by default, `content-samples` for UI testing | Keeps the Researched, Outdated and mobile-app layouts testable |
-| Images | A route at `/content/<slug>/<file>` that reads from the entry's folder | Images stay out of the public folder, so later login and Shared rules can protect them |
-| Deployment | Tell Next.js to include `content/` with the server code (`outputFileTracingIncludes`) | Set now so Phase 4's deploy just works |
-| Live site framing | Claude checks each live site's headers (`X-Frame-Options`, `Content-Security-Policy`) while writing the project file | Recorded once, as the spec says |
+| Front matter | The `yaml` package plus a small `---` splitter | Small and strict |
+| Content check | `zod` schemas mirroring the Entry and Playbook types | Readable errors; types and check can't drift |
+| Check command | `npm run check:content` (with `tsx`), also as `prebuild` | A bad file fails before the build |
+| Project-file check | Every `projects/*.md` has the sections of its kind; every entry's `projectFile` exists; every slug a project file proposes exists once applied | Applied entries always trace back |
+| Reading files | `data.ts` reads `content/` once per server start, on every request in development | Fast in production, instant while editing |
+| Which folder | `TABANE_CONTENT`: `content` by default, `content-samples` for UI testing | Keeps the Researched, Outdated and app layouts testable |
+| Images | `/content/<slug>/<file>` route reading from the entry's folder | Images stay out of `public/`, so later login and Shared rules can protect them |
+| Deployment | `outputFileTracingIncludes` for `content/` | Phase 4's deploy just works |
+| Wireframes | A layout spec per entry (`wireframe.yml`: frame size, boxes with labels, kinds such as text, image, button, chart, list) rendered to SVG by `scripts/wireframes.ts` in the Alice palette and hand-drawn line style; outputs committed | 58 wireframes that match, cheap to change, readable by Claude |
+| Screenshots | `scripts/screenshots.ts` with the installed Chrome over the DevTools protocol (Hanon's `cdp.js` approach, no Puppeteer): desktop 1366×768 and phone 390×844, per entry's section or selector, saved as PNG in the entry folder | All five sites refuse framing |
+| Capture hygiene | Block each site's analytics (`/api/track`, Aqua's `/s/*`); skip splashes and tours through each site's own storage keys (the portfolio's capture scripts already know them); wait for fonts and images | Clean statistics and stable shots |
+| Used in | Lists every project that contains the piece, **including the project it came from** | The project files and the K2/W1 answers already use it this way; see "Choices Kyle may want to change" |
 
 ## Steps
 
-Each step ends with a local commit and a `LOG.md` line.
+Each step ends with a local commit and a `LOG.md` line. Steps 1–9 need nothing from Kyle and run back to back.
 
 | # | Step | Done when |
 |---|---|---|
-| 1 | **Content format.** Create `content/`, `tags.yml`, the entry and playbook templates; convert the 12 sample entries and 2 sample playbooks into files in `content-samples/` | Every sample exists as a file in the new format |
-| 2 | **Loader.** Front matter and body parsing, diagram files, the `TABANE_CONTENT` folder switch; `data.ts` reads files instead of `samples.ts`, which is deleted | With `TABANE_CONTENT=content-samples`, every Phase 1 page looks exactly as before |
-| 3 | **Content check.** `zod` schemas and cross-checks (tags, related entries, diagram parents and boxes, playbook links, image files exist), `npm run check:content`, `prebuild` | A deliberately broken sample fails with a clear message, and the fixed one passes |
-| 4 | **Images route.** `/content/<slug>/<file>` serves entry images, with an allow-list of image types and no access outside the entry's folder; `outputFileTracingIncludes` set | Sample images load through the route; a path like `../` is refused |
+| 1 | **Content format.** `content/`, `tags.yml` (spec lists + the 41 proposed values, one spelling each), entry and playbook templates; the 12 sample entries and 2 sample playbooks as files in `content-samples/` | Every sample exists as a file in the new format |
+| 2 | **Loader.** Front matter, body, diagram files, `TABANE_CONTENT`; `data.ts` reads files; `samples.ts` deleted | With `TABANE_CONTENT=content-samples`, every Phase 1 page looks exactly as before |
+| 3 | **Content check.** Schemas and cross-checks (tags, related slugs, diagram parents and boxes, playbook links, images exist, status rule), `npm run check:content`, `prebuild` | A deliberately broken sample fails with a clear message; the fixed one passes |
+| 4 | **Image route** with an allow-list of image types and no access outside the entry's folder; `outputFileTracingIncludes` | Sample images load through the route; `../` is refused |
 | 5 | **Search by word start** | "stats" finds "statistics" |
-| 6 | **Project files.** `projects/_template.md` with every section; `projectFile` field on entries; the project-file check | A template-shaped file passes the check, and one missing a section fails |
-| 7 | **Full CLAUDE.md.** Step by step: writing a project file, applying it, updating entries when it changes, adding and updating entries and playbooks by hand, naming, image, tag and commit/log rules | A new Claude session could write and apply a project file from CLAUDE.md alone |
-| 8 | **First project file.** When Kyle asks for one, Claude writes it | **Kyle reviews it and answers its open questions** |
-| 9 | **Apply the first project file.** When Kyle says, Claude creates its entries (wireframes, diagrams, details, key code, code locations) and its Draft replication guide | Entries pass the check and look right on the site |
-| 10 | **Switch to real content.** `content/` becomes the default; the samples stay only for UI testing; sample images move out of `public/` | The Library shows only real entries, and every one opens correctly |
-| 11 | **Final check.** Content check, typecheck, lint, build; every real entry and guide opened at desktop and phone width; review with Kyle | All checks pass and Kyle approves Phase 2 |
+| 6 | **Project files.** `projects/_template.md` with both kinds; `projectFile` field; the project-file check, run on the five real files | All five files pass; a file missing a section fails |
+| 7 | **Wireframe kit.** `wireframe.yml` format, `scripts/wireframes.ts`, `npm run wireframes`; the sample wireframes redrawn with it | Desktop and phone sample wireframes generate and look right on the entry page |
+| 8 | **Screenshot capture.** `scripts/screenshots.ts` and `npm run screenshots -- <project>`, with per-site settings (URL, analytics paths to block, storage keys to skip intros, selectors per entry) | One Kotoha entry's desktop and phone shots captured, with no visit counted |
+| 9 | **Full CLAUDE.md.** Writing a project file (both kinds), applying it, updating it, wireframes, screenshots, naming, tags, commit and log rules | A new session could apply a project file from CLAUDE.md alone |
+| 10 | **Apply Kotoha** (29 entries, its guide). ✋ **Kyle reviews the first project on the site** before the rest, so any format change happens once | Entries pass the check; Kyle approves how they look |
+| 11 | **Apply Hanon** (5 entries, the main fan-site guide, Hanon added to Used in on the Kotoha entries with notes) | Check passes |
+| 12 | **Apply Aqua Iro Archive** (28 entries, guide) | Check passes |
+| 13 | **Apply Himawari website** (18 entries, guide, Himawari added to Used in where it reuses Aqua and Kotoha) | Check passes |
+| 14 | **Apply Moeko Works portfolio** (18 entries, guide, lineage links from Himawari) | Check passes; all 34 questions moved to "Answered and applied" |
+| 15 | **Switch to real content.** `content/` becomes the default; sample images move out of `public/` | The Library shows only the 98 real entries and every one opens |
+| 16 | **Final check.** Content check, typecheck, lint, build; every entry and guide opened at desktop and phone width; search and filters across 98 entries; review with Kyle ✋ | All checks pass and Kyle approves Phase 2 |
 
-Steps 1 to 7 need nothing from you and can run back to back. Step 8 waits for you to name the first project.
+Steps 11–14 run back to back after Kyle's OK at step 10. Each applied project gets its own commit.
+
+### How one project is applied (steps 10–14)
+
+1. `git pull` the project; if it changed since the file was read, update the project file first (and its read-at commit).
+2. Add any new tag values (already in `tags.yml` from step 1, so normally none).
+3. Per proposed entry: folder, `entry.md` (front matter from the file's tables, Technical details from its front-end/back-end sections, Key code from its key-code list), `wireframe.yml` → SVG for UI/UX, Mermaid files for Backend (starting from the file's architecture diagrams, split into levels), screenshots for UI/UX.
+4. The replication guide as a Draft playbook.
+5. Used in and Related updates on earlier projects' entries.
+6. `npm run check:content`, typecheck, lint, build; open a sample of the new entries on the site.
+7. Move the project's questions to "Answered and applied" with the date; log; commit.
+
+## Effort and order
+
+- **The size:** 98 entries is about 400 files (entry, wireframe spec and SVGs, screenshots, diagrams). Each project is a long session of its own; Kotoha and Aqua are the biggest.
+- **Why Kotoha first:** Hanon builds on it, and it has the most varied pieces, so the format gets tested early.
+- **Why one review stop:** reviewing every project would add four waits; reviewing the first one catches format problems before they repeat 98 times.
 
 ## Known gaps after Phase 2
 
-- **Other projects:** only the first project is in Tabane. The rest arrive one project file at a time, whenever you ask.
-- **No screenshots yet:** live sites that can't be framed show "No screenshot saved yet" until Phase 3's screenshot script runs.
-- **Last checked:** it holds the date the site's headers were checked while writing the project file, until Phase 3's link check takes over.
+- **No link check yet:** `lastChecked` is the capture date until Phase 3.
+- **Screenshots are a snapshot:** re-capturing when a site changes is by hand until Phase 3 automates it.
+- **Himawari engine and Studio** are not in Tabane (the project file covers the website only).
+- **Admin screens:** screenshots cover public pages only; admin panels appear as wireframes (Claude can't sign in to Kyle's admin panels).
 
 ## Finished looks like
 
-- **Content system:** `content/`, `tags.yml`, the templates, the loader, the image route and the content check all work, and `npm run check:content` runs before every build.
-- **Project files:** `projects/_template.md` exists, and the first project file is written, reviewed and applied.
-- **Library:** shows that project's real entries, with wireframes, diagrams and code locations, plus its Draft replication guide.
-- **Samples:** `TABANE_CONTENT=content-samples` still brings back the Phase 1 samples for UI testing.
-- **CLAUDE.md:** explains how to write and apply a project file, and how to add and update everything.
-- **Commits and checks:** all commits are local and logged, and typecheck, lint and build pass.
+- **Content system:** `content/`, `tags.yml`, templates, loader, image route, content check, wireframe kit and screenshot capture all work; `npm run check:content` runs before every build.
+- **Library:** 98 real entries with wireframes, screenshots, diagrams and code locations, plus 5 Draft replication guides, each tracing back to its project file.
+- **Samples:** `TABANE_CONTENT=content-samples` still brings back the Phase 1 samples.
+- **CLAUDE.md:** explains writing, applying and updating project files.
+- **Commits and checks:** all local and logged; typecheck, lint and build pass.
 
 ## Choices Kyle may want to change
 
-- **Where project files live:** `projects/` in the Tabane repository. Keeping them outside Tabane is the alternative.
-- **Showing project files:** they are not shown on the site. A read-only page for each one, owner only, is the alternative.
-- **Shared:** every entry starts with Shared off. Setting Shared inside the project file is the alternative.
-- **Samples:** they stay as test content in `content-samples/`. Deleting them entirely is the alternative.
+- **Used in includes the origin project** (default). The spec's wording says Used in lists projects that *reused* an entry; the alternative is to leave Used in empty for the origin and show the origin only through the live site and project file. The default matches how the project files and the K2/W1 answers already use it.
+- **Screenshots in Phase 2** (default) instead of placeholders until Phase 3.
+- **One review stop after Kotoha** (default) instead of a review after every project.
+- **Generated wireframes** (default) instead of hand-drawn SVGs per entry.
+- **Where project files live:** `projects/` in the Tabane repository (default), or outside it.
+- **Samples:** kept as test content in `content-samples/` (default), or deleted.
