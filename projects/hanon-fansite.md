@@ -110,7 +110,7 @@ The full-body model stands on a pale star (`.ripple-stage__star`, `pg--pale`) wi
 
 ## 3. Unique: behaviour and tooling
 
-### 3.1 Marquee bug fix (`motion/marquee.js`) — ported to Kotoha on 2026-10-25 (branch `marquee-reverse-fix`, not merged yet)
+### 3.1 Marquee bug fix (`motion/marquee.js`) — ported to Kotoha on 2026-10-25 (live, merge `52e0184`)
 
 When the marquee plays in reverse after scrolling up, an infinite Web Animation reaching `currentTime = 0` finishes, and `play()` can't rewind a reversed infinite animation from 0 (it throws). Hanon starts the timeline `HEADROOM = 1000` loops in, and resets to `HEADROOM × duration` before `play()` if it ever got below one loop. It also guards `currentTime == null`. Found by the committed behaviour suite ("marquee runs again after calm → full").
 
@@ -263,7 +263,7 @@ All 29 proposed Kotoha entries exist unchanged (apart from names and colours) in
 |---|---|
 | `kotoha-clover-loader` | Hanon variant: star rays + still penguin (H6) |
 | `kotoha-scrapbook-design-system` | Hanon re-theme: Sazanami (H5) |
-| `kotoha-scroll-life` | Hanon's marquee fix (H7); ported to Kotoha on branch `marquee-reverse-fix` (`c4dcee4`), live once merged |
+| `kotoha-scroll-life` | Hanon's marquee fix (H7); ported to Kotoha and live since 2026-10-25 (merge `52e0184`), so both sites now have the same `marquee.js` |
 | `kotoha-stream-ticket-week` | use Hanon's single schedule constant (H8) |
 | `kotoha-image-pipeline` | Hanon adds the flattened sticker favicon (H9) |
 | `kotoha-db-scripts` | Hanon adds the PGlite preview (H3) |

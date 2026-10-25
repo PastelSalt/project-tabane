@@ -4,6 +4,8 @@ Everything that happens on Project Tabane, by Kyle and by Claude. Newest first. 
 
 | Date | Who | Action |
 |---|---|---|
+| 2026-10-25 | Claude | Merged `marquee-reverse-fix` into Kotoha's `main` (`52e0184`) and pushed it, with the branch; production served the new `marquee.js` about 20 s later. The six marquee checks pass twice on https://kotoha-fansite.vercel.app (headless Chrome, `/api/track` blocked so no test visits were counted). Kotoha's `docs/PROGRESS.md` updated and pushed (`6d78e9a`, `41d4bd8`). Tabane notes (G24, Hanon §3.1 and §7.1, H1) now say the fix is live |
+| 2026-10-25 | Kyle | Asked to merge the Kotoha marquee fix into `main`, push it, and check the live marquee after scrolling up |
 | 2026-10-25 | Claude | Ported Hanon's marquee fix to the Kotoha repository (outside Tabane): `public/js/public/motion/marquee.js` now matches Hanon's, with a §9 decision and a session-7 note in Kotoha's `docs/PROGRESS.md`; committed on Kotoha branch `marquee-reverse-fix` (`c4dcee4`), not merged or pushed. Checked with the marquee part of Hanon's behaviour suite in headless Chrome: on `main` the marquee stops after scrolling up + calm → full and throws `InvalidStateError`; with the fix all six checks pass (twice each). Updated Kotoha G24, Hanon §3.1 and §7.1, and the H1 answer |
 | 2026-10-25 | Kyle | Asked to do the Kotoha marquee fix in this session |
 | 2026-10-25 | Claude | Answered all 34 questions in `projects/OPEN-QUESTIONS.md` with the recommended answers and ticked them (K1–K7, H1–H4, A1–A8, W1–W7, M1–M8). The 7 that had no recommendation (K5, H1, A4, A7, W3, W6, M7) got one first. Two answers are tasks outside Tabane for later: Hanon's marquee fix in Kotoha (H1) and removing Preact from the Himawari site (W3). Nothing applied yet |

@@ -42,7 +42,7 @@ Every open question from every project file, in one place, for Kyle to answer la
 - [x] **H1. Marquee fix in Kotoha:** apply Hanon's marquee fix to the Kotoha repository? That is a change outside Tabane, so it would be its own task.
   *Recommended:* yes, as its own task in the Kotoha repository, not part of Tabane work.
   _Answer:_ Yes, as its own task. Until it's done, `kotoha-scroll-life` keeps the note that Kotoha still has the bug (G24).
-  *Done 2026-10-25:* ported on Kotoha branch `marquee-reverse-fix` (`c4dcee4`), checked; waiting for Kyle's OK to merge into `main`.
+  *Done 2026-10-25:* ported (`c4dcee4`), merged into Kotoha's `main` (`52e0184`) with Kyle's OK, live and checked on the live site.
 - [x] **H2. Sazanami theme:** keep `hanon-sazanami-theme` as its own entry, or fold it into `kotoha-scrapbook-design-system` as a "theme variant" section?
   *Recommended:* its own entry.
   _Answer:_ Its own entry.
