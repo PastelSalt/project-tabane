@@ -124,7 +124,7 @@ Every entry uses the same fields, so people and Claude can read any entry the sa
 | Key code | Own projects, optional | A short excerpt of the code that makes the piece work (a few dozen lines at most), in a "Key code" part of the body. The full code stays in the project's repository |
 | Source and license | Researched | Where the idea came from and any license or usage terms, so Shared entries don't pass on someone else's work |
 | Wireframe | UI/UX | A wireframe of the interface, an SVG or PNG file in the entry's folder |
-| Screenshot | UI/UX with a live site, and every Mobile or Desktop Application entry | PNGs in the entry's folder, saved when the entry is created. Shown if the live site cannot be embedded or is offline, and always for apps, which cannot be embedded |
+| Screenshot | UI/UX with a live site, and every Mobile or Desktop Application entry | Images in the entry's folder (WebP for screenshots, decided 2026-10-25: about a tenth of a PNG's size), saved when the entry is created. Shown if the live site cannot be embedded or is offline, and always for apps, which cannot be embedded |
 | Clip | Mobile or Desktop Application, optional | A short silent clip of the piece in use, shown only on the entry page and never on cards |
 | Technical details | All | How it operates: the techniques and stack for UI/UX, the backend logic for backend |
 | Diagrams | Backend | Mermaid files in the entry's folder, so Claude can read them. The front matter lists each diagram with its ID, level (1 for the whole system, then 2, 3 and lower), parent diagram ID, file name, and the box in the parent that opens it (when its name differs from the diagram ID), so the levels link to each other |
@@ -189,7 +189,7 @@ Tabane will be worked on by me and Claude over a long time, and Claude is the on
 | Part | How Claude makes it |
 |---|---|
 | Wireframe | Hand-written SVG: grey boxes, labels and lines only, no colors or real content, at 1440 px wide for desktop layouts or 390 px for phone layouts |
-| Screenshot | Taken by a Playwright script in the repository at fixed sizes: 1440 × 900 for desktop and 390 × 844 for phone, saved as PNG |
+| Screenshot | Taken by `scripts/screenshots.ts` (the installed Chrome over the DevTools protocol) at fixed sizes: 1366 × 768 for desktop and 390 × 844 at 2× for phone, saved as WebP |
 | App screenshots and clips | Taken from the running app on my machine, since apps have no live site |
 | Diagrams | Written as Mermaid, level 1 first, then a level-2 diagram for each part of level 1 that needs more detail |
 | Researched entries | Added only when I ask, either for a site I name or for one Claude suggested while we were deliberating and I agreed to |

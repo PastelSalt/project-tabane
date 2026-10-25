@@ -17,7 +17,7 @@ wireframe:                        # UI/UX: files in this folder (generated from 
   desktop: { file: wireframe.svg, alt: "Wireframe: what it shows" }
   phone: { file: wireframe-phone.svg, alt: "Phone wireframe: what it shows" }
 screenshots:                      # UI/UX with a live site, and every app entry
-  - { file: screenshot-desktop.png, alt: "Screenshot of …" }
+  - { file: screenshot-desktop.webp, alt: "Screenshot of …" }
 clip: { file: clip.webm, poster: poster.png }   # apps only, optional
 diagrams:                         # backend: one Mermaid file per diagram, exactly one level 1
   - { id: system, level: 1, title: System, file: level-1-system.mmd }

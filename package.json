@@ -10,7 +10,8 @@
     "lint": "eslint",
     "typecheck": "next typegen && tsc --noEmit",
     "check:content": "tsx scripts/check-content.ts",
-    "wireframes": "tsx scripts/wireframes.ts"
+    "wireframes": "tsx scripts/wireframes.ts",
+    "screenshots": "tsx scripts/screenshots.ts"
   },
   "dependencies": {
     "mermaid": "^12.2.0",

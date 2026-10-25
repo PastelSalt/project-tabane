@@ -32,12 +32,24 @@ export function sections(body: string): Map<string, string> {
   return out;
 }
 
-/** Width and height of an SVG (width/height or viewBox) or PNG (IHDR) file. */
+/** Width and height of an SVG (width/height or viewBox), PNG (IHDR) or WebP (VP8, VP8L, VP8X) file. */
 export function imageSize(file: string): { width: number; height: number } {
   if (file.endsWith(".png")) {
     const buf = readFileSync(file);
     if (buf.toString("ascii", 1, 4) !== "PNG") throw new Error(`${file} is not a PNG`);
     return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+  }
+  if (file.endsWith(".webp")) {
+    const buf = readFileSync(file);
+    if (buf.toString("ascii", 0, 4) !== "RIFF" || buf.toString("ascii", 8, 12) !== "WEBP") throw new Error(`${file} is not a WebP`);
+    const chunk = buf.toString("ascii", 12, 16);
+    if (chunk === "VP8X") return { width: 1 + buf.readUIntLE(24, 3), height: 1 + buf.readUIntLE(27, 3) };
+    if (chunk === "VP8 ") return { width: buf.readUInt16LE(26) & 0x3fff, height: buf.readUInt16LE(28) & 0x3fff };
+    if (chunk === "VP8L") {
+      const [b0, b1, b2, b3] = [buf[21], buf[22], buf[23], buf[24]];
+      return { width: 1 + (((b1 & 0x3f) << 8) | b0), height: 1 + (((b3 & 0xf) << 10) | (b2 << 2) | ((b1 & 0xc0) >> 6)) };
+    }
+    throw new Error(`${file}: unknown WebP chunk "${chunk}"`);
   }
   if (file.endsWith(".svg")) {
     const head = readFileSync(file, "utf8").slice(0, 2000);
@@ -49,7 +61,7 @@ export function imageSize(file: string): { width: number; height: number } {
     if (!width || !height) throw new Error(`${file}: SVG needs width/height or a viewBox`);
     return { width, height };
   }
-  throw new Error(`${file}: only .svg and .png images are supported`);
+  throw new Error(`${file}: only .svg, .png and .webp images are supported`);
 }
 
 type FileRef = string | { file: string; alt?: string };

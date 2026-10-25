@@ -1,0 +1,17 @@
+# Per-site settings for the screenshot capture (scripts/screenshots.ts, PHASE-2.md step 8).
+# Every site blocks its own analytics, so a capture never counts as a visit, and skips intros through the site's own
+# storage keys (taken from each project file). Keys are the project-file names in projects/.
+#
+#   url:          the live site, no trailing slash
+#   block:        URL patterns Chrome refuses to load (analytics beacons and scripts)
+#   local/session: storage set before every page load (skip splashes, tours, language prompts)
+#   ready:        a JS expression that is true once the page has finished its intro
+#   settle:       extra milliseconds after ready, for fonts and images
+#   motion:       false (default) captures with prefers-reduced-motion, so animations stand still
+
+kotoha-fansite:
+  url: https://kotoha-fansite.vercel.app
+  block: ["*/api/track*"]
+  local: { kf_lang: en }
+  ready: "!document.getElementById('loader') && document.fonts.status === 'loaded'"
+  settle: 1500

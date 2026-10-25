@@ -108,8 +108,8 @@ content/
       wireframe.yml                       the wireframe as a layout spec (input to the kit)
       wireframe.svg                       generated desktop wireframe
       wireframe-phone.svg                 generated phone wireframe, optional
-      screenshot-desktop.png              captured from the live site
-      screenshot-phone.png
+      screenshot-desktop.webp             captured from the live site
+      screenshot-phone.webp
     kotoha-sleeping-db-cache/
       entry.md
       level-1-system.mmd                  one Mermaid file per diagram
@@ -140,7 +140,7 @@ repository: { name: PastelSalt/kotoha-fansite, url: https://github.com/PastelSal
 codeLocation: { path: public/js/public/countdown.js, ref: 2fa67f2 }
 projectFile: kotoha-fansite
 wireframe: { desktop: wireframe.svg }
-screenshots: [screenshot-desktop.png, screenshot-phone.png]
+screenshots: [screenshot-desktop.webp, screenshot-phone.webp]
 diagrams: []
 related: [kotoha-scrapbook-design-system]
 usedIn: [Kotoha Fan Site, Hanon Fan Site]
@@ -185,7 +185,7 @@ How it works, in plain words, with short bullet lists.
 | Images | `/content/<slug>/<file>` route reading from the entry's folder | Images stay out of `public/`, so later login and Shared rules can protect them |
 | Deployment | `outputFileTracingIncludes` for `content/` | Phase 4's deploy just works |
 | Wireframes | A layout spec per entry (`wireframe.yml`: frame size, boxes with labels, kinds such as text, image, button, chart, list) rendered to SVG by `scripts/wireframes.ts` in the Alice palette and hand-drawn line style; outputs committed | 58 wireframes that match, cheap to change, readable by Claude |
-| Screenshots | `scripts/screenshots.ts` with the installed Chrome over the DevTools protocol (Hanon's `cdp.js` approach, no Puppeteer): desktop 1366×768 and phone 390×844, per entry's section or selector, saved as PNG in the entry folder | All five sites refuse framing |
+| Screenshots | `scripts/screenshots.ts` with the installed Chrome over the DevTools protocol (Hanon's `cdp.js` approach, no Puppeteer): desktop 1366×768 and phone 390×844, per entry's section or selector, saved as WebP (quality 82, about 100 KB each) in the entry folder | All five sites refuse framing |
 | Capture hygiene | Block each site's analytics (`/api/track`, Aqua's `/s/*`); skip splashes and tours through each site's own storage keys (the portfolio's capture scripts already know them); wait for fonts and images | Clean statistics and stable shots |
 | Used in | Lists every project that contains the piece, **including the project it came from** | The project files and the K2/W1 answers already use it this way; see "Choices Kyle may want to change" |
 
